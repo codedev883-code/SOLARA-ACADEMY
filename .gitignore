@@ -1,6 +1,9 @@
-# Chỉ theo dõi solara_website.html
+# Bỏ qua tất cả
 *
 
-# Cho phép Git theo dõi
-!solara_website.html
+# Cho phép Git theo dõi .gitignore
 !.gitignore
+
+# Chỉ theo dõi thư mục solara_energy
+!solara_energy/
+!solara_energy/**
