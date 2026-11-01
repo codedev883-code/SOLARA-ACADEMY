@@ -1,6 +1,6 @@
-/.vscode
-/Bai_tap_of_huy
-/indexh.html
-/ngon_ngu_C++
-/script.js
-/style.css
+# Chỉ theo dõi solara_website.html
+*
+
+# Cho phép Git theo dõi
+!solara_website.html
+!.gitignore
