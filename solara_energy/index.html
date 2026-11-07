@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html data-theme="dark" lang="vi" data-solara-version="16.5">
+<html data-theme="dark" lang="vi" data-solara-version="16.8">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
@@ -31,11 +31,12 @@ try {
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="SOLARA Academy — Học viện Năng lượng Tái tạo" name="twitter:title"/>
 <meta content="68 bài học nền tảng, bài học chuyên sâu, tổng quan năng lượng theo vùng và phòng mô phỏng tương tác." name="twitter:description"/>
-<title>SOLARA Academy — Học viện Năng lượng Tái tạo · V16.5 · Stable Theme &amp; Cosmic Motion</title>
+<title>SOLARA Academy — Học viện Năng lượng Tái tạo · V16.8 · Vertical Meteor & Learning Accuracy</title>
 <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6.5' fill='%2345e0a2'/%3E%3Cg stroke='%23f4c24f' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M16 2v4M16 26v4M2 16h4M26 16h4M6 6l2.8 2.8M23.2 23.2L26 26M26 6l-2.8 2.8M8.8 23.2L6 26'/%3E%3C/g%3E%3C/svg%3E" rel="icon"/>
 
 <style id="solara-styles">
 :root {
+  --motion-smooth: cubic-bezier(.2,.75,.25,1);
   --sp-xs: 6px;
   --sp-sm: 12px;
   --sp-md: 20px;
@@ -504,67 +505,6 @@ section {
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   animation: sp-grain 8s steps(6) infinite;
-}
-#loader {
-  position: fixed;
-  inset: 0;
-  z-index: 300;
-  background: var(--bg);
-  display: grid;
-  place-items: center;
-  transition: opacity .7s, visibility .7s;
-}
-
-#loader.done {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.ld {
-  text-align: center;
-}
-
-.ld-ic {
-  width: 48px;
-  height: 48px;
-  color: var(--acc);
-  display: inline-block;
-  animation: sp-spin 1.2s linear infinite;
-}
-
-.ld-num {
-  font-family: var(--f-mono);
-  font-size: clamp(2rem, 6vw, 3.2rem);
-  font-weight: 600;
-  color: var(--acc);
-  margin-top: 18px;
-  font-variant-numeric: tabular-nums;
-}
-
-.ld-txt {
-  font-family: var(--f-mono);
-  font-size: .7rem;
-  letter-spacing: .45em;
-  text-transform: uppercase;
-  color: var(--faint);
-  margin-top: 8px;
-}
-
-.ld-bar {
-  width: 230px;
-  height: 2px;
-  background: var(--line);
-  margin: 22px auto 0;
-  overflow: hidden;
-  border-radius: 2px;
-}
-
-.ld-bar b {
-  display: block;
-  height: 100%;
-  width: 0;
-  background: linear-gradient(90deg, var(--acc), var(--amb));
-  transition: width .2s;
 }
 .topbar {
   position: fixed;
@@ -4649,67 +4589,6 @@ section {
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   animation: sp-grain 8s steps(6) infinite;
-}
-#loader {
-  position: fixed;
-  inset: 0;
-  z-index: 300;
-  background: var(--bg);
-  display: grid;
-  place-items: center;
-  transition: opacity .7s, visibility .7s;
-}
-
-#loader.done {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.ld {
-  text-align: center;
-}
-
-.ld-ic {
-  width: 48px;
-  height: 48px;
-  color: var(--acc);
-  display: inline-block;
-  animation: sp-spin 1.2s linear infinite;
-}
-
-.ld-num {
-  font-family: var(--f-mono);
-  font-size: clamp(2rem, 6vw, 3.2rem);
-  font-weight: 600;
-  color: var(--acc);
-  margin-top: 18px;
-  font-variant-numeric: tabular-nums;
-}
-
-.ld-txt {
-  font-family: var(--f-mono);
-  font-size: .7rem;
-  letter-spacing: .45em;
-  text-transform: uppercase;
-  color: var(--faint);
-  margin-top: 8px;
-}
-
-.ld-bar {
-  width: 230px;
-  height: 2px;
-  background: var(--line);
-  margin: 22px auto 0;
-  overflow: hidden;
-  border-radius: 2px;
-}
-
-.ld-bar b {
-  display: block;
-  height: 100%;
-  width: 0;
-  background: linear-gradient(90deg, var(--acc), var(--amb));
-  transition: width .2s;
 }
 .topbar {
   position: fixed;
@@ -14951,17 +14830,6 @@ html.motion-ready .src-card[data-motion-item].is-visible { transform:translate3d
   html { scroll-behavior:auto !important;
  }
 }
-@keyframes solara-loader-watchdog {
-  to { opacity: 0;
- visibility: hidden;
- pointer-events: none;
- }
-}
-#loader:not(.done) {
-  animation: solara-loader-watchdog 1ms linear 12s forwards;
-}
-#loader.done { animation: none;
- }
 .mod[data-tilt] {
   --card-rx: 0deg;
   --card-ry: 0deg;
@@ -16417,19 +16285,6 @@ button:disabled {
 .ai-hub-dialog__body a {
   text-underline-offset: 3px;
 }
-#loader.done {
-  pointer-events: none;
-}
-
-#loader:not(.done) {
-  pointer-events: auto;
-}
-
-html.solara-v16-ready #loader {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
 .aurora,
 .noise,
 #bgCanvas,
@@ -16915,7 +16770,6 @@ html.solara-v16-ready #loader {
   .dock-flank-trigger,
   .cursor-dot,
   .cursor-ring,
-  #loader,
   #toTop,
   .scroll-hint,
   .ticker,
@@ -17345,55 +17199,12 @@ html.solara-footer-zone .dock-flank-trigger {
   background: radial-gradient(ellipse, rgba(189,139,73,.045) 0%, rgba(67,151,136,.025) 40%, transparent 72%);
   animation: solara-nebula-drift 124s ease-in-out -48s infinite alternate;
 }
-.cosmic-planet {
-  position: absolute;
-  display: block;
-  left: -8vw;
-  top: var(--planet-y, 30%);
-  width: var(--planet-size, 13px);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  opacity: .25;
-  background: radial-gradient(circle at 32% 28%, rgba(226,255,247,.9) 0%, var(--planet-color, rgba(87,196,183,.65)) 18%, rgba(16,57,70,.82) 66%, rgba(4,19,24,.95) 100%);
-  box-shadow: 0 0 12px color-mix(in srgb, var(--planet-color, #57c4b7) 28%, transparent), inset -2px -2px 5px rgba(0,0,0,.35);
-  animation: solara-planet-transit var(--planet-duration, 86s) linear var(--planet-delay, 0s) infinite;
-  will-change: transform;
-}
-.cosmic-planet::after {
-  content: "";
-  position: absolute;
-  left: -38%; top: 28%; width: 176%; height: 43%;
-  border: 1px solid color-mix(in srgb, var(--planet-color, #57c4b7) 45%, transparent);
-  border-radius: 50%;
-  transform: rotate(-24deg);
-  opacity: .62;
-}
-.cosmic-planet--one { --planet-y: 16%; --planet-size: 14px; --planet-color: rgba(77,192,175,.8); --planet-duration: 98s; --planet-delay: -62s; }
-.cosmic-planet--two { --planet-y: 39%; --planet-size: 9px; --planet-color: rgba(121,154,226,.76); --planet-duration: 116s; --planet-delay: -18s; }
-.cosmic-planet--three { --planet-y: 63%; --planet-size: 17px; --planet-color: rgba(194,146,95,.7); --planet-duration: 108s; --planet-delay: -82s; }
-.cosmic-planet--four { --planet-y: 80%; --planet-size: 11px; --planet-color: rgba(153,132,214,.72); --planet-duration: 124s; --planet-delay: -44s; }
-.cosmic-planet--five { --planet-y: 28%; --planet-size: 7px; --planet-color: rgba(100,184,221,.65); --planet-duration: 132s; --planet-delay: -105s; }
 @keyframes solara-nebula-drift {
   0% { transform: translate3d(-1.5vw,1vh,0) scale(.96); opacity: .55; }
   50% { opacity: .9; }
   100% { transform: translate3d(3vw,-2vh,0) scale(1.04); opacity: .62; }
 }
-@keyframes solara-planet-transit {
-  0% { transform: translate3d(0,0,0) rotate(0deg); }
-  100% { transform: translate3d(118vw,-8vh,0) rotate(360deg); }
-}
 html.perf-lite .cosmic-nebula { animation-duration: 150s !important; opacity: .42; }
-html.perf-lite .cosmic-planet { opacity: .16; animation-duration: 160s !important; }
-@media (max-width: 760px) {
-  .cosmic-passby { opacity: .5; }
-  .cosmic-nebula--three, .cosmic-planet--five { display: none; }
-  .cosmic-planet { opacity: .15; }
-  .cosmic-planet--one, .cosmic-planet--three { animation-duration: 150s; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .cosmic-passby { display: none !important; }
-  .cursor-dot, .cursor-ring { display: none !important; }
-}
 
 .cosmic-passby::before {
   content: "";
@@ -17417,71 +17228,38 @@ html.perf-lite .cosmic-planet { opacity: .16; animation-duration: 160s !importan
 .cosmic-nebula--three {
   background: radial-gradient(ellipse, rgba(189,139,73,.12) 0%, rgba(67,151,136,.075) 40%, transparent 74%);
 }
-.cosmic-planet { opacity: .38; }
-.cosmic-asteroid {
-  position: absolute;
-  display: block;
-  width: var(--asteroid-size, 24px);
-  height: calc(var(--asteroid-size, 24px) * .76);
-  left: -9vw;
-  top: var(--asteroid-y, 40%);
-  border-radius: 34% 46% 39% 44%;
-  clip-path: polygon(16% 5%, 69% 0, 100% 35%, 82% 86%, 43% 100%, 0 65%);
-  background: radial-gradient(circle at 28% 24%, rgba(225,230,235,.95), rgba(118,139,154,.82) 25%, rgba(44,63,76,.94) 70%, rgba(20,33,43,.98));
-  box-shadow: inset -5px -5px 9px rgba(0,0,0,.42), 0 0 18px rgba(154,192,213,.13);
-  opacity: .7;
-  animation: solara-asteroid-flight var(--asteroid-duration, 95s) linear var(--asteroid-delay, 0s) infinite;
-}
-.cosmic-asteroid::after {
-  content: "";
-  position: absolute;
-  inset: 22% 18%;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(13,25,34,.65) 0 16%, transparent 19% 100%);
-  box-shadow: 8px 4px 0 -2px rgba(15,26,35,.45), -5px -3px 0 -2px rgba(15,26,35,.36);
-}
-.cosmic-asteroid--one { --asteroid-y: 22%; --asteroid-size: 28px; --asteroid-duration: 112s; --asteroid-delay: -44s; }
-.cosmic-asteroid--two { --asteroid-y: 57%; --asteroid-size: 18px; --asteroid-duration: 128s; --asteroid-delay: -91s; }
-.cosmic-asteroid--three { --asteroid-y: 84%; --asteroid-size: 34px; --asteroid-duration: 140s; --asteroid-delay: -68s; }
 .cosmic-meteor {
   position: absolute;
   display: block;
-  width: clamp(70px, 10vw, 150px);
-  height: 1.5px;
-  left: 0;
-  top: 0;
+  width: clamp(150px, 22vw, 330px);
+  height: 2px;
+  left: -30vw;
+  top: var(--meteor-y, 25%);
   opacity: 0;
-  transform: rotate(-34deg);
-  transform-origin: right center;
-  background: linear-gradient(90deg, transparent, rgba(107,222,255,.18) 35%, rgba(205,246,255,.94));
-  filter: drop-shadow(0 0 4px rgba(113,222,255,.55));
-  animation: solara-meteor-cross 19s linear infinite;
+  border-radius: 999px;
+  transform: rotate(-24deg);
+  transform-origin: left center;
+  background: linear-gradient(90deg, transparent 0%, rgba(100,205,255,.18) 48%, rgba(183,237,255,.95) 88%, #fff 100%);
+  box-shadow: 0 0 5px rgba(125,218,255,.9), 0 0 14px rgba(83,177,255,.65), 0 0 28px rgba(91,139,255,.32);
+  filter: drop-shadow(0 0 5px rgba(130,220,255,.8));
+  animation: solara-meteor-dash var(--meteor-duration, 1.15s) cubic-bezier(.18,.55,.35,1) var(--meteor-delay, 0s) infinite;
 }
-.cosmic-meteor--one { top: 14%; animation-delay: -3s; }
-.cosmic-meteor--two { top: 43%; animation-delay: -11s; animation-duration: 23s; }
-.cosmic-meteor--three { top: 71%; animation-delay: -16s; animation-duration: 27s; }
+.cosmic-meteor--one { --meteor-y: 12%; --meteor-duration: 1.05s; --meteor-delay: -0.2s; }
+.cosmic-meteor--two { --meteor-y: 39%; --meteor-duration: 1.25s; --meteor-delay: -2.7s; width: clamp(180px, 25vw, 380px); }
+.cosmic-meteor--three { --meteor-y: 68%; --meteor-duration: .95s; --meteor-delay: -4.4s; width: clamp(130px, 19vw, 290px); }
+.cosmic-meteor--four { --meteor-y: 25%; --meteor-duration: 1.1s; --meteor-delay: -6.1s; width: clamp(170px, 24vw, 360px); }
+.cosmic-meteor--five { --meteor-y: 54%; --meteor-duration: 1.3s; --meteor-delay: -8.3s; width: clamp(140px, 20vw, 300px); }
+.cosmic-meteor--six { --meteor-y: 82%; --meteor-duration: .9s; --meteor-delay: -10.5s; width: clamp(160px, 23vw, 340px); }
+.cosmic-meteor--seven { --meteor-y: 8%; --meteor-duration: 1.2s; --meteor-delay: -12.7s; width: clamp(120px, 18vw, 270px); }
 @keyframes solara-stardust { from { opacity: .24; } to { opacity: .48; } }
-@keyframes solara-asteroid-flight {
-  0% { transform: translate3d(0, 0, 0) rotate(0deg); }
-  100% { transform: translate3d(118vw, -10vh, 0) rotate(420deg); }
-}
-@keyframes solara-meteor-cross {
-  0%, 72% { opacity: 0; transform: translate3d(0,0,0) rotate(-34deg); }
-  74% { opacity: .88; }
-  82% { opacity: .82; transform: translate3d(54vw, 22vh, 0) rotate(-34deg); }
-  86%, 100% { opacity: 0; transform: translate3d(68vw, 28vh, 0) rotate(-34deg); }
+@keyframes solara-meteor-dash {
+  0% { opacity: 0; transform: translate3d(0,0,0) rotate(-24deg); }
+  8% { opacity: 1; }
+  72% { opacity: .92; }
+  100% { opacity: 0; transform: translate3d(155vw, 72vh, 0) rotate(-24deg); }
 }
 html.perf-lite .cosmic-passby { display: block !important; opacity: .48 !important; }
 html.perf-lite .cosmic-nebula { animation-duration: 180s !important; opacity: .3 !important; }
-html.perf-lite .cosmic-planet, html.perf-lite .cosmic-asteroid { animation-duration: 190s !important; opacity: .16 !important; }
-
-main { position: relative; z-index: 1; }
-body > footer { position: relative; z-index: 1; }
-@media (max-width: 760px) {
-  .cosmic-asteroid--three, .cosmic-meteor--three { display: none; }
-  .cosmic-asteroid { opacity: .35; }
-}
-
 ::view-transition-group(root) { animation-duration: 820ms; }
 ::view-transition-old(root) { animation: none; z-index: 1; }
 ::view-transition-new(root) {
@@ -17537,9 +17315,9 @@ body > footer { position: relative; z-index: 1; }
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-group(root), ::view-transition-new(root), ::view-transition-old(root) { animation: none !important; }
   .cosmic-passby { display: block !important; opacity: .46 !important; }
-  .cosmic-passby::before, .cosmic-nebula, .cosmic-planet, .cosmic-asteroid, .cosmic-meteor { animation: none !important; }
+  .cosmic-passby::before, .cosmic-nebula, .cosmic-meteor { animation: none !important; }
   .cosmic-nebula { opacity: .34 !important; }
-  .cosmic-planet, .cosmic-asteroid, .cosmic-meteor { display: none !important; }
+  .cosmic-meteor { display: none !important; }
   .cursor-dot, .cursor-ring { display: none !important; }
 }
 html[data-theme="light"] .cosmic-nebula {
@@ -17567,22 +17345,240 @@ html[data-theme="light"] .cosmic-passby::before {
 .cosmic-meteor--two { animation-delay: -7s; }
 .cosmic-meteor--three { animation-delay: -15s; }
 
+
+
+/* SOLARA V16.6 visual refinement */
+
+html { scroll-behavior: smooth; }
+body { isolation: isolate; }
+/* Clearer custom pointer with crisp core, luminous halo and stronger water rings. */
+.cursor-dot { width: 8px !important; height: 8px !important; background: #f4ffff !important; border: 1px solid color-mix(in srgb,var(--acc) 75%,white) !important; box-shadow: 0 0 7px 2px color-mix(in srgb,var(--acc) 75%,transparent),0 0 17px color-mix(in srgb,var(--sky) 52%,transparent) !important; opacity: 0; }
+.cursor-ring { width: 46px !important; height: 46px !important; border: 1.5px solid color-mix(in srgb,var(--sky) 82%,white) !important; background: radial-gradient(circle,color-mix(in srgb,var(--sky) 11%,transparent),transparent 68%) !important; box-shadow: 0 0 0 1px color-mix(in srgb,var(--acc) 22%,transparent),0 0 18px color-mix(in srgb,var(--sky) 30%,transparent),inset 0 0 13px color-mix(in srgb,var(--sky) 12%,transparent) !important; }
+.cursor-ring::before,.cursor-ring::after { border-color: color-mix(in srgb,var(--sky) 70%,white) !important; box-shadow: 0 0 12px color-mix(in srgb,var(--sky) 35%,transparent); }
+.cursor-ring.hover { width: 62px !important; height: 62px !important; border-color: var(--acc) !important; box-shadow: 0 0 0 4px color-mix(in srgb,var(--acc) 13%,transparent),0 0 28px color-mix(in srgb,var(--acc) 36%,transparent),inset 0 0 18px color-mix(in srgb,var(--acc) 14%,transparent) !important; }
+.cursor-ring.water-fast { filter: drop-shadow(0 0 8px color-mix(in srgb,var(--sky) 72%,transparent)) !important; }
+/* Shared micro-interactions make every major content layout feel responsive. */
+:where(.pillar,.mod,.catalog-card,.practice-card,.hub-card,.roadmap-card,.journey-item,.src-card,.faq-item,.calc,.dcard,.map-card,.course-knowledge-card,.course-activity-card,.course-outcome-card,.course-reflection-card,.author-v2__vision,.author-v2__timeline-item,.hero-diagram,.foot-grid > div) {
+  transition: transform .55s var(--motion-smooth), box-shadow .55s var(--motion-smooth), border-color .4s ease, background-color .4s ease;
+  transform: translateZ(0);
+}
+:where(.pillar,.mod,.catalog-card,.practice-card,.hub-card,.roadmap-card,.journey-item,.src-card,.faq-item,.calc,.dcard,.map-card,.course-knowledge-card,.course-activity-card,.course-outcome-card,.course-reflection-card,.author-v2__vision,.author-v2__timeline-item,.hero-diagram):hover {
+  border-color: color-mix(in srgb,var(--acc) 38%,var(--line)) !important;
+  box-shadow: 0 18px 46px -30px color-mix(in srgb,var(--acc) 30%,transparent),0 8px 24px -18px rgba(0,0,0,.22);
+}
+:where(.sec-head h2,.h-title,.hero h1,.foot-thanks__title) { text-wrap: balance; }
+:where(.sec-head h2,.h-title,.hero h1) { animation: solara-type-arrive .85s var(--motion-smooth) both; }
+@keyframes solara-type-arrive { from { opacity: 0; transform: translateY(16px); filter: blur(5px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } }
+:where(.eyebrow,.sec-head .lede,.h-lede,.pillar p,.mod p,.faq-a,.foot-brand p) { transition: color .35s ease, transform .5s var(--motion-smooth); }
+:where(.btn,.chip,.dock-item,.theme-btn,.course-action-btn,.course-filter,.faq-q,.gq) { transition-timing-function: var(--motion-smooth) !important; }
+:where(.btn,.chip,.theme-btn,.course-action-btn):hover { transform: translateY(-3px); }
+:where(.foot-grid a,.foot-thanks__top) { transition: color .25s ease, transform .3s var(--motion-smooth); }
+:where(.foot-grid a,.foot-thanks__top):hover { color: var(--acc); transform: translateX(3px); }
+.foot-thanks { position: relative; isolation: isolate; max-width: 850px; margin: clamp(34px,5vw,64px) auto 0; padding: clamp(26px,4vw,44px); text-align: center; border: 1px solid var(--line); border-radius: 26px; overflow: hidden; background: linear-gradient(135deg,color-mix(in srgb,var(--surface) 88%,transparent),color-mix(in srgb,var(--surface2) 80%,transparent)); box-shadow: 0 22px 55px -38px var(--glow); }
+.foot-thanks::before { content:""; position:absolute; inset:-55% 15%; z-index:-1; background: radial-gradient(ellipse,color-mix(in srgb,var(--acc) 13%,transparent),transparent 68%); animation: solara-thanks-glow 9s ease-in-out infinite alternate; }
+@keyframes solara-thanks-glow { from { transform:translate3d(-8%,0,0) scale(.9); opacity:.45; } to { transform:translate3d(8%,5%,0) scale(1.12); opacity:.9; } }
+.foot-thanks__spark { display:inline-block; color:var(--amb); font-size:1.35rem; text-shadow:0 0 18px color-mix(in srgb,var(--amb) 55%,transparent); animation: sp-float 4s ease-in-out infinite; }
+.foot-thanks__title { margin:8px 0 10px; color:var(--ink); font-family:var(--f-disp); font-size:clamp(1.35rem,3vw,2rem); font-weight:800; letter-spacing:-.025em; }
+.foot-thanks__copy { max-width:66ch; margin:0 auto; color:var(--soft); font-size:.96rem; line-height:1.85; }
+.foot-thanks__top { display:inline-flex; gap:9px; align-items:center; margin-top:20px; color:var(--acc); font-size:.86rem; font-weight:700; }
+@media (max-width:760px) { .foot-thanks { margin-top:28px; padding:24px 18px; border-radius:20px; } .foot-thanks__copy { font-size:.9rem; } .cursor-dot,.cursor-ring { display:none !important; } }
+@media (prefers-reduced-motion:reduce) { :where(.sec-head h2,.h-title,.hero h1) { animation:none !important; } .foot-thanks::before,.foot-thanks__spark { animation:none !important; } :where(.pillar,.mod,.catalog-card,.practice-card,.hub-card,.roadmap-card,.journey-item,.src-card,.faq-item,.calc,.dcard,.map-card,.course-knowledge-card,.course-activity-card,.course-outcome-card,.course-reflection-card,.author-v2__vision,.author-v2__timeline-item,.hero-diagram) { transition:none !important; } }
+
+
+
+/* SOLARA V16.7 — refined motion, cosmic depth and responsive safeguards */
+:where(.pillar,.mod,.catalog-card,.practice-card,.hub-card,.roadmap-card,.journey-item,.src-card,.faq-item,.calc,.dcard,.map-card,.course-knowledge-card,.course-activity-card,.course-outcome-card,.course-reflection-card,.author-v2__vision,.author-v2__timeline-item,.hero-diagram,.foot-grid > div) {
+  /* Avoid forcing a dedicated GPU layer for every card; transitions remain composited when needed. */
+  transform: none;
+}
+:where(.reading-item,.career-card,.myth-card,.author-v2__profile-item,.author-v2__edge-card,.hub-ai-step,.hub-license,.trans-item,.src-chip,.reading-badge,.map-v2__stat,.stat,.hd-stat,.calc-note,.journey-item,.roadmap-item,.les) {
+  transition: transform .42s var(--motion-smooth), box-shadow .42s var(--motion-smooth), border-color .32s ease, background-color .32s ease, color .32s ease;
+}
+:where(.sec-head .lede,.h-lede,.hero .lede,.hero .sub,.foot-thanks__copy) {
+  text-wrap: pretty;
+  transition: color .35s ease, opacity .45s ease, transform .55s var(--motion-smooth);
+}
+:where(.eyebrow,.sec-head .lede,.h-lede,.hero .lede,.hero .sub) {
+  animation: solara-type-arrive .78s var(--motion-smooth) both;
+  animation-delay: .08s;
+}
+:where(button,a,[role="button"],input,select,textarea):focus-visible {
+  outline: 2px solid var(--acc);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px color-mix(in srgb,var(--acc) 14%,transparent);
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  :where(.reading-item,.career-card,.myth-card,.author-v2__profile-item,.author-v2__edge-card,.hub-ai-step,.hub-license,.trans-item,.src-chip,.reading-badge,.map-v2__stat,.stat,.hd-stat,.calc-note,.journey-item,.roadmap-item,.les):hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb,var(--acc) 36%,var(--line));
+    box-shadow: 0 14px 34px -26px color-mix(in srgb,var(--acc) 34%,transparent);
+  }
+  :where(.reading-item,.career-card,.myth-card,.author-v2__profile-item,.author-v2__edge-card,.hub-ai-step,.hub-license,.trans-item,.src-chip,.reading-badge,.map-v2__stat,.stat,.hd-stat,.calc-note,.journey-item,.roadmap-item,.les) a:focus-visible {
+    transform: translateY(-1px);
+  }
+}
+/* Nebulae move slowly at different depths; no planets or asteroid sprites are used. */
+.cosmic-nebula--four {
+  width: min(39vw,520px); height: min(31vw,400px); right: 22%; top: -14%;
+  background: radial-gradient(ellipse,rgba(53,125,185,.16) 0%,rgba(75,82,167,.08) 40%,transparent 75%);
+  animation: solara-nebula-drift 116s ease-in-out -27s infinite alternate-reverse;
+}
+.cosmic-nebula--five {
+  width: min(48vw,640px); height: min(34vw,440px); left: 54%; top: 64%;
+  background: radial-gradient(ellipse,rgba(124,83,174,.14) 0%,rgba(42,139,151,.07) 42%,transparent 76%);
+  animation: solara-nebula-drift 132s ease-in-out -61s infinite alternate;
+}
+.cosmic-nebula--six {
+  width: min(34vw,460px); height: min(26vw,340px); left: 4%; top: 58%;
+  background: radial-gradient(ellipse,rgba(47,155,151,.14) 0%,rgba(67,117,181,.07) 42%,transparent 75%);
+  animation: solara-nebula-drift 144s ease-in-out -83s infinite alternate-reverse;
+}
+.cosmic-meteor { width: clamp(190px, 29vw, 440px); height: 1.6px; }
+.cosmic-meteor--eight { --meteor-y: 18%; --meteor-duration: .82s; --meteor-delay: -3.8s; width: clamp(230px, 32vw, 500px); }
+.cosmic-meteor--nine { --meteor-y: 47%; --meteor-duration: .94s; --meteor-delay: -9.1s; width: clamp(200px, 28vw, 430px); }
+.cosmic-meteor--ten { --meteor-y: 74%; --meteor-duration: .88s; --meteor-delay: -12.4s; width: clamp(240px, 35vw, 540px); }
+.cosmic-meteor--eleven { --meteor-y: 91%; --meteor-duration: 1.02s; --meteor-delay: -16.2s; width: clamp(180px, 25vw, 390px); }
+html[data-theme="light"] .cosmic-nebula--four { background: radial-gradient(ellipse,rgba(72,125,185,.2) 0%,rgba(112,101,184,.1) 42%,transparent 76%); }
+html[data-theme="light"] .cosmic-nebula--five { background: radial-gradient(ellipse,rgba(145,98,175,.18) 0%,rgba(54,139,151,.09) 43%,transparent 77%); }
+html[data-theme="light"] .cosmic-nebula--six { background: radial-gradient(ellipse,rgba(48,145,145,.18) 0%,rgba(84,129,184,.09) 42%,transparent 76%); }
+html.perf-lite .cosmic-nebula { animation-duration: 190s !important; opacity: .32 !important; }
+html.perf-lite .cosmic-meteor--six,
+html.perf-lite .cosmic-meteor--seven,
+html.perf-lite .cosmic-meteor--eight,
+html.perf-lite .cosmic-meteor--nine,
+html.perf-lite .cosmic-meteor--ten,
+html.perf-lite .cosmic-meteor--eleven { display: none !important; }
+@media (max-width: 760px) {
+  .cosmic-nebula { opacity: .46; }
+  .cosmic-nebula--four,.cosmic-nebula--five,.cosmic-nebula--six { opacity: .30; }
+  .cosmic-meteor--four,.cosmic-meteor--five,.cosmic-meteor--six,.cosmic-meteor--seven,
+  .cosmic-meteor--eight,.cosmic-meteor--nine,.cosmic-meteor--ten,.cosmic-meteor--eleven { display: none !important; }
+  .foot-thanks { width: min(calc(100% - 28px), 850px); }
+  .foot-thanks__copy { overflow-wrap: anywhere; }
+  :where(.sec-head h2,.h-title,.hero h1,.foot-thanks__title) { letter-spacing: -.018em; }
+}
+@media (max-width: 360px) {
+  .foot-thanks { padding-inline: 15px; }
+  .foot-thanks__copy { font-size: .86rem; line-height: 1.75; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cosmic-nebula,.cosmic-meteor { animation: none !important; }
+  .cosmic-meteor { display: none !important; }
+  :where(.eyebrow,.sec-head .lede,.h-lede,.hero .lede,.hero .sub) { animation: none !important; }
+}
+@supports not (color: color-mix(in srgb, white, black)) {
+  :where(button,a,[role="button"],input,select,textarea):focus-visible { outline: 2px solid #32b889; box-shadow: 0 0 0 4px rgba(50,184,137,.15); }
+  @media (hover: hover) and (pointer: fine) {
+    :where(.reading-item,.career-card,.myth-card,.author-v2__profile-item,.author-v2__edge-card,.hub-ai-step,.hub-license,.trans-item,.src-chip,.reading-badge,.map-v2__stat,.stat,.hd-stat,.calc-note,.journey-item,.roadmap-item,.les):hover { border-color: #32b889; box-shadow: 0 14px 34px -26px rgba(50,184,137,.34); }
+  }
+}
+
+/* SOLARA V16.8 — restrained vertical meteor, clearer water wake and responsive motion polish */
+.cosmic-meteor,
+.cosmic-meteor--single {
+  position: absolute !important;
+  display: block !important;
+  left: 28% !important;
+  top: -28vh !important;
+  width: 2px !important;
+  height: clamp(150px, 25vh, 260px) !important;
+  border-radius: 999px !important;
+  opacity: 0 !important;
+  transform: translate3d(0, 0, 0) !important;
+  transform-origin: center top !important;
+  background: linear-gradient(180deg, transparent 0%, rgba(116,211,255,.10) 25%, rgba(151,229,255,.78) 76%, rgba(255,255,255,.98) 100%) !important;
+  box-shadow: 0 0 7px rgba(112,218,255,.48), 0 0 17px rgba(92,193,255,.24) !important;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,.48));
+  animation: solara-single-vertical-meteor 4s linear infinite !important;
+  animation-delay: 0s !important;
+  will-change: transform, opacity;
+}
+@keyframes solara-single-vertical-meteor {
+  0%, 3% { left: 28%; opacity: 0; transform: translate3d(0, -8vh, 0); }
+  5% { opacity: .96; }
+  13% { left: 28%; opacity: 0; transform: translate3d(0, 142vh, 0); }
+  13.01%, 100% { left: 72%; opacity: 0; transform: translate3d(0, 142vh, 0); }
+}
+/* One brief vertical streak pass per 4-second cycle; reposition only while invisible. */
+#waterCanvas { opacity: .86 !important; }
+.cursor-dot {
+  width: 9px !important; height: 9px !important;
+  background: #f7ffff !important;
+  box-shadow: 0 0 8px 2px rgba(89,224,255,.90), 0 0 20px 5px rgba(67,205,255,.40) !important;
+}
+.cursor-ring {
+  width: 50px !important; height: 50px !important;
+  border-width: 1.7px !important;
+  border-color: rgba(148,237,255,.98) !important;
+  box-shadow: 0 0 0 1px rgba(90,220,255,.35), 0 0 23px rgba(58,201,255,.42), inset 0 0 16px rgba(84,225,255,.20) !important;
+}
+.cursor-ring::before { inset: -8px !important; border-color: rgba(88,219,255,.76) !important; }
+.cursor-ring::after { inset: 7px !important; border-color: rgba(121,255,220,.62) !important; }
+.cursor-ring.water-fast {
+  width: 60px !important; height: 60px !important;
+  border-color: rgba(114,244,255,1) !important;
+  box-shadow: 0 0 0 5px rgba(87,219,255,.14), 0 0 34px rgba(67,202,255,.62), inset 0 0 22px rgba(80,235,255,.22) !important;
+}
+.cursor-ring.water-fast::before { inset: -12px !important; }
+.cursor-ring.water-fast::after { inset: 11px !important; }
+/* The closing thank-you uses a gentle stagger rather than a loud entrance. */
+.foot-thanks__title { animation: solara-thanks-text-in .8s cubic-bezier(.2,.75,.25,1) both; }
+.foot-thanks__copy { animation: solara-thanks-text-in .9s cubic-bezier(.2,.75,.25,1) .10s both; }
+.foot-thanks__top { animation: solara-thanks-text-in .9s cubic-bezier(.2,.75,.25,1) .18s both; }
+@keyframes solara-thanks-text-in {
+  from { opacity: 0; transform: translate3d(0,12px,0); filter: blur(3px); }
+  to { opacity: 1; transform: translate3d(0,0,0); filter: blur(0); }
+}
+/* Refined, restrained motion on learning cards and typography. */
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  :where(.catalog-course-intro,.catalog-scroll-lesson,.catalog-module-expansion,.catalog-accuracy-card,.catalog-course-sources,.foundation-deep-dive,.foundation-sources,.foundation-accuracy-note,.course-scroll-lesson,.course-modal-headline,.course-reflection-card,.course-outcome-card,.course-knowledge-card,.course-activity-card,.foot-thanks) {
+    transition: transform .48s cubic-bezier(.2,.75,.25,1), box-shadow .48s ease, border-color .35s ease, background-color .35s ease;
+  }
+  :where(.catalog-scroll-lesson,.catalog-course-intro,.catalog-accuracy-card,.foundation-accuracy-note,.course-reflection-card,.course-outcome-card,.course-knowledge-card,.course-activity-card):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 17px 38px -28px rgba(70,190,205,.34);
+    border-color: color-mix(in srgb, var(--acc) 34%, var(--line));
+  }
+  :where(.catalog-scroll-lesson__title h3,.course-lesson__title h3,.course-modal-headline h3,.catalog-course-intro h3) {
+    transition: color .35s ease, text-shadow .35s ease, letter-spacing .35s ease;
+  }
+  :where(.catalog-scroll-lesson,.catalog-course-intro,.course-modal-headline):hover :where(h3,h2) {
+    text-shadow: 0 0 20px color-mix(in srgb, var(--acc) 18%, transparent);
+    letter-spacing: -.012em;
+  }
+}
+.foundation-accuracy-note {
+  margin: 24px 0 10px; padding: clamp(18px, 2.8vw, 26px);
+  border: 1px solid color-mix(in srgb, var(--acc) 28%, var(--line));
+  border-radius: 20px;
+  background: linear-gradient(140deg, color-mix(in srgb, var(--surface) 94%, var(--acc) 6%), color-mix(in srgb, var(--surface2) 88%, transparent));
+  box-shadow: 0 18px 46px -36px var(--glow);
+}
+.foundation-accuracy-note__top { display:flex; align-items:center; gap:9px; color:var(--acc); letter-spacing:.08em; font-weight:800; }
+.foundation-accuracy-note__top span { display:grid; place-items:center; width:25px; height:25px; border-radius:50%; background:color-mix(in srgb,var(--acc) 15%,transparent); }
+.foundation-accuracy-note h4 { margin:13px 0 10px; color:var(--ink); font-size:clamp(1.02rem,2vw,1.2rem); line-height:1.45; text-wrap:balance; }
+.foundation-accuracy-note p { color:var(--soft); font-size:.91rem; line-height:1.82; margin:10px 0 0; }
+.foundation-accuracy-note .foundation-accuracy-note__disclaimer { padding-top:12px; margin-top:14px; border-top:1px solid var(--line); font-size:.82rem; }
+.catalog-accuracy-card,.catalog-course-sources { contain:layout paint; }
+@media (max-width: 760px) {
+  #waterCanvas { display:none !important; }
+  .cosmic-meteor,.cosmic-meteor--single { height: clamp(120px, 20vh, 190px) !important; box-shadow:0 0 6px rgba(112,218,255,.34) !important; }
+  .foundation-accuracy-note { border-radius:16px; padding:17px; }
+  .foundation-accuracy-note p { font-size:.87rem; }
+}
+@media (max-width: 380px) {
+  .foundation-accuracy-note__top { letter-spacing:.035em; font-size:.78rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cosmic-meteor,.cosmic-meteor--single { animation:none !important; display:none !important; }
+  #waterCanvas { opacity:0 !important; }
+  :where(.catalog-course-intro,.catalog-scroll-lesson,.catalog-module-expansion,.catalog-accuracy-card,.catalog-course-sources,.foundation-deep-dive,.foundation-sources,.foundation-accuracy-note,.course-scroll-lesson,.course-modal-headline,.foot-thanks) { transition:none !important; }
+}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Bỏ qua tới nội dung</a>
-
-<div aria-hidden="true" id="loader">
-<div class="ld">
-<svg class="ld-ic" viewBox="0 0 24 24">
-<path class="ic-stroke" d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path>
-<circle cx="12" cy="12" fill="currentColor" r="4"></circle>
-</svg>
-<div class="ld-num" id="ldNum">0%</div>
-<div class="ld-txt">Đang mở lớp học</div>
-<div class="ld-bar"><b id="ldBar"></b></div>
-</div>
-</div>
 
 <canvas aria-hidden="true" id="bgCanvas"></canvas>
 <canvas aria-hidden="true" id="waterCanvas"></canvas>
@@ -17591,17 +17587,10 @@ html[data-theme="light"] .cosmic-passby::before {
   <span class="cosmic-nebula cosmic-nebula--one"></span>
   <span class="cosmic-nebula cosmic-nebula--two"></span>
   <span class="cosmic-nebula cosmic-nebula--three"></span>
-  <span class="cosmic-planet cosmic-planet--one"></span>
-  <span class="cosmic-planet cosmic-planet--two"></span>
-  <span class="cosmic-planet cosmic-planet--three"></span>
-  <span class="cosmic-planet cosmic-planet--four"></span>
-  <span class="cosmic-planet cosmic-planet--five"></span>
-  <span class="cosmic-asteroid cosmic-asteroid--one"></span>
-  <span class="cosmic-asteroid cosmic-asteroid--two"></span>
-  <span class="cosmic-asteroid cosmic-asteroid--three"></span>
-  <span class="cosmic-meteor cosmic-meteor--one"></span>
-  <span class="cosmic-meteor cosmic-meteor--two"></span>
-  <span class="cosmic-meteor cosmic-meteor--three"></span>
+  <span class="cosmic-nebula cosmic-nebula--four"></span>
+  <span class="cosmic-nebula cosmic-nebula--five"></span>
+  <span class="cosmic-nebula cosmic-nebula--six"></span>
+  <span class="cosmic-meteor cosmic-meteor--single" aria-hidden="true"></span>
 </div>
 <div aria-hidden="true" class="noise"></div>
 
@@ -17919,7 +17908,7 @@ html[data-theme="light"] .cosmic-passby::before {
       </div>
       <p class="src-card__desc">Gió tạo lực nâng khí động học trên cánh rotor, làm quay trục và máy phát điện. Ngày 5/2/2026, một turbine ngoài khơi 20 MW tại vùng biển Phúc Kiến (Trung Quốc) hoàn tất chạy thử và kết nối lưới; đây là một mốc công nghệ cụ thể, không đại diện cho công suất turbine phổ biến ở mọi dự án.</p>
       <div class="src-card__proscons">
-        <section class="src-card__good"><h4><span aria-hidden="true">＋</span> Ưu điểm</h4><ul><li>Phát điện cả ngày lẫn đêm</li><li>Ngoài khơi gió mạnh và ổn định hơn</li><li>Chân đế có thể nuôi trồng thủy sản</li><li>Công suất mỗi tuabin tăng rất nhanh</li></ul></section>
+        <section class="src-card__good"><h4><span aria-hidden="true">＋</span> Ưu điểm</h4><ul><li>Có thể phát điện cả ngày lẫn đêm khi có gió phù hợp</li><li>Nhiều địa điểm ngoài khơi có tài nguyên gió tốt hơn; cần dữ liệu từng vùng</li><li>Chân đế có thể nuôi trồng thủy sản</li><li>Công suất mỗi tuabin tăng rất nhanh</li></ul></section>
         <section class="src-card__limits"><h4><span aria-hidden="true">−</span> Giới hạn</h4><ul><li>Biến thiên theo thời tiết</li><li>Ảnh hưởng cảnh quan và tiếng ồn</li><li>Logistics cánh khổng lồ phức tạp</li></ul></section>
       </div>
       <div class="src-card__stats"><div class="src-stat"><strong>1.291 GW</strong><span>Công suất gió cuối 2025</span></div><div class="src-stat"><strong>158,7 GW</strong><span>Công suất bổ sung năm 2025</span></div><div class="src-stat"><strong>20 MW</strong><span>Một turbine nối lưới 02/2026</span></div></div>
@@ -18675,6 +18664,12 @@ html[data-theme="light"] .cosmic-passby::before {
 <span>© 2026 <b>Lê Đức Huy</b>. Nội dung tự biên soạn; tài nguyên bên ngoài tuân theo điều kiện của chủ sở hữu.</span>
 </div>
 </div>
+<div class="foot-thanks" aria-label="Lời cảm ơn">
+  <span class="foot-thanks__spark" aria-hidden="true">✦</span>
+  <p class="foot-thanks__title">Cảm ơn bạn đã ghé thăm SOLARA.</p>
+  <p class="foot-thanks__copy">Đến cuối hành trình rồi, cảm ơn bạn đã dành thời gian khám phá SOLARA. Mỗi điều bạn hiểu thêm, mỗi câu hỏi bạn đặt ra đều có thể mở ra một ý tưởng mới. Mong rằng những kiến thức ở đây giúp bạn nhìn thế giới năng lượng quanh mình rõ hơn và tiếp tục tò mò về cách chúng ta có thể tạo nên một tương lai bền vững. Chúc bạn luôn giữ được tinh thần khám phá — hẹn gặp lại ở hành trình tiếp theo.</p>
+  <a class="foot-thanks__top" href="#top">Trở lại đầu trang <span aria-hidden="true">↑</span></a>
+</div>
 </div>
 </footer>
 
@@ -18792,79 +18787,79 @@ html[data-theme="light"] .cosmic-passby::before {
 
     const COURSES = [
         { id: 'm1', lv: 'CƠ BẢN', title: 'Nhập môn năng lượng', sub: 'Khái niệm nền tảng về năng lượng, đơn vị đo và lý do chuyển dịch', icon: '<path class="ic-stroke" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>', dur: '2,5 giờ', count: 7, progress: 72, desc: 'Giúp người học (không chuyên) hiểu các khái niệm cơ bản về năng lượng: năng lượng là gì, các dạng năng lượng, các nguồn sơ cấp, đơn vị đo (W, kWh), và lý do phải chuyển dịch sang năng lượng sạch.', courses: [
-                { stt: 1, name: 'Khái niệm năng lượng', diff: 'Cơ bản', dur: '~20 phút', content: ['Năng lượng định nghĩa là khả năng thực hiện công (EIA). Ví dụ: năng lượng dùng cho làm nóng, chuyển động, chiếu sáng.', 'Phân loại: năng lượng thế (động, nhiệt, hoá học, hạt nhân) và năng lượng động học (chuyển động, quang, âm thanh…).', 'Vật chuyển hoá năng lượng: chuỗi chuyển hoá năng lượng trong bếp (hóa năng → điện năng → nhiệt năng trong ấm nước).', 'Các khái niệm công, công suất (Công suất = năng lượng/thời gian, P=W/t).'], activity: 'Thực hành: Tính công suất của ấm đun nước, đo công suất đèn bàn, so sánh năng lượng tốn cho đun sôi 1 lít nước. Tự kiểm tra: Nhận biết các dạng năng lượng trong hoạt động hàng ngày.', outcome: 'Hiểu năng lượng là gì, phân biệt các dạng cơ bản. Trình bày ví dụ chuyển hoá năng lượng trong nhà bếp. Biết đơn vị J, W, kWh.' },
-                { stt: 2, name: 'Các nguồn năng lượng và năng lượng sơ cấp', diff: 'Cơ bản', dur: '~20 phút', content: ['Nguồn sơ cấp: tái tạo (Mặt Trời, gió, nước, địa nhiệt, sinh khối) và không tái tạo (dầu mỏ, than, khí đốt, hạt nhân).', 'Tỉ trọng năng lượng sơ cấp toàn cầu (ví dụ ~80% từ hóa thạch hiện nay).', 'Năng lượng thứ cấp: điện, nhiệt - được tạo từ nguồn sơ cấp.', 'Đơn vị năng lượng: 1 kWh ≈ 3.6 MJ; công suất (kW), công (kWh).', 'Lý do chuyển dịch: giảm phát thải CO₂, cạn kiệt tài nguyên, an ninh năng lượng.'], activity: 'Thực hành: Tính lượng CO₂ phát thải khi dùng 1 kWh điện từ than. Tự kiểm tra: Phân loại nguồn năng lượng nào là tái tạo/nhiên liệu.', outcome: 'Biết phân biệt nguồn năng lượng sơ cấp/tái tạo. Hiểu mối liên hệ sơ cấp → thứ cấp.' },
+                { stt: 1, name: 'Khái niệm năng lượng', diff: 'Cơ bản', dur: '~20 phút', content: ['Năng lượng định nghĩa là khả năng thực hiện công (EIA). Ví dụ: năng lượng dùng cho làm nóng, chuyển động, chiếu sáng.', 'Có nhiều dạng năng lượng: động năng; thế năng (trọng trường, đàn hồi); nội năng/nhiệt; hóa năng; điện năng; năng lượng hạt nhân và năng lượng bức xạ. Âm thanh là năng lượng truyền bởi sóng cơ trong môi trường; ánh sáng là bức xạ điện từ. Không thể chia mọi dạng năng lượng chỉ thành hai nhóm thế năng và động năng.', 'Vật chuyển hoá năng lượng: chuỗi chuyển hoá năng lượng trong bếp (hóa năng → điện năng → nhiệt năng trong ấm nước).', 'Các khái niệm công, công suất (Công suất = năng lượng/thời gian, P=W/t).'], activity: 'Thực hành: Tính công suất của ấm đun nước, đo công suất đèn bàn, so sánh năng lượng tốn cho đun sôi 1 lít nước. Tự kiểm tra: Nhận biết các dạng năng lượng trong hoạt động hàng ngày.', outcome: 'Hiểu năng lượng là gì, phân biệt các dạng cơ bản. Trình bày ví dụ chuyển hoá năng lượng trong nhà bếp. Biết đơn vị J, W, kWh.' },
+                { stt: 2, name: 'Các nguồn năng lượng và năng lượng sơ cấp', diff: 'Cơ bản', dur: '~20 phút', content: ['Nguồn sơ cấp: tái tạo (Mặt Trời, gió, nước, địa nhiệt, sinh khối) và không tái tạo (dầu mỏ, than, khí đốt, hạt nhân).', 'Tỷ trọng nhiên liệu hóa thạch thay đổi theo năm, khu vực và cách quy đổi năng lượng sơ cấp. Chỉ nêu phần trăm khi ghi rõ nguồn dữ liệu, năm, phạm vi và phương pháp thống kê; không dùng một tỷ lệ cũ như con số hiện hành chung.', 'Điện là dạng năng lượng thứ cấp/chất mang năng lượng được tạo từ các nguồn khác; nhiệt có thể là nhiệt sơ cấp (ví dụ địa nhiệt) hoặc nhiệt thứ cấp được tạo trong quá trình chuyển đổi. Vì vậy, không xếp mọi dạng nhiệt vào một nhóm duy nhất.', 'Đơn vị năng lượng: 1 kWh ≈ 3.6 MJ; công suất (kW), công (kWh).', 'Lý do chuyển dịch: giảm phát thải CO₂, cạn kiệt tài nguyên, an ninh năng lượng.'], activity: 'Thực hành: Tính lượng CO₂ phát thải khi dùng 1 kWh điện từ than. Tự kiểm tra: Phân loại nguồn năng lượng nào là tái tạo/nhiên liệu.', outcome: 'Biết phân biệt nguồn năng lượng sơ cấp/tái tạo. Hiểu mối liên hệ sơ cấp → thứ cấp.' },
                 { stt: 3, name: 'Lý thuyết năng lượng - định luật bảo toàn', diff: 'Cơ bản', dur: '~15 phút', content: ['Định luật bảo toàn: Năng lượng không tự sinh ra hay mất đi, chỉ chuyển hoá giữa các dạng.', 'Ví dụ đổi hoá năng lượng: động năng → nhiệt (phanh xe), điện năng → quang năng (bóng đèn).', 'Hiệu suất: Định nghĩa (đầu ra/đầu vào).', 'Nêu các dạng thất thoát năng lượng và cách nâng cao hiệu suất.'], activity: 'Thực hành: Tính hiệu suất của bóng đèn LED so với đèn sợi đốt. Tự kiểm tra: Ví dụ cho chuyển hoá năng lượng.', outcome: 'Hiểu định luật bảo toàn, khái niệm hiệu suất.' },
-                { stt: 4, name: 'Đo lường công suất và năng lượng', diff: 'Cơ bản', dur: '~15 phút', content: ['Phân biệt đơn vị: công suất (W, kW, HP) và năng lượng (J, kJ, kWh). Ví dụ: 1 HP ≈ 0.75 kW.', 'Cách tính năng lượng tiêu thụ: kWh = kW × giờ.', 'Ví dụ tính: dùng bếp điện 2 kW trong 1 giờ → 2 kWh (~7.2 MJ).', 'Công suất đỉnh (peak) và trung bình.'], activity: 'Thực hành: Tính năng lượng tiêu thụ của một ngày sử dụng điện. Tự kiểm tra: Chuyển đổi đơn vị năng lượng.', outcome: 'Nắm được cách đo và tính năng lượng tiêu thụ.' },
-                { stt: 5, name: 'Điện năng và hệ thống điện', diff: 'Cơ bản', dur: '~20 phút', content: ['Điện một chiều (DC) vs xoay chiều (AC): Đặc điểm, ưu nhược điểm.', 'Hệ thống điện: nguồn phát → lưới truyền tải → trạm biến áp → lưới phân phối → phụ tải; cấu trúc thực tế còn có nhiều cấp điện áp và nguồn phân tán.', 'Tần số và mạng điện: Việt Nam 50 Hz (chu kỳ 20 ms).', 'Biến tần (inverter): Đổi DC ↔ AC.', 'Bảo vệ điện: Cầu dao, aptomat, chống giật.'], activity: 'Thực hành: Đo điện áp ra của pin mặt trời nhỏ. Tự kiểm tra: Sự khác nhau giữa AC và DC.', outcome: 'Hiểu cấu trúc cơ bản của lưới điện và dòng điện một chiều/xoay chiều.' },
+                { stt: 4, name: 'Đo lường công suất và năng lượng', diff: 'Cơ bản', dur: '~15 phút', content: ['Phân biệt công suất (W, kW, mã lực) và năng lượng (J, kJ, Wh, kWh). 1 mechanical horsepower (hp) ≈ 0,7457 kW; mã lực mét (PS/CV) ≈ 0,7355 kW. Khi đổi đơn vị phải xác định đang dùng định nghĩa hp nào.', 'Cách tính năng lượng tiêu thụ: kWh = kW × giờ.', 'Ví dụ tính: dùng bếp điện 2 kW trong 1 giờ → 2 kWh (~7.2 MJ).', 'Công suất đỉnh (peak) và trung bình.'], activity: 'Thực hành: Tính năng lượng tiêu thụ của một ngày sử dụng điện. Tự kiểm tra: Chuyển đổi đơn vị năng lượng.', outcome: 'Nắm được cách đo và tính năng lượng tiêu thụ.' },
+                { stt: 5, name: 'Điện năng và hệ thống điện', diff: 'Cơ bản', dur: '~20 phút', content: ['Điện một chiều (DC) vs xoay chiều (AC): Đặc điểm, ưu nhược điểm.', 'Hệ thống điện: nguồn phát → lưới truyền tải → trạm biến áp → lưới phân phối → phụ tải; cấu trúc thực tế còn có nhiều cấp điện áp và nguồn phân tán.', 'Tần số và mạng điện: Việt Nam 50 Hz (chu kỳ 20 ms).', 'Inverter thường biến đổi DC thành AC; bộ biến đổi hai chiều hoặc hệ lưu trữ tích hợp có thể hỗ trợ chiều AC–DC tùy cấu hình. Máy biến áp thay đổi cấp điện áp AC, không phải chức năng của inverter.', 'Bảo vệ điện: Cầu dao, aptomat, chống giật.'], activity: 'Thực hành: Đo điện áp ra của pin mặt trời nhỏ. Tự kiểm tra: Sự khác nhau giữa AC và DC.', outcome: 'Hiểu cấu trúc cơ bản của lưới điện và dòng điện một chiều/xoay chiều.' },
                 { stt: 6, name: 'Năng lượng trong đời sống hàng ngày', diff: 'Cơ bản', dur: '~15 phút', content: ['Ứng dụng năng lượng: Xem xét các thiết bị trong nhà.', 'Ví dụ căn bếp: Nồi cơm điện (điện → nhiệt), ga đun nấu (hóa năng → nhiệt).', 'Hiệu suất thiết bị: So sánh tủ lạnh inverter vs thường.', 'Tiết kiệm năng lượng: Thói quen tốt.'], activity: 'Thực hành: Tính tiền điện theo công suất thiết bị. Tự kiểm tra: Liệt kê năm thiết bị gia dụng.', outcome: 'Áp dụng hiểu biết vào cuộc sống.' },
                 { stt: 7, name: 'Tổng quan năng lượng tái tạo và biến đổi khí hậu', diff: 'Cơ bản', dur: '~15 phút', content: ['Biến đổi khí hậu: Vai trò của CO₂ do đốt nhiên liệu hoá thạch.', 'Giảm phát thải: Các giải pháp: năng lượng tái tạo, tiết kiệm điện.', 'Hội nhập toàn cầu: Thỏa thuận Paris, mục tiêu Net Zero 2050.', 'Lợi ích kinh tế xã hội: Tạo công ăn việc làm.'], activity: 'Thực hành: Tính giảm CO₂ khi chuyển sang xe điện. Tự kiểm tra: Nguyên nhân chính gây ấm lên toàn cầu.', outcome: 'Nhận thức tổng quan về tác động môi trường.' }
             ] },
         { id: 'm2', lv: 'PHỔ BIẾN', title: 'Điện mặt trời từ A đến Á', sub: 'Nguyên lý quang điện, tấm pin, MPPT, thiết kế hệ thống PV', icon: '<rect x="3" y="3" width="18" height="18" rx="2" class="ic-stroke"/><path class="ic-stroke" d="M3 9h18M9 21V9"/>', dur: '4 giờ', count: 12, progress: 58, desc: 'Giúp người học hiểu nguyên lý cơ bản của công nghệ quang điện: từ photon của ánh sáng mặt trời đến electron sinh ra dòng điện. Các khái niệm kỹ thuật (MPP, Voc, Isc) được minh hoạ trực quan.', courses: [
-                { stt: 1, name: 'Ánh sáng và pin mặt trời', diff: 'Phổ biến', dur: '~15 phút', content: ['Cơ chế quang điện: photon ánh sáng kích thích tạo cặp electron-lỗ trống trong bán dẫn.', 'Tế bào quang điện silicon: p–n junction.', 'Ví dụ so sánh ánh sáng trắng, đỏ, xanh.', 'Nguyên lý: pin chỉ tạo được điện khi chiếu sáng.'], activity: 'Thực hành: Xem ảnh hưởng của đèn pin khác màu. Tự kiểm tra: Giải thích vai trò p–n junction.', outcome: 'Hiểu cách photon biến thành electron.' },
-                { stt: 2, name: 'Loại tấm pin: mono/đa tinh thể & màng mỏng', diff: 'Phổ biến', dur: '~15 phút', content: ['So sánh pin đơn tinh thể (mono-Si) và đa tinh thể (multi-Si).', 'Giới thiệu công nghệ màng mỏng: CIS, CdTe, perovskite.', 'Xu hướng thị trường: mono-Si chiếm ưu thế từ 2018.'], activity: 'Tự kiểm tra: Pin đơn tinh thể có ưu thế gì?', outcome: 'Phân biệt các công nghệ pin Mặt Trời.' },
-                { stt: 3, name: 'Góc lắp đặt và hệ số ánh sáng', diff: 'Phổ biến', dur: '~15 phút', content: ['Góc nghiêng và hướng: Tối ưu sao cho bề mặt pin luôn hướng về mặt trời.', 'Chiếu sáng trực tiếp vs gián tiếp.', 'Hệ số tác động môi trường: mây, bóng cây, bụi.'], activity: 'Thực hành: Tính góc lắp cho Hà Nội.', outcome: 'Nắm kiến thức cơ bản về tối ưu góc lắp.' },
-                { stt: 4, name: 'Nhiệt độ & hiệu suất pin', diff: 'Phổ biến', dur: '~10 phút', content: ['Nhiệt độ tấm pin: Pin nóng lên khi hoạt động.', 'Ví dụ: Hiệu suất giảm ~0.4%/°C.', 'Giải thích vật lý: điện áp Voc giảm khi tăng nhiệt độ.', 'Biện pháp: hệ thống làm mát.'], activity: 'Thực hành: Đo nhiệt độ tấm pin. Tự kiểm tra: Tại sao pin nóng lại ít điện?', outcome: 'Hiểu tác động của nhiệt độ lên hiệu suất.' },
-                { stt: 5, name: 'Đọc thông số tấm pin', diff: 'Phổ biến', dur: '~15 phút', content: ['Khái niệm Wp: "Watt-peak" – công suất cực đại dưới điều kiện tiêu chuẩn STC.', 'Voc, Isc, Vmp, Imp: Giải thích các thông số.', 'Hiệu suất chuyển đổi: Hiệu suất = (Wp)/(Diện tích × 1000W/m²).', 'Hiệu suất thực tế: Tổn thất ~10–20%.'], activity: 'Thực hành: Đọc datasheet tấm pin. Tự kiểm tra: Tính hiệu suất của tấm pin.', outcome: 'Nắm các thông số cơ bản của tấm pin.' },
-                { stt: 6, name: 'Điểm công suất cực đại (MPP)', diff: 'Phổ biến', dur: '~15 phút', content: ['Đường cong I–V của tấm pin.', 'MPPT: Bộ theo dõi MPP trong inverter.', 'Ứng dụng: luôn khai thác công suất tối đa.'], activity: 'Tự kiểm tra: Tại sao MPP không nằm ở Voc hay Isc?', outcome: 'Hiểu rõ cách xác định điểm công suất tối đa.' },
+                { stt: 1, name: 'Ánh sáng và pin mặt trời', diff: 'Phổ biến', dur: '~15 phút', content: ['Cơ chế quang điện: photon ánh sáng kích thích tạo cặp electron-lỗ trống trong bán dẫn.', 'Tế bào quang điện silicon: p–n junction.', 'Ví dụ so sánh ánh sáng trắng, đỏ, xanh.', 'Ánh sáng tạo dòng quang điện trong cell PV; khi không có ánh sáng, dòng quang điện gần như bằng 0. Tuy nhiên, module đã đấu nối vẫn có thể có điện áp DC nguy hiểm dưới ánh sáng yếu hoặc ánh sáng khuếch tán, nên không chạm đầu nối hay tự thao tác với hệ thống.'], activity: 'Thực hành: Xem ảnh hưởng của đèn pin khác màu. Tự kiểm tra: Giải thích vai trò p–n junction.', outcome: 'Hiểu cách photon biến thành electron.' },
+                { stt: 2, name: 'Loại tấm pin: mono/đa tinh thể & màng mỏng', diff: 'Phổ biến', dur: '~15 phút', content: ['So sánh pin đơn tinh thể (mono-Si) và đa tinh thể (multi-Si).', 'Giới thiệu công nghệ màng mỏng: CIS, CdTe, perovskite.', 'Silicon tinh thể, đặc biệt mono-Si, hiện là nhóm công nghệ phổ biến trong module thương mại. Tỷ trọng thị trường thay đổi theo năm và khu vực; màng mỏng, tandem và perovskite có vị trí riêng. Phải ghi năm và nguồn khi đưa ra thị phần cụ thể.'], activity: 'Tự kiểm tra: Pin đơn tinh thể có ưu thế gì?', outcome: 'Phân biệt các công nghệ pin Mặt Trời.' },
+                { stt: 3, name: 'Góc lắp đặt và hệ số ánh sáng', diff: 'Phổ biến', dur: '~15 phút', content: ['Chọn góc nghiêng và phương vị theo vĩ độ, mục tiêu sản lượng theo mùa, bóng che, kết cấu mái và điều kiện địa phương. Tấm pin cố định không thể luôn hướng vuông góc với Mặt Trời; hệ tracking có thể xoay theo một hoặc hai trục nhưng tăng chi phí, bảo trì và yêu cầu kết cấu.', 'Chiếu sáng trực tiếp vs gián tiếp.', 'Hệ số tác động môi trường: mây, bóng cây, bụi.'], activity: 'Thực hành: Tính góc lắp cho Hà Nội.', outcome: 'Nắm kiến thức cơ bản về tối ưu góc lắp.' },
+                { stt: 4, name: 'Nhiệt độ & hiệu suất pin', diff: 'Phổ biến', dur: '~10 phút', content: ['Nhiệt độ tấm pin: Pin nóng lên khi hoạt động.', 'Ví dụ minh họa: nhiều module silicon tinh thể có hệ số nhiệt độ Pmax âm, thường ở cỡ vài phần mười phần trăm trên mỗi °C; phải dùng đúng hệ số trong datasheet của module. Đây là mức thay đổi tương đối của công suất theo nhiệt độ cell so với điều kiện tham chiếu, không phải mức giảm cố định cho mọi tấm pin.', 'Giải thích vật lý: điện áp Voc giảm khi tăng nhiệt độ.', 'Biện pháp: hệ thống làm mát.'], activity: 'Thực hành: Đo nhiệt độ tấm pin. Tự kiểm tra: Tại sao pin nóng lại ít điện?', outcome: 'Hiểu tác động của nhiệt độ lên hiệu suất.' },
+                { stt: 5, name: 'Đọc thông số tấm pin', diff: 'Phổ biến', dur: '~15 phút', content: ['Khái niệm Wp: "Watt-peak" – công suất cực đại dưới điều kiện tiêu chuẩn STC.', 'Voc, Isc, Vmp, Imp: Giải thích các thông số.', 'Hiệu suất chuyển đổi: Hiệu suất = (Wp)/(Diện tích × 1000W/m²).', 'Tổn hao hệ thống không có tỷ lệ cố định: phụ thuộc nhiệt độ, bức xạ, bóng che, bụi, mismatch, dây dẫn, inverter, clipping, suy giảm và thời gian ngừng máy. Ước tính sản lượng cần mô hình và dữ liệu địa điểm; STC không phải điều kiện vận hành ngoài trời.'], activity: 'Thực hành: Đọc datasheet tấm pin. Tự kiểm tra: Tính hiệu suất của tấm pin.', outcome: 'Nắm các thông số cơ bản của tấm pin.' },
+                { stt: 6, name: 'Điểm công suất cực đại (MPP)', diff: 'Phổ biến', dur: '~15 phút', content: ['Đường cong I–V của tấm pin.', 'MPPT: Bộ theo dõi MPP trong inverter.', 'MPPT điều chỉnh điểm làm việc để bám điểm công suất cực đại khả dụng của mảng PV theo điều kiện hiện tại. Nó không thể tạo thêm bức xạ, xóa bóng che hay bảo đảm đạt công suất nhãn; khi bóng che một phần, đường cong công suất có thể có nhiều cực đại cục bộ.'], activity: 'Tự kiểm tra: Tại sao MPP không nằm ở Voc hay Isc?', outcome: 'Hiểu rõ cách xác định điểm công suất tối đa.' },
                 { stt: 7, name: 'Kết nối tấm pin: nối tiếp và song song', diff: 'Phổ biến', dur: '~10 phút', content: ['Nối tiếp (Series): Điện áp cộng dồn, dòng không đổi.', 'Nối song song (Parallel): Dòng cộng dồn, điện áp không đổi.', 'Cảnh báo: mismatch khi ghép tấm khác loại.'], activity: 'Tự kiểm tra: Ghép 4 tấm 12V, 5A nối tiếp → điện áp?', outcome: 'Hiểu cách đấu nối tấm pin.' },
                 { stt: 8, name: 'Inverter – bộ biến đổi điện', diff: 'Phổ biến', dur: '~15 phút', content: ['Vai trò: Đổi điện DC từ pin thành AC.', 'Các loại inverter: Hòa lưới, độc lập, hybrid.', 'Công năng: MPPT tích hợp, bảo vệ ngắn mạch.'], activity: 'Tự kiểm tra: Phân biệt inverter hòa lưới và độc lập.', outcome: 'Trình bày được nguyên lý inverter.' },
                 { stt: 9, name: 'Thiết kế hệ thống PV gia đình', diff: 'Phổ biến', dur: '~15 phút', content: ['Các thành phần: Tấm pin, inverter, bộ điện đo, công tắc bảo vệ.', 'Cách tính công suất cần: Đánh giá tiêu thụ điện.', 'Chi phí sơ bộ.', 'Yêu cầu an toàn: đấu đất, tiếp địa.'], activity: 'Thực hành: Tính quy mô hệ PV cho gia đình 20 kWh/ngày.', outcome: 'Biết các bước cơ bản trong tính toán thiết kế.' },
-                { stt: 10, name: 'Bảo trì, độ bền và an toàn', diff: 'Phổ biến', dur: '~10 phút', content: ['Tuổi thọ pin mặt trời: Trung bình 20–25 năm.', 'Bảo trì: Vệ sinh tấm, kiểm tra đấu nối.', 'An toàn: Chống điện giật, chống sét.', 'Tái chế tấm pin.'], activity: 'Tự kiểm tra: Tại sao cần lắp hệ thống cách ly?', outcome: 'Hiểu tuổi thọ và các bước bảo trì.' },
-                { stt: 11, name: 'So sánh với lưới điện', diff: 'Phổ biến', dur: '~10 phút', content: ['Hệ hòa lưới (grid-tie): Nguyên lý "bán ngược" điện dư.', 'Hệ độc lập (off-grid): Cần pin lưu trữ.', 'Hybrid: Kết hợp cả hai.'], activity: 'Tự kiểm tra: Nêu ưu nhược điểm của hệ độc lập.', outcome: 'Phân biệt được 2 mô hình chính của hệ PV.' },
+                { stt: 10, name: 'Bảo trì, độ bền và an toàn', diff: 'Phổ biến', dur: '~10 phút', content: ['Module PV thường được thiết kế để vận hành trong nhiều thập kỷ và có bảo hành hiệu suất dài hạn, nhưng tuổi thọ thực tế không phải một con số cố định. Cần đọc riêng bảo hành sản phẩm, bảo hành công suất, tốc độ suy giảm được bảo đảm và điều kiện môi trường.', 'Bảo trì: Vệ sinh tấm, kiểm tra đấu nối.', 'An toàn: Chống điện giật, chống sét.', 'Tái chế tấm pin.'], activity: 'Tự kiểm tra: Tại sao cần lắp hệ thống cách ly?', outcome: 'Hiểu tuổi thọ và các bước bảo trì.' },
+                { stt: 11, name: 'So sánh với lưới điện', diff: 'Phổ biến', dur: '~10 phút', content: ['Hệ hòa lưới có thể phát điện lên lưới khi thiết bị, hợp đồng, cơ chế đo đếm và quy định đấu nối cho phép; không mặc định mọi điện dư đều được mua hoặc thanh toán. Cần đối chiếu chính sách và thỏa thuận hiện hành tại địa điểm lắp đặt.', 'Hệ độc lập (off-grid): Cần pin lưu trữ.', 'Hybrid: Kết hợp cả hai.'], activity: 'Tự kiểm tra: Nêu ưu nhược điểm của hệ độc lập.', outcome: 'Phân biệt được 2 mô hình chính của hệ PV.' },
                 { stt: 12, name: 'Dự án cuối khóa PV', diff: 'Phổ biến', dur: '~20 phút', content: ['Đề bài: Cho thông số tấm pin và nhu cầu điện, tính:', 'Công suất hệ (kWp) cần lắp.', 'Sản lượng điện trung bình hàng năm (kWh).', 'Viết báo cáo ngắn.'], activity: 'Hoạt động: Tính công suất và sản lượng thực tế.', outcome: 'Ứng dụng toàn bộ kiến thức.' }
             ] },
         { id: 'm3', lv: 'TRUNG CẤP', title: 'Năng lượng gió', sub: 'Cơ học khí động turbine, Betz, trang trại gió, logistics', icon: '<path class="ic-stroke" d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4" fill="currentColor"/>', dur: '3,5 giờ', count: 13, progress: 41, desc: 'Giới thiệu chi tiết lý thuyết khí động học turbine gió, cấu tạo và điều khiển turbine, các yếu tố triển khai trang trại gió. Hiểu lực nâng trên cánh quạt, giới hạn Betz ~59.3%, cơ chế pitch/yaw, hiệu ứng wake.', courses: [
                 { stt: 1, name: 'Gió là gì?', diff: 'Trung cấp', dur: '~10 phút', content: ['Nguồn gió: Sự chênh lệch nhiệt độ và áp suất tạo ra gió.', 'Kỳ hạn gió: Gió địa phương và toàn cầu.', 'Ví dụ: Vùng gió mạnh tại Việt Nam.'], activity: 'Tự kiểm tra: Nêu nguyên nhân chính tạo ra gió.', outcome: 'Hiểu cơ bản nguyên nhân và biến thiên của gió.' },
                 { stt: 2, name: 'Cấu tạo turbine gió', diff: 'Trung cấp', dur: '~10 phút', content: ['Thành phần chính: Rotor, khung máy (nacelle), hộp số, máy phát, tháp.', 'Hoạt động: Gió thổi vào cánh → quay rotor → máy phát → tạo điện.'], activity: 'Tự kiểm tra: Máy phát trong nacelle làm gì?', outcome: 'Hiểu rõ cấu tạo cơ bản của turbine.' },
                 { stt: 3, name: 'Nguyên lý khí động học cánh turbine', diff: 'Trung cấp', dur: '~15 phút', content: ['Hình dạng cánh (airfoil): Tạo lực nâng (lift) khi gió đi qua.', 'Lực nâng và lực cản.', 'Góc tấn của cánh (angle of attack).'], activity: 'Tự kiểm tra: Tại sao cánh turbine mỏng hơn cánh máy bay?', outcome: 'Giải thích được vì sao cánh turbine cong.' },
-                { stt: 4, name: 'Công suất gió và Betz', diff: 'Trung cấp', dur: '~15 phút', content: ['Công suất gió: P = ½ρAV³.', 'Ví dụ: Gió 6→7 m/s, P tăng ~1.59 lần.', 'Giới hạn Betz (59.3%): Không thể thu hết 100% năng lượng gió.', 'Ứng dụng: turbine thực tế đạt ~40-50% hiệu suất.'], activity: 'Thực hành: Tính P gió qua rotor 100 m² ở 8 m/s.', outcome: 'Hiểu công thức và giới hạn lý thuyết Betz.' },
+                { stt: 4, name: 'Công suất gió và Betz', diff: 'Trung cấp', dur: '~15 phút', content: ['Công suất động năng của luồng gió đi qua diện tích quét A là P_gió = ½ρAv³. Công suất cơ mà rotor lấy được xấp xỉ P_rotor = Cₚ × P_gió; công suất điện còn chịu tổn hao và bị giới hạn bởi đường cong công suất, công suất định mức và điều khiển turbine.', 'Ví dụ: Gió 6→7 m/s, P tăng ~1.59 lần.', 'Giới hạn Betz (59.3%): Không thể thu hết 100% năng lượng gió.', 'Hệ số công suất khí động Cₚ của turbine thực tế luôn thấp hơn giới hạn Betz 59,3% và thay đổi theo thiết kế, tốc độ đầu cánh và điều kiện vận hành. DOE nêu khoảng Cₚ 0,25–0,45 cho turbine gió nhỏ trong hướng dẫn của họ; không áp khoảng này cho mọi turbine quy mô utility hoặc gọi đó là hiệu suất điện toàn hệ thống.'], activity: 'Thực hành: Tính P gió qua rotor 100 m² ở 8 m/s.', outcome: 'Hiểu công thức và giới hạn lý thuyết Betz.' },
                 { stt: 5, name: 'Tốc độ gió và quy luật hai lực', diff: 'Trung cấp', dur: '~10 phút', content: ['Quy tắc lực: Lực nâng/cản tăng với bình phương hoặc lập phương tốc độ.', 'Ví dụ: Gió 10 m/s tạo ~15.6 lần công suất so với 4 m/s.', 'Cường độ gió: Năng lượng tập trung tại vùng nhiều gió.'], activity: 'Tự kiểm tra: Tại sao tốc độ gió tăng 50% công suất tăng >50%?', outcome: 'Nhận biết sự phụ thuộc P∝V³.' },
                 { stt: 6, name: 'Tại sao turbine ngày càng to và cao?', diff: 'Trung cấp', dur: '~10 phút', content: ['Kích thước tăng để tiếp nhận gió mạnh hơn.', 'Ví dụ: So sánh turbine 3 MW (rotor ~100m) và 10 MW (rotor ~150m).', 'Khó khăn: Kết cấu cánh dài cần vật liệu siêu bền.'], activity: 'Tự kiểm tra: Liệt kê lý do chính khiến cần tháp cao.', outcome: 'Hiểu xu hướng turbine lớn hơn.' },
                 { stt: 7, name: 'Máy phát điện và truyền động', diff: 'Trung cấp', dur: '~15 phút', content: ['Hộp số vs Direct-drive.', 'Máy phát điện: cảm ứng hoặc đồng bộ.', 'Ví dụ: Rotor 20 rpm, hộp số lên 1500 rpm.'], activity: 'Tự kiểm tra: So sánh ưu nhược hộp số và direct-drive.', outcome: 'Biết cơ bản cơ chế hộp số.' },
                 { stt: 8, name: 'Tự điều chỉnh của turbine', diff: 'Trung cấp', dur: '~10 phút', content: ['Hệ yaw: Căn hướng nacelle theo phương gió.', 'Điều khiển pitch: Điều chỉnh góc cánh để tối ưu.', 'Bảo vệ: Khi gió quá lớn, turbine vào chế độ an toàn.'], activity: 'Tự kiểm tra: Tại sao cần điều khiển góc cánh?', outcome: 'Hiểu các cơ chế điều khiển turbine.' },
-                { stt: 9, name: 'Trang trại gió (wind farm)', diff: 'Trung cấp', dur: '~15 phút', content: ['Bố trí turbine: khoảng cách >5–10 lần đường kính rotor.', 'Hiệu ứng wake: Gió sau turbine bị rối.', 'Ví dụ: Phân tích sơ đồ trang trại ở Việt Nam.'], activity: 'Tự kiểm tra: Tại sao turbine phải cách nhau xa?', outcome: 'Hiểu cách bố trí tối ưu turbine.' },
-                { stt: 10, name: 'Điện gió trên bờ & ngoài khơi', diff: 'Trung cấp', dur: '~10 phút', content: ['Onshore: Chi phí thấp hơn, vận hành bảo trì thuận tiện.', 'Offshore: Gió mạnh và ổn định, chi phí cao.', 'Ví dụ dự án lớn.'], activity: 'Tự kiểm tra: Liệt kê ưu/nhược của onshore và offshore.', outcome: 'Phân biệt điều kiện điện gió trên bờ và ngoài khơi.' },
-                { stt: 11, name: 'Vận chuyển kết cấu turbine', diff: 'Trung cấp', dur: '~10 phút', content: ['Logistics: Cánh gió dài (50–100m) phải thiết kế gập.', 'Ví dụ: Giao thông đường bộ ở Việt Nam.', 'Xu hướng: Turbine cập cảng.'], activity: 'Tự kiểm tra: Kể tên khó khăn khi chở cánh turbine.', outcome: 'Nhận biết thách thức hậu cần.' },
+                { stt: 9, name: 'Trang trại gió (wind farm)', diff: 'Trung cấp', dur: '~15 phút', content: ['Khoảng cách giữa turbine thường được thiết kế theo hướng gió chủ đạo, đường kính rotor, địa hình, độ nhiễu loạn, wake, cáp và ràng buộc môi trường. Quy tắc 5–10D chỉ là khoảng tham khảo sơ bộ trong một số cấu hình, không phải tiêu chuẩn bắt buộc hay giá trị tối ưu cho mọi trang trại.', 'Hiệu ứng wake: Gió sau turbine bị rối.', 'Ví dụ: Phân tích sơ đồ trang trại ở Việt Nam.'], activity: 'Tự kiểm tra: Tại sao turbine phải cách nhau xa?', outcome: 'Hiểu cách bố trí tối ưu turbine.' },
+                { stt: 10, name: 'Điện gió trên bờ & ngoài khơi', diff: 'Trung cấp', dur: '~10 phút', content: ['Onshore thường có hạ tầng thi công và bảo trì thuận tiện hơn ở nhiều dự án; offshore có thể tiếp cận tài nguyên gió tốt hơn nhưng yêu cầu móng, tàu chuyên dụng, cáp biển và bảo trì phức tạp. So sánh chi phí và độ ổn định phải dựa trên địa điểm, công nghệ, đấu nối và vòng đời dự án.', 'Offshore có thể tiếp cận tài nguyên gió tốt hơn nhưng yêu cầu móng, tàu chuyên dụng, cáp biển và bảo trì phức tạp; không phải lúc nào cũng có gió mạnh hoặc ổn định hơn tại mọi địa điểm.', 'Ví dụ dự án lớn.'], activity: 'Tự kiểm tra: Liệt kê ưu/nhược của onshore và offshore.', outcome: 'Phân biệt điều kiện điện gió trên bờ và ngoài khơi.' },
+                { stt: 11, name: 'Vận chuyển kết cấu turbine', diff: 'Trung cấp', dur: '~10 phút', content: ['Logistics: Cánh turbine dài cần tuyến vận chuyển, bán kính cua, cầu đường, cảng hoặc tàu chuyên dụng phù hợp. Cánh không mặc định được thiết kế gập; phương án vận chuyển phụ thuộc kích thước, tuyến đường và công nghệ.', 'Ví dụ: Giao thông đường bộ ở Việt Nam.', 'Xu hướng: Turbine cập cảng.'], activity: 'Tự kiểm tra: Kể tên khó khăn khi chở cánh turbine.', outcome: 'Nhận biết thách thức hậu cần.' },
                 { stt: 12, name: 'Bảo trì và tác động môi trường', diff: 'Trung cấp', dur: '~10 phút', content: ['Bảo trì: kiểm tra rung động, bôi trơn hộp số.', 'Đa dạng sinh học & cộng đồng: Tiếng ồn, đèn cảnh báo.', 'Tái chế cánh composite.'], activity: 'Tự kiểm tra: Nêu tác động môi trường của điện gió.', outcome: 'Nhận thức về bảo trì, an toàn, môi trường.' },
                 { stt: 13, name: 'Dự án cuối khóa gió', diff: 'Trung cấp', dur: '~20 phút', content: ['Đề bài: Chọn địa điểm có dữ liệu gió, tính:', 'Số turbine cần thiết.', 'Sản lượng điện hàng năm (xét wake).', 'Lập mô hình sơ bộ vị trí.'], activity: 'Hoạt động: Dự báo công suất và số turbine.', outcome: 'Ứng dụng kiến thức tính toán trang trại gió.' }
             ] },
         { id: 'm4', lv: 'TRUNG CẤP', title: 'Lưu trữ năng lượng & pin', sub: 'Nguyên lý pin, LFP, Na-ion, BESS, BMS và tái chế', icon: '<rect x="2" y="7" width="18" height="10" rx="2" class="ic-stroke"/><path class="ic-stroke" d="M22 11v2M6 11v2M10 11v2M14 11v2"/>', dur: '3 giờ', count: 14, progress: 33, desc: 'Giải thích nguyên lý cơ bản của pin và các công nghệ lưu trữ năng lượng: từ ắc-quy chì đến pin lithium-ion (LFP, NMC), pin thế hệ mới (natri-ion, sắt–không khí). Học viên hiểu cách hoạt động, khác biệt công nghệ và vai trò của BMS.', courses: [
                 { stt: 1, name: 'Tại sao cần lưu trữ năng lượng?', diff: 'Trung cấp', dur: '~10 phút', content: ['Thách thức nguồn tái tạo: Điện mặt trời/gió biến động.', 'Vai trò lưu trữ: Cân bằng cung-cầu.', 'Ví dụ: Mua điện giá thấp và dùng ban ngày.'], activity: 'Thực hành: Tính toán dung lượng cần lưu.', outcome: 'Hiểu nhu cầu lưu trữ cho điện tái tạo.' },
                 { stt: 2, name: 'Cấu tạo và nguyên lý pin', diff: 'Trung cấp', dur: '~15 phút', content: ['Pin/ắc-quy: Hai điện cực và chất điện phân.', 'Quá trình nạp/xả.', 'Ví dụ: Pin AA, ắc-quy chì.'], activity: 'Tự kiểm tra: Mô tả phản ứng hóa học trong ắc-quy chì.', outcome: 'Hiểu cơ bản cấu tạo pin.' },
-                { stt: 3, name: 'Ắc-quy chì (Lead-Acid)', diff: 'Trung cấp', dur: '~10 phút', content: ['Cấu tạo: PbO₂, Pb, H₂SO₄.', 'Đặc điểm: Rẻ, chịu dòng xả lớn.', 'Hạn chế: Tuổi thọ ngắn (~300–500 chu kỳ).', 'Ứng dụng: Xe hơi, UPS.'], activity: 'Tự kiểm tra: Tại sao ắc-quy chì nặng hơn Li-ion?', outcome: 'Nắm ưu/nhược của ắc-quy chì.' },
-                { stt: 4, name: 'Pin Lithium-ion cơ bản', diff: 'Trung cấp', dur: '~15 phút', content: ['Cấu tạo: LiCoO₂, NMC, graphite.', 'Ưu điểm: Mật độ năng lượng cao (125–250 Wh/kg).', 'Nhược điểm: Chi phí cao, nguy cơ cháy nổ.'], activity: 'Tự kiểm tra: Tại sao không nên xả kiệt Li-ion?', outcome: 'Hiểu cấu trúc cơ bản của pin Li-ion.' },
-                { stt: 5, name: 'Lithium sắt phosphate (LFP)', diff: 'Trung cấp', dur: '~10 phút', content: ['Chất liệu: LiFePO₄.', 'Ưu điểm: Rất an toàn, >2000 chu kỳ.', 'Nhược điểm: Mật độ năng lượng thấp hơn NMC.', 'Ứng dụng: Lưu trữ, xe tầm trung.'], activity: 'Tự kiểm tra: Tại sao LFP an toàn hơn NMC?', outcome: 'Biết đặc tính LFP.' },
-                { stt: 6, name: 'Pin natri-ion', diff: 'Trung cấp', dur: '~10 phút', content: ['Nguyên lý: Thay Li⁺ bằng Na⁺.', 'Ưu điểm: Nguyên liệu rẻ, không cần cobalt.', 'Hạn chế: Mật độ năng lượng thấp hơn Li-ion.'], activity: 'Tự kiểm tra: Thách thức của Na-ion so với Li-ion?', outcome: 'Hiểu nguyên lý và tiềm năng Na-ion.' },
-                { stt: 7, name: 'Pin sắt-không khí', diff: 'Trung cấp', dur: '~10 phút', content: ['Công nghệ: Phản ứng oxi hóa/khử của sắt với oxy.', 'Ưu điểm: Siêu cao mật độ năng lượng có thể.', 'Thách thức: Hiệu suất thấp, chưa thương mại.'], activity: 'Tự kiểm tra: Tại sao pin sắt-không khí khó ứng dụng?', outcome: 'Biết khái niệm pin sắt-không khí.' },
+                { stt: 3, name: 'Ắc-quy chì (Lead-Acid)', diff: 'Trung cấp', dur: '~10 phút', content: ['Cấu tạo: PbO₂, Pb, H₂SO₄.', 'Đặc điểm: Rẻ, chịu dòng xả lớn.', 'Hạn chế: khối lượng lớn, độ sâu xả và tốc độ sạc ảnh hưởng mạnh đến tuổi thọ; số chu kỳ phụ thuộc loại ắc-quy và quy trình thử, không có một khoảng áp dụng cho mọi bình.', 'Ứng dụng: Xe hơi, UPS.'], activity: 'Tự kiểm tra: Tại sao ắc-quy chì nặng hơn Li-ion?', outcome: 'Nắm ưu/nhược của ắc-quy chì.' },
+                { stt: 4, name: 'Pin Lithium-ion cơ bản', diff: 'Trung cấp', dur: '~15 phút', content: ['Cấu tạo: LiCoO₂, NMC, graphite.', 'Ưu điểm: nhiều cell lithium-ion có mật độ năng lượng theo khối lượng cao hơn ắc-quy chì; giá trị Wh/kg thay đổi lớn theo hóa học và cấp độ đo (cell, module hay pack). Khi so sánh phải dùng cùng cấp độ và datasheet cụ thể.', 'Nhược điểm: Chi phí cao, nguy cơ cháy nổ.'], activity: 'Tự kiểm tra: Tại sao không nên xả kiệt Li-ion?', outcome: 'Hiểu cấu trúc cơ bản của pin Li-ion.' },
+                { stt: 5, name: 'Lithium sắt phosphate (LFP)', diff: 'Trung cấp', dur: '~10 phút', content: ['Chất liệu: LiFePO₄.', 'Ưu điểm tương đối: LFP thường có độ ổn định nhiệt tốt hơn một số hóa học lithium-ion giàu nickel và có thể đạt tuổi thọ chu kỳ cao trong điều kiện phù hợp. LFP không an toàn tuyệt đối; số chu kỳ phụ thuộc DoD, C-rate, nhiệt độ, cửa sổ SOC, tiêu chí cuối đời và nhà sản xuất.', 'Nhược điểm: Mật độ năng lượng thấp hơn NMC.', 'Ứng dụng: Lưu trữ, xe tầm trung.'], activity: 'Tự kiểm tra: Tại sao LFP an toàn hơn NMC?', outcome: 'Biết đặc tính LFP.' },
+                { stt: 6, name: 'Pin natri-ion', diff: 'Trung cấp', dur: '~10 phút', content: ['Nguyên lý: Thay Li⁺ bằng Na⁺.', 'Một số cấu hình natri-ion có thể giảm phụ thuộc lithium và cobalt; ưu điểm về giá thành, an toàn, nguồn cung và hiệu suất phải đánh giá theo hóa học và sản phẩm cụ thể. Không phải mọi cell natri-ion đều có cùng thành phần điện cực hoặc chi phí.', 'Hạn chế: Mật độ năng lượng thấp hơn Li-ion.'], activity: 'Tự kiểm tra: Thách thức của Na-ion so với Li-ion?', outcome: 'Hiểu nguyên lý và tiềm năng Na-ion.' },
+                { stt: 7, name: 'Pin sắt-không khí', diff: 'Trung cấp', dur: '~10 phút', content: ['Công nghệ: Phản ứng oxi hóa/khử của sắt với oxy.', 'Tiềm năng: pin sắt–không khí được nghiên cứu cho lưu trữ tĩnh thời lượng dài nhờ vật liệu sắt phổ biến. Hệ thống thường cồng kềnh và có đặc tính công suất, hiệu suất vòng, thời gian đáp ứng khác pin lithium-ion; không gọi đây là công nghệ có mật độ năng lượng theo khối lượng cao cho xe điện.', 'Thách thức: cần đánh giá hiệu suất vòng, công suất, thời lượng, số chu kỳ, độ bền và mức độ trưởng thành của từng dự án. Một số thiết kế đang ở giai đoạn trình diễn/triển khai ban đầu; không khẳng định toàn bộ họ công nghệ đều chưa thương mại.'], activity: 'Tự kiểm tra: Tại sao pin sắt-không khí khó ứng dụng?', outcome: 'Biết khái niệm pin sắt-không khí.' },
                 { stt: 8, name: 'Định nghĩa công suất & mật độ năng lượng', diff: 'Trung cấp', dur: '~15 phút', content: ['Năng lượng (kWh) vs công suất (kW).', 'Mật độ năng lượng: Wh/kg.', 'Ví dụ so sánh các loại pin.'], activity: 'Tự kiểm tra: Tại sao pin EV cần mật độ năng lượng cao?', outcome: 'Hiểu khác biệt công suất và năng lượng.' },
                 { stt: 9, name: 'Hệ thống quản lý pin (BMS)', diff: 'Trung cấp', dur: '~10 phút', content: ['Chức năng: Giám sát điện áp, nhiệt độ.', 'Cân bằng cell.', 'Bảo vệ quá áp/quá dòng/quá nhiệt.'], activity: 'Tự kiểm tra: Nêu lý do phải có BMS.', outcome: 'Biết vai trò của BMS.' },
                 { stt: 10, name: 'Nhiệt độ và tuổi thọ pin', diff: 'Trung cấp', dur: '~10 phút', content: ['Ảnh hưởng nhiệt độ: Pin Li-ion mau lão hoá ở nhiệt độ cao.', 'Độ sâu xả (DoD): Sạc xả sâu làm giảm tuổi thọ.', 'Biện pháp: Làm mát, tránh sạc đầy/xả kiệt.'], activity: 'Tự kiểm tra: Vì sao không nên xả kiệt pin?', outcome: 'Hiểu tác động của nhiệt độ và DoD.' },
-                { stt: 11, name: 'Lưu trữ quy mô lưới & BESS', diff: 'Trung cấp', dur: '~15 phút', content: ['Cell → module → rack → container.', 'Ví dụ: Nhà máy pin Bình Phước 256 MWh.', 'An toàn: Phương pháp làm mát, chống cháy.'], activity: 'Tự kiểm tra: Các thành phần của BESS?', outcome: 'Hiểu quy mô lưu trữ điện.' },
+                { stt: 11, name: 'Lưu trữ quy mô lưới & BESS', diff: 'Trung cấp', dur: '~15 phút', content: ['Cell → module → rack → container.', 'Ví dụ nghiên cứu: chỉ đưa tên và dung lượng dự án BESS khi có thông báo chính thức hoặc hồ sơ kỹ thuật xác nhận công suất (MW), dung lượng (MWh), địa điểm và ngày vận hành. Không dùng một con số chưa kiểm chứng làm dữ liệu thực tế.', 'An toàn: Phương pháp làm mát, chống cháy.'], activity: 'Tự kiểm tra: Các thành phần của BESS?', outcome: 'Hiểu quy mô lưu trữ điện.' },
                 { stt: 12, name: 'Các giải pháp lưu trữ khác', diff: 'Trung cấp', dur: '~15 phút', content: ['Thủy điện tích năng: Đập nước cao-thấp.', 'Lưu trữ nhiệt: Đun nước hoặc muối nóng chảy.', 'Cơ học khác: Bánh đà (flywheel), khí nén, siêu tụ.'], activity: 'Tự kiểm tra: Nêu phương pháp lưu trữ không dùng pin.', outcome: 'Hiểu có nhiều phương án lưu trữ.' },
-                { stt: 13, name: 'Tái chế và vòng đời pin', diff: 'Trung cấp', dur: '~10 phút', content: ['Chu kỳ tuổi thọ: LFP ~2000 chu kỳ, EV ~1000.', 'Tái chế pin: Thu hồi Li, Co, Ni.', 'Chính sách: Quy định tái chế pin sau sử dụng.'], activity: 'Tự kiểm tra: Pin Li-ion hết tuổi thọ nên xử lý thế nào?', outcome: 'Nắm ý nghĩa vòng đời pin.' },
+                { stt: 13, name: 'Tái chế và vòng đời pin', diff: 'Trung cấp', dur: '~10 phút', content: ['Tuổi thọ chu kỳ của pin LFP, NMC hay pin xe điện không có một con số cố định. Cần ghi hóa học, DoD, C-rate, nhiệt độ, cửa sổ SOC, tiêu chí dung lượng cuối đời và điều kiện thử của nhà sản xuất.', 'Tái chế pin: Thu hồi Li, Co, Ni.', 'Chính sách: Quy định tái chế pin sau sử dụng.'], activity: 'Tự kiểm tra: Pin Li-ion hết tuổi thọ nên xử lý thế nào?', outcome: 'Nắm ý nghĩa vòng đời pin.' },
                 { stt: 14, name: 'Dự án cuối khóa pin', diff: 'Trung cấp', dur: '~20 phút', content: ['Đề bài: So sánh 2 phương án pin cho hệ PV:', 'Phương án A: 10 kWh Pin LFP, công suất 5 kW.', 'Phương án B: 10 kWh Pin Na-ion.', 'Đánh giá: Hiệu suất, tuổi thọ, chi phí.'], activity: 'Hoạt động: Tính toán hiệu suất và chi phí.', outcome: 'Ứng dụng so sánh đặc tính pin.' }
             ] },
         { id: 'm5', lv: 'NÂNG CAO', title: 'Hydro xanh & nhiên liệu mới', sub: 'Điện phân nước, PEM/SOEC, amoniac xanh, pin nhiên liệu', icon: '<circle cx="12" cy="12" r="2" fill="currentColor"/><ellipse cx="12" cy="12" rx="10" ry="4" class="ic-stroke"/>', dur: '2,5 giờ', count: 10, progress: 19, desc: 'Trình bày quy trình chuyển đổi từ điện tái tạo thành nhiên liệu: điện phân nước tạo hydro xanh, lưu trữ vận chuyển hydro, tổng hợp amoniac và methanol. Học viên hiểu các công nghệ điện phân (PEM, kiềm, SOEC) và ứng dụng chủ yếu.', courses: [
-                { stt: 1, name: 'Hydro là gì?', diff: 'Nâng cao', dur: '~10 phút', content: ['Đặc tính cơ bản: Phần tử nhẹ nhất, dẫn điện tốt.', 'Hydro sơ cấp vs nhiên liệu: Hydro không có sẵn, cần sản xuất.', 'Mục đích: Dùng làm nhiên liệu hoặc chất phản ứng.'], activity: 'Tự kiểm tra: Tại sao gọi là "hydro xanh"?', outcome: 'Hiểu vai trò hydro như "carrier".' },
+                { stt: 1, name: 'Hydro là gì?', diff: 'Nâng cao', dur: '~10 phút', content: ['Hydrogen là nguyên tố nhẹ nhất; ở điều kiện thường, H₂ là khí có mật độ rất thấp và dễ cháy. Khí H₂ trung hòa không dẫn điện tốt như kim loại; plasma hydrogen bị ion hóa mới có thể dẫn điện đáng kể.', 'Hydro sơ cấp vs nhiên liệu: Hydro không có sẵn, cần sản xuất.', 'Mục đích: Dùng làm nhiên liệu hoặc chất phản ứng.'], activity: 'Tự kiểm tra: Tại sao gọi là "hydro xanh"?', outcome: 'Hiểu vai trò hydro như "carrier".' },
                 { stt: 2, name: 'Điện phân nước', diff: 'Nâng cao', dur: '~15 phút', content: ['Quy trình: Dùng dòng điện phân tách H₂O thành H₂ và O₂.', 'Hoá học: 2H₂O → 2H₂ + O₂.', 'Ví dụ: Sản xuất H₂ tại nơi có giá điện thấp.'], activity: 'Tự kiểm tra: Nêu điều kiện để hydro "xanh".', outcome: 'Nắm nguyên lý điện phân nước.' },
                 { stt: 3, name: 'Các loại điện phân (PEM, kiềm, SOEC)', diff: 'Nâng cao', dur: '~15 phút', content: ['PEM: Màng polymer dẫn proton, 70–90°C.', 'Kiềm (Alkaline): Dung dịch KOH, 50–80°C.', 'SOEC: Màng gốm, nhiệt độ cao 650–850°C.', 'So sánh: Chi phí, hiệu suất, khả năng mở rộng.'], activity: 'Tự kiểm tra: Nêu khác biệt PEM và kiềm.', outcome: 'Hiểu cấu tạo 3 công nghệ điện phân.' },
                 { stt: 4, name: 'Từ điện tái tạo đến hydro xanh', diff: 'Nâng cao', dur: '~15 phút', content: ['Chuỗi chuyển đổi: Điện → điện phân → hydro.', 'Ví dụ minh họa theo giả định: 1 kWh điện đầu vào tương ứng khoảng 0,021 kg H₂ nếu hiệu suất toàn hệ thống được giả định là 70% theo LHV (LHV H₂ ≈ 33,3 kWh/kg). Đây là giả định tính toán để học cân bằng năng lượng, không phải hiệu suất mặc định của mọi thiết bị thương mại; chưa tính riêng các phụ tải ngoài ranh giới mô hình.', 'Theo IEA, hydro sản xuất từ khí tự nhiên không có thu giữ carbon (không CCS) phát thải khoảng 10–12 kg CO₂e/kg H₂ trong bộ số liệu sản xuất năm 2023. Kết quả thực tế thay đổi theo công nghệ và phát thải thượng nguồn, đặc biệt là rò rỉ methane.'], activity: 'Tự kiểm tra: Ưu điểm của hydro xanh?', outcome: 'Nắm hiệu quả chuỗi điện → H₂.' },
                 { stt: 5, name: 'Lưu trữ và vận chuyển hydro', diff: 'Nâng cao', dur: '~15 phút', content: ['Dạng lưu trữ: Khí nén (200–700 bar), lỏng (–253°C).', 'Chất mang hydro (ammonia, methylcyclohexane).', 'Vận chuyển: Đường ống, tàu, xe tải bồn.'], activity: 'Tự kiểm tra: So sánh khí nén và dạng lỏng.', outcome: 'Hiểu các phương án lưu trữ hydro.' },
                 { stt: 6, name: 'Hydro → Amoniac (NH₃)', diff: 'Nâng cao', dur: '~10 phút', content: ['Tổng hợp NH₃ (Haber–Bosch): N₂ + 3H₂ ↔ 2NH₃.', 'Lợi ích: Dễ bảo quản ở điều kiện cao áp hoặc -33°C.', 'Ứng dụng: Nhiên liệu tàu biển, phân bón.'], activity: 'Tự kiểm tra: Tại sao amoniac là "đóng chai hydrogen"?', outcome: 'Hiểu cơ bản quá trình tổng hợp amoniac.' },
-                { stt: 7, name: 'Hydro xanh trong ngành thép', diff: 'Nâng cao', dur: '~10 phút', content: ['Sản xuất thép truyền thống: Luyện quặng sắt với than.', 'Khử quặng bằng H₂: Fe₂O₃ + 3H₂ → 2Fe + 3H₂O.', 'Ưu thế: Giảm CO₂ (chỉ thải H₂O).'], activity: 'Tự kiểm tra: Viết phương trình khử Fe₂O₃ bằng H₂.', outcome: 'Hiểu ứng dụng hydro trong công nghiệp.' },
-                { stt: 8, name: 'Nhiên liệu mới cho tàu biển', diff: 'Nâng cao', dur: '~15 phút', content: ['So sánh: Hydro, Amoniac, Methanol xanh.', 'Lưu trữ: Cả ba dễ bay hơi, phải lưu dưới áp suất.', 'Động cơ: Hydro/methanol dùng trong động cơ đốt.'], activity: 'Tự kiểm tra: Tại sao cần nhiều loại nhiên liệu thay thế?', outcome: 'Hiểu lựa chọn nhiên liệu thay thế.' },
-                { stt: 9, name: 'Pin nhiên liệu (Fuel Cell)', diff: 'Nâng cao', dur: '~10 phút', content: ['Nguyên lý: oxy + hydro → điện + nước.', 'PEMFC: Màng trao đổi proton.', 'So sánh: Pin nhiên liệu khác pin sạc.'], activity: 'Tự kiểm tra: Viết phương trình tổng hợp.', outcome: 'Nắm rõ sự khác biệt pin nhiên liệu và pin sạc.' },
+                { stt: 7, name: 'Hydro xanh trong ngành thép', diff: 'Nâng cao', dur: '~10 phút', content: ['Sản xuất thép truyền thống: Luyện quặng sắt với than.', 'Khử quặng bằng H₂: Fe₂O₃ + 3H₂ → 2Fe + 3H₂O.', 'Ưu thế tại công đoạn khử quặng: phản ứng trực tiếp với hydrogen có thể tạo nước thay cho CO₂ từ chất khử carbon. Phát thải toàn chuỗi vẫn phụ thuộc nguồn hydrogen, điện/nhiệt, khai thác nguyên liệu, vận chuyển và công nghệ hoàn thiện thép.'], activity: 'Tự kiểm tra: Viết phương trình khử Fe₂O₃ bằng H₂.', outcome: 'Hiểu ứng dụng hydro trong công nghiệp.' },
+                { stt: 8, name: 'Nhiên liệu mới cho tàu biển', diff: 'Nâng cao', dur: '~15 phút', content: ['So sánh: Hydro, Amoniac, Methanol xanh.', 'Hydrogen, ammonia và methanol có đặc tính lưu trữ khác nhau: hydrogen có thể được lưu dưới dạng khí nén hoặc chất lỏng lạnh sâu; ammonia có thể được hóa lỏng bằng làm lạnh hoặc áp suất và có độc tính; methanol là chất lỏng ở điều kiện môi trường nhưng dễ cháy và độc. Không thể mô tả cả ba là đều phải lưu dưới áp suất.', 'Động cơ: Hydro/methanol dùng trong động cơ đốt.'], activity: 'Tự kiểm tra: Tại sao cần nhiều loại nhiên liệu thay thế?', outcome: 'Hiểu lựa chọn nhiên liệu thay thế.' },
+                { stt: 9, name: 'Pin nhiên liệu (Fuel Cell)', diff: 'Nâng cao', dur: '~10 phút', content: ['Trong pin nhiên liệu hydrogen, hydrogen phản ứng điện hóa với oxygen (thường lấy từ không khí), tạo điện, nhiệt và nước ở điểm sử dụng đối với PEMFC dùng H₂ tinh khiết. Hiệu suất và phát thải vòng đời còn phụ thuộc nguồn hydrogen, tải và việc tận dụng nhiệt.', 'PEMFC: Màng trao đổi proton.', 'So sánh: Pin nhiên liệu khác pin sạc.'], activity: 'Tự kiểm tra: Viết phương trình tổng hợp.', outcome: 'Nắm rõ sự khác biệt pin nhiên liệu và pin sạc.' },
                 { stt: 10, name: 'Dự án cuối khóa hydro', diff: 'Nâng cao', dur: '~20 phút', content: ['Đề bài: Giả sử nhà máy thép DRI cần 100 tấn H₂/ngày.', 'Tính công suất điện cần để điện phân.', 'Xét 2 nguồn: Điện gió và điện lưới.', 'Trình bày yêu cầu lưu trữ và vận chuyển.'], activity: 'Hoạt động: Tính năng lượng cần thiết.', outcome: 'Ứng dụng kiến thức tính toán hydro.' }
             ] },
         { id: 'm6', lv: 'NÂNG CAO', title: 'Lưới điện thông minh & VPP', sub: 'Tần số 50Hz, dự báo AI, nhà máy điện ảo, demand response', icon: '<circle cx="12" cy="12" r="2" fill="currentColor"/><circle cx="5" cy="6" r="2" class="ic-stroke"/><circle cx="19" cy="6" r="2" class="ic-stroke"/><circle cx="5" cy="18" r="2" class="ic-stroke"/><circle cx="19" cy="18" r="2" class="ic-stroke"/>', dur: '3 giờ', count: 12, progress: 12, desc: 'Mô tả cách thức vận hành hệ thống điện hiện đại với nhiều nguồn phân tán: từ việc duy trì tần số lưới, dự báo nguồn điện tái tạo, đến điều độ cung cầu thông minh và xây dựng VPP (Virtual Power Plant).', courses: [
                 { stt: 1, name: 'Hệ thống điện truyền thống', diff: 'Nâng cao', dur: '~10 phút', content: ['Cấu trúc cơ bản: Nhà máy phát điện → trạm biến áp → đường dây cao thế.', 'Nguyên tắc cơ bản: cân bằng công suất theo thời gian thực.', 'Ví dụ: Khái niệm "cung cầu cân bằng".'], activity: 'Tự kiểm tra: Vẽ sơ đồ hệ điện truyền thống.', outcome: 'Nắm kiến thức cơ bản về lưới điện.' },
-                { stt: 2, name: 'Lưới điện thông minh (Smart Grid)', diff: 'Nâng cao', dur: '~10 phút', content: ['Khái niệm: Tích hợp thiết bị đo số thông minh.', 'Ví dụ: Đo đếm theo thời gian thực.', 'Thực tế: Smart grid tự phát hiện lỗi.'], activity: 'Tự kiểm tra: Liệt kê 2 công nghệ mới trong smart grid.', outcome: 'Hiểu mục đích của smart grid.' },
-                { stt: 3, name: 'Cân bằng tần số (50 Hz)', diff: 'Nâng cao', dur: '~10 phút', content: ['Tần số: Hệ thống xoay chiều Việt Nam 50 Hz.', 'Vai trò: Ổn định hệ thống.', 'Điều khiển: Thay đổi cơ cấu nguồn.', 'Ví dụ: Khi mất 1 GW, tần số giảm 0.2 Hz.'], activity: 'Tự kiểm tra: Nêu hậu quả khi tần số lệch 1 Hz.', outcome: 'Hiểu tầm quan trọng của tần số 50 Hz.' },
-                { stt: 4, name: 'Phản ứng khi mây che nắng', diff: 'Nâng cao', dur: '~10 phút', content: ['Hiện tượng: Đột ngột mất 30-50% công suất PV.', 'Ảnh hưởng: Dao động nguồn điện.', 'Giải pháp: BMS huy động năng lượng tích trữ.', 'Ví dụ: Duck curve ở California.'], activity: 'Tự kiểm tra: Kể 2 biện pháp đối phó với mây che.', outcome: 'Nhận biết ảnh hưởng biến động nguồn tái tạo.' },
+                { stt: 2, name: 'Lưới điện thông minh (Smart Grid)', diff: 'Nâng cao', dur: '~10 phút', content: ['Khái niệm: Tích hợp thiết bị đo số thông minh.', 'Ví dụ: Đo đếm theo thời gian thực.', 'Lưới điện thông minh có thể hỗ trợ phát hiện, định vị và cô lập sự cố nhờ cảm biến, bảo vệ, truyền thông và tự động hóa phù hợp. Khả năng này không tự có ở mọi lưới; phụ thuộc mức trang bị, cấu hình, độ tin cậy dữ liệu và quy trình vận hành.'], activity: 'Tự kiểm tra: Liệt kê 2 công nghệ mới trong smart grid.', outcome: 'Hiểu mục đích của smart grid.' },
+                { stt: 3, name: 'Cân bằng tần số (50 Hz)', diff: 'Nâng cao', dur: '~10 phút', content: ['Tần số: Hệ thống xoay chiều Việt Nam 50 Hz.', 'Vai trò: Ổn định hệ thống.', 'Điều khiển: Thay đổi cơ cấu nguồn.', 'Mức thay đổi tần số sau khi mất một tổ máy phụ thuộc quy mô hệ thống, quán tính, dự phòng quay, đáp ứng điều tần, điều khiển inverter và liên kết lưới. Không có quy đổi cố định 1 GW = 0,2 Hz cho mọi hệ thống; muốn tính phải dùng mô hình động và dữ liệu hệ thống cụ thể.'], activity: 'Tự kiểm tra: Nêu hậu quả khi tần số lệch 1 Hz.', outcome: 'Hiểu tầm quan trọng của tần số 50 Hz.' },
+                { stt: 4, name: 'Phản ứng khi mây che nắng', diff: 'Nâng cao', dur: '~10 phút', content: ['Mây đi qua có thể làm công suất PV biến động nhanh, nhưng mức thay đổi phụ thuộc loại mây, tốc độ và diện tích che phủ, quy mô/phân bố địa lý của các mảng PV và bước thời gian đo. Không dùng 30–50% như mức giảm phổ quát; cần chuỗi đo hoặc mô hình thời tiết cụ thể.', 'Ảnh hưởng: Dao động nguồn điện.', 'Giải pháp: bộ điều khiển nhà máy, EMS hoặc đơn vị điều độ có thể ra quyết định sạc/xả BESS theo yêu cầu hệ thống; BMS giám sát cell và áp đặt giới hạn an toàn cho pin, không phải bộ điều độ lưới.', 'Ví dụ: Duck curve ở California.'], activity: 'Tự kiểm tra: Kể 2 biện pháp đối phó với mây che.', outcome: 'Nhận biết ảnh hưởng biến động nguồn tái tạo.' },
                 { stt: 5, name: 'Dự báo và điều độ', diff: 'Nâng cao', dur: '~15 phút', content: ['Dữ liệu thời tiết: Dự báo mây, bức xạ, gió.', 'Ví dụ: AI dự báo 1 giờ tới.', 'Điều phối: Trung tâm điều độ sử dụng dự báo.'], activity: 'Tự kiểm tra: Dự báo thời tiết giúp gì cho lưới?', outcome: 'Hiểu cách dữ liệu thời tiết hỗ trợ.' },
-                { stt: 6, name: 'Nhà máy điện ảo (VPP)', diff: 'Nâng cao', dur: '~15 phút', content: ['Khái niệm: Tập hợp nhiều nguồn phát phân tán.', 'Cách thức: Điều khiển tập trung.', 'Ví dụ: VPP ở Mỹ/EU.', 'Lợi ích: Tăng khả năng điều tiết.'], activity: 'Tự kiểm tra: Mô tả lợi ích chính của VPP.', outcome: 'Hiểu bản chất VPP.' },
-                { stt: 7, name: 'Mái nhà thành phần của VPP', diff: 'Nâng cao', dur: '~10 phút', content: ['Hệ PV gia đình: Được điều khiển tăng/giảm công suất.', 'Pin gia đình: Lưu trữ và xả theo yêu cầu.', 'Xe điện: Sạc/xả thông minh (V2G).'], activity: 'Tự kiểm tra: Nhà quản lý điều chỉnh máy lạnh qua VPP thế nào?', outcome: 'Biết các thành phần gia đình tham gia VPP.' },
+                { stt: 6, name: 'Nhà máy điện ảo (VPP)', diff: 'Nâng cao', dur: '~15 phút', content: ['Khái niệm: Tập hợp nhiều nguồn phát phân tán.', 'Cách thức: đơn vị tổng hợp phối hợp nhiều nguồn phân tán qua nền tảng điều khiển/điều độ; kiến trúc có thể tập trung, phân cấp hoặc kết hợp. Mức điều khiển phụ thuộc hợp đồng, truyền thông, thiết bị và quy tắc thị trường.', 'Ví dụ: VPP ở Mỹ/EU.', 'Lợi ích: Tăng khả năng điều tiết.'], activity: 'Tự kiểm tra: Mô tả lợi ích chính của VPP.', outcome: 'Hiểu bản chất VPP.' },
+                { stt: 7, name: 'Mái nhà thành phần của VPP', diff: 'Nâng cao', dur: '~10 phút', content: ['Hệ PV gia đình chỉ có thể nhận lệnh giới hạn/điều chỉnh công suất khi inverter, truyền thông, cấu hình đo đếm, thỏa thuận với chủ hệ thống và quy tắc đấu nối cho phép.', 'Pin gia đình: Lưu trữ và xả theo yêu cầu.', 'Xe điện: Sạc/xả thông minh (V2G).'], activity: 'Tự kiểm tra: Nhà quản lý điều chỉnh máy lạnh qua VPP thế nào?', outcome: 'Biết các thành phần gia đình tham gia VPP.' },
                 { stt: 8, name: 'AI và dữ liệu trong quản lý năng lượng', diff: 'Nâng cao', dur: '~10 phút', content: ['Ứng dụng AI: Tối ưu hóa điều độ.', 'Ví dụ: AI phân tích dữ liệu tiêu thụ.', 'Giới hạn: Cần dữ liệu lớn.'], activity: 'Tự kiểm tra: AI giúp dự báo điều gì trong lưới?', outcome: 'Nhận thức tiềm năng của AI.' },
                 { stt: 9, name: 'Pin hỗ trợ lưới điện', diff: 'Nâng cao', dur: '~10 phút', content: ['Dịch chuyển thời gian: Dùng BESS tích trữ dư thừa.', 'Dịch vụ hệ thống: Cung cấp công suất phản hồi.', 'Ví dụ: BESS 100 MW ở California.'], activity: 'Tự kiểm tra: Pin lưới đóng góp gì khi nhu cầu tăng?', outcome: 'Hiểu vai trò pin quy mô lưới.' },
                 { stt: 10, name: 'Điều chỉnh phụ tải (Demand Response)', diff: 'Nâng cao', dur: '~10 phút', content: ['Khái niệm: Giảm phụ tải không cần thiết.', 'Ứng dụng: Hẹn giờ, bật/tắt thiết bị theo giá điện.', 'Ví dụ: Hồi đáp nhu cầu giờ cao điểm.'], activity: 'Tự kiểm tra: Đưa ví dụ thiết bị có thể điều khiển.', outcome: 'Hiểu các cách giảm tải cho lưới.' },
@@ -18886,7 +18881,7 @@ html[data-theme="light"] .cosmic-passby::before {
 
     const SOURCES = [
         { id: 'sun', chip: 'Điện mặt trời', icon: '<circle cx="12" cy="12" r="4" fill="currentColor"/><path class="ic-stroke" d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4"/>', title: 'Điện mặt trời', sub: 'Quang điện & nhiệt mặt trời', desc: 'Trong tế bào PV bán dẫn, photon tạo cặp electron–lỗ trống; điện trường tại tiếp giáp giúp phân tách điện tích và tạo dòng DC. Inverter chuyển DC thành AC. LCOE bình quân toàn cầu của điện mặt trời quy mô nhà máy giảm 90% trong giai đoạn 2010–2024 theo IRENA; đây không phải mức giảm giá tấm pin bán lẻ.', pro: ['LCOE cạnh tranh ở nhiều dự án quy mô nhà máy', 'Có thể lắp trên mái hoặc trang trại mặt đất', 'Ít bộ phận chuyển động trong module', 'Có thể kết hợp lưu trữ và quản lý phụ tải'], con: ['Không phát điện ban đêm, giảm khi nhiều mây', 'Cần diện tích lớn cho quy mô lớn', 'Phụ thuộc chuỗi cung ứng vật liệu'], data: [['2,96 TW', 'Công suất PV cuối 2025'], ['90%', 'LCOE giảm 2010–2024'], ['35,5%', 'Tế bào tandem thử nghiệm 07/2026']], svg: `<svg viewBox="0 0 300 180" fill="none"><circle cx="70" cy="65" r="26" fill="var(--amb)"/><g class="s-sun-rays" stroke="var(--amb)" stroke-width="2.5" stroke-linecap="round"><path d="M70 25v-8M70 113v8M30 65h-8M118 65h8M42 37l-6-6M98 93l6 6M98 37l6-6M42 93l-6 6"/></g><path class="s-flow" d="M96 75 L140 105" stroke="var(--amb)" stroke-width="2"/><path d="M130 130 L210 130 L198 100 L142 100 Z" fill="var(--surface2)" stroke="var(--acc)" stroke-width="2"/><path d="M150 100l6 30M170 100l3 30M188 100l-3 30" stroke="var(--acc)" stroke-width="1" opacity=".5"/><path class="s-flow" d="M210 115 H245" stroke="var(--acc)" stroke-width="2"/><rect x="245" y="98" width="34" height="36" rx="8" stroke="var(--sky)" stroke-width="2" fill="var(--surface2)"/></svg>` },
-        { id: 'wind', chip: 'Điện gió', icon: '<path class="ic-stroke" d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4" fill="currentColor"/>', title: 'Điện gió', sub: 'Trên bờ & ngoài khơi', desc: 'Gió tạo lực nâng khí động học trên cánh rotor, làm quay trục và máy phát điện. Ngày 5/2/2026, một turbine ngoài khơi 20 MW tại vùng biển Phúc Kiến (Trung Quốc) hoàn tất chạy thử và kết nối lưới; đây là một mốc công nghệ cụ thể, không đại diện cho công suất turbine phổ biến ở mọi dự án.', pro: ['Phát điện cả ngày lẫn đêm', 'Ngoài khơi gió mạnh và ổn định hơn', 'Chân đế có thể nuôi trồng thủy sản', 'Công suất mỗi tuabin tăng rất nhanh'], con: ['Biến thiên theo thời tiết', 'Ảnh hưởng cảnh quan và tiếng ồn', 'Logistics cánh khổng lồ phức tạp'], data: [['1.291 GW', 'Công suất cuối 2025'], ['158,7 GW', 'Bổ sung năm 2025'], ['20 MW', 'Một turbine nối lưới 02/2026']], svg: `<svg viewBox="0 0 300 180" fill="none"><path d="M150 155V70" stroke="var(--faint)" stroke-width="5" stroke-linecap="round"/><path d="M120 155h60" stroke="var(--faint)" stroke-width="4" stroke-linecap="round"/><g class="s-turbine"><circle cx="150" cy="65" r="7" fill="var(--acc)"/><path d="M150 58 C146 38 150 20 154 12 C158 22 156 42 153 58 Z" fill="var(--acc)"/><path d="M144 68 C126 77 111 89 106 97 C117 95 135 83 145 72 Z" fill="var(--acc)"/><path d="M156 68 C174 77 189 89 194 97 C183 95 165 83 155 72 Z" fill="var(--acc)"/></g><path class="s-flow" d="M40 50 H110M30 78 H104" stroke="var(--sky)" stroke-width="2"/><path class="s-flow" d="M200 125 H262" stroke="var(--acc)" stroke-width="2"/><rect x="262" y="108" width="28" height="32" rx="7" stroke="var(--sky)" stroke-width="2" fill="var(--surface2)"/></svg>` },
+        { id: 'wind', chip: 'Điện gió', icon: '<path class="ic-stroke" d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4" fill="currentColor"/>', title: 'Điện gió', sub: 'Trên bờ & ngoài khơi', desc: 'Gió tạo lực nâng khí động học trên cánh rotor, làm quay trục và máy phát điện. Ngày 5/2/2026, một turbine ngoài khơi 20 MW tại vùng biển Phúc Kiến (Trung Quốc) hoàn tất chạy thử và kết nối lưới; đây là một mốc công nghệ cụ thể, không đại diện cho công suất turbine phổ biến ở mọi dự án.', pro: ['Có thể phát điện cả ngày lẫn đêm khi có gió phù hợp', 'Nhiều địa điểm ngoài khơi có tài nguyên gió tốt hơn; cần dữ liệu từng vùng', 'Chân đế có thể nuôi trồng thủy sản', 'Công suất mỗi tuabin tăng rất nhanh'], con: ['Biến thiên theo thời tiết', 'Ảnh hưởng cảnh quan và tiếng ồn', 'Logistics cánh khổng lồ phức tạp'], data: [['1.291 GW', 'Công suất cuối 2025'], ['158,7 GW', 'Bổ sung năm 2025'], ['20 MW', 'Một turbine nối lưới 02/2026']], svg: `<svg viewBox="0 0 300 180" fill="none"><path d="M150 155V70" stroke="var(--faint)" stroke-width="5" stroke-linecap="round"/><path d="M120 155h60" stroke="var(--faint)" stroke-width="4" stroke-linecap="round"/><g class="s-turbine"><circle cx="150" cy="65" r="7" fill="var(--acc)"/><path d="M150 58 C146 38 150 20 154 12 C158 22 156 42 153 58 Z" fill="var(--acc)"/><path d="M144 68 C126 77 111 89 106 97 C117 95 135 83 145 72 Z" fill="var(--acc)"/><path d="M156 68 C174 77 189 89 194 97 C183 95 165 83 155 72 Z" fill="var(--acc)"/></g><path class="s-flow" d="M40 50 H110M30 78 H104" stroke="var(--sky)" stroke-width="2"/><path class="s-flow" d="M200 125 H262" stroke="var(--acc)" stroke-width="2"/><rect x="262" y="108" width="28" height="32" rx="7" stroke="var(--sky)" stroke-width="2" fill="var(--surface2)"/></svg>` },
         { id: 'hydro', chip: 'Thủy điện', icon: '<path class="ic-stroke" d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>', title: 'Thủy điện', sub: 'Dòng chảy & tích năng', desc: 'Thế năng hoặc động năng của nước được chuyển qua turbine và máy phát. Thủy điện tích năng bơm nước lên hồ cao khi có điện dư rồi phát điện khi xả; do tổn hao, đây là hệ thống lưu trữ chứ không tạo thêm năng lượng ròng.', pro: ['Nguồn điện tái tạo có quy mô lớn', 'PHS có thể dịch chuyển điện theo thời gian', 'Một số hồ chứa hỗ trợ điều độ và đa mục tiêu', 'Khả năng khởi động tùy loại tổ máy'], con: ['Phụ thuộc vị trí sông', 'Tác động hệ sinh thái', 'Hạn hán làm sản lượng trồi sụt'], data: [['1.296 GW', 'Công suất cuối 2025*'], ['18,4 GW', 'Bổ sung năm 2025*'], ['PHS', 'Lưu trữ bằng bơm – xả']], svg: `<svg viewBox="0 0 300 180" fill="none"><path d="M40 40 h60 v100 h-60" stroke="var(--sky)" stroke-width="3" fill="var(--surface2)"/><path class="s-flow" d="M100 40 c30 8 40 40 42 100" stroke="var(--sky)" stroke-width="3"/><path d="M118 140 h80" stroke="var(--faint)" stroke-width="3"/><g style="animation:sp-spin 3s linear infinite;transform-origin:180px 115px"><circle cx="180" cy="115" r="22" stroke="var(--acc)" stroke-width="3" fill="var(--surface2)"/><path d="M180 93v44M158 115h44" stroke="var(--acc)" stroke-width="2"/></g><path class="s-flow" d="M205 115 H262" stroke="var(--acc)" stroke-width="2"/><rect x="262" y="98" width="28" height="32" rx="7" stroke="var(--sky)" stroke-width="2" fill="var(--surface2)"/></svg>` },
         { id: 'bio', chip: 'Sinh khối', icon: '<path class="ic-stroke" d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>', title: 'Sinh khối & khí sinh học', sub: 'Năng lượng tuần hoàn', desc: 'Sinh khối có thể được chuyển thành nhiệt, điện hoặc nhiên liệu sinh học. Lợi ích môi trường phụ thuộc nguồn nguyên liệu, thay đổi sử dụng đất, vận chuyển, công nghệ chuyển đổi và kiểm soát phát thải.', pro: ['Có thể điều độ khi nhiên liệu sẵn có', 'Tận dụng một số phụ phẩm phù hợp', 'Có thể kết hợp xử lý chất thải hữu cơ', 'Tận dụng một số hạ tầng hiện hữu'], con: ['Cần quy hoạch nguyên liệu', 'Nếu đốt không kiểm soát sẽ phát thải bụi', 'Hiệu suất chuyển đổi chưa cao'], data: [['154 GW', 'Công suất cuối 2025'], ['3,4 GW', 'Bổ sung năm 2025'], ['Có thể điều độ', 'Khi có nhiên liệu']], svg: `<svg viewBox="0 0 300 180" fill="none"><path d="M70 140 C70 90 95 60 130 60 C130 105 105 140 70 140 Z" fill="var(--surface2)" stroke="var(--acc)" stroke-width="2.4"/><path d="M70 140 C85 115 100 95 122 75" stroke="var(--acc)" stroke-width="1.6"/><path class="s-flow" d="M135 90 H185" stroke="var(--acc)" stroke-width="2"/><rect x="185" y="65" width="46" height="50" rx="9" stroke="var(--amb)" stroke-width="2.4" fill="var(--surface2)"/><path d="M193 82h30M193 92h30M193 102h22" stroke="var(--amb)" stroke-width="2"/><path class="s-flow" d="M231 90 H262" stroke="var(--acc)" stroke-width="2"/><circle cx="272" cy="90" r="10" stroke="var(--sky)" stroke-width="2"/></svg>` },
         { id: 'geo', chip: 'Địa nhiệt', icon: '<path class="ic-stroke" d="M12 2c0 6-4 10-4 14a4 4 0 0 0 8 0c0-4-4-8-4-14z"/>', title: 'Địa nhiệt', sub: 'Nhiệt từ lòng đất', desc: 'Nhà máy địa nhiệt khai thác nhiệt trong lòng đất; tùy nhiệt độ và trạng thái lưu chất, hệ thống có thể dùng chu trình hơi khô, flash hoặc chu trình nhị phân. Địa nhiệt có khả năng vận hành với hệ số công suất cao tại mỏ phù hợp, nhưng không có một mức 90% áp dụng cho mọi nhà máy.', pro: ['Có thể vận hành ổn định tại mỏ phù hợp', 'Không phụ thuộc trực tiếp vào nắng và gió', 'Có thể cung cấp điện nền', 'EGS là hướng mở rộng tài nguyên nhưng còn thách thức kỹ thuật'], con: ['Chỉ kinh tế ở vùng địa chất phù hợp', 'Chi phí khoan thăm dò ban đầu cao', 'Rủi ro vi địa chấn'], data: [['16 GW', 'Công suất cuối 2025'], ['0,3 GW', 'Bổ sung năm 2025'], ['Theo mỏ', 'Điều kiện địa chất']], svg: `<svg viewBox="0 0 300 180" fill="none"><path d="M30 150 H270" stroke="var(--faint)" stroke-width="3"/><path d="M55 150 c10-26 30-26 40 0" stroke="var(--amb)" stroke-width="2.4"/><path d="M120 150 c8-20 24-20 32 0" stroke="var(--amb)" stroke-width="2.4" opacity=".8"/><path class="s-flow" d="M150 148 V80" stroke="var(--sky)" stroke-width="3"/><g style="animation:sp-spin 3.4s linear infinite;transform-origin:150px 58px"><circle cx="150" cy="58" r="20" stroke="var(--acc)" stroke-width="3" fill="var(--surface2)"/><path d="M150 38v40M130 58h40" stroke="var(--acc)" stroke-width="2"/></g><path class="s-flow" d="M170 52 H226" stroke="var(--acc)" stroke-width="2"/><rect x="226" y="36" width="28" height="32" rx="7" stroke="var(--sky)" stroke-width="2" fill="var(--surface2)"/></svg>` },
@@ -18910,7 +18905,7 @@ html[data-theme="light"] .cosmic-passby::before {
 
     const GLOSSARY = [
         { t: 'kWh — kilowatt-giờ', d: 'Đơn vị "đếm" trên hóa đơn tiền điện: dùng thiết bị công suất 1 kW trong 1 giờ thì hết 1 kWh. Ấm siêu tốc (2 kW) đun nửa giờ cũng tốn 1 kWh.' },
-        { t: 'kWp — kilowatt đỉnh', d: 'Công suất tối đa của hệ điện mặt trời trong điều kiện chuẩn. Hệ 5 kWp ở miền Nam thực tế phát ~20–22 kWh mỗi ngày nắng tốt.' },
+        { t: 'kWp — kilowatt đỉnh', d: 'Công suất danh định DC của mảng PV tại điều kiện thử nghiệm chuẩn (STC), không phải sản lượng điện. Sản lượng ngày của hệ 5 kWp phụ thuộc bức xạ theo mùa, hướng/nghiêng, nhiệt độ, bóng che, inverter và tổn hao; phải dùng dữ liệu địa điểm để ước tính.' },
         { t: 'LCOE — chi phí điện quy dẫn', d: 'Giá trị hiện tại của tổng chi phí vòng đời chia cho giá trị hiện tại của điện năng giao trong cùng ranh giới tính toán. LCOE hữu ích để so sánh có điều kiện, nhưng không tự phản ánh đầy đủ thời điểm phát điện, chi phí lưới, lưu trữ hay giá trị hệ thống.' },
         { t: 'Net Zero — phát thải ròng bằng 0', d: 'Lượng khí nhà kính thải ra được cân bằng đúng bằng lượng lấy lại. Việt Nam cam kết đạt mốc này năm 2050.' },
         { t: 'BESS — pin lưu trữ lưới điện', d: 'Hệ pin lớn "cất" điện thừa lúc trưa nắng và "trả" lại vào giờ cao điểm tối — chìa khóa để lưới vận hành bằng năng lượng tái tạo.' },
@@ -18955,7 +18950,7 @@ html[data-theme="light"] .cosmic-passby::before {
         { t: 'DRI — Direct Reduced Iron', d: 'Sắt hoàn nguyên trực tiếp: dùng khí H₂ khử quặng Fe₂O₃ thành Fe rắn ở ~800–900°C, thay vì luyện trong lò cao bằng than.' },
         { t: 'Green steel — thép phát thải thấp', d: 'Thép có cường độ phát thải thấp nhờ phối hợp quặng, hoàn nguyên trực tiếp, hydrogen, điện ít carbon, tái chế thép và tối ưu lò. Mức giảm phát thải phụ thuộc tuyến công nghệ, nguồn hydrogen/điện và ranh giới vòng đời; không có tỷ lệ giảm cố định cho mọi nhà máy.' },
         { t: 'Grey/Blue/Brown/Green hydrogen', d: 'Các màu là thuật ngữ mô tả tuyến sản xuất. Xám thường từ khí tự nhiên không thu giữ carbon; nâu thường từ than; lam thường gắn với thu giữ carbon; xanh thường gắn với điện tái tạo dùng cho điện phân. Cần kiểm tra tiêu chí chứng nhận và phát thải vòng đời; không tuyến nào tự động bằng 0 phát thải.' },
-        { t: 'Ammonia — amoniac (NH₃)', d: 'Khí có thể làm nhiên liệu tàu biển, hoặc chất mang hydro (17,6% H₂ theo khối lượng). Dễ hóa lỏng ở -33°C.' },
+        { t: 'Ammonia — amoniac (NH₃)', d: 'Hợp chất chứa khoảng 17,6% hydrogen theo khối lượng, có thể dùng làm nguyên liệu phân bón hoặc chất mang hydrogen. Ammonia có thể hóa lỏng ở khoảng −33°C tại áp suất khí quyển hoặc ở nhiệt độ cao hơn khi tăng áp; chất này độc và cần quy trình công nghiệp chuyên dụng.' },
         { t: 'Methanol — methanol xanh (CH₃OH)', d: 'Nhiên liệu lỏng tổng hợp từ CO₂ + H₂ xanh. Dễ lưu trữ ở nhiệt độ thường. Nhiên liệu tiềm năng cho tàu biển.' },
         { t: 'Fuel cell — pin nhiên liệu', d: 'Thiết bị điện hóa chuyển năng lượng hóa học của nhiên liệu và chất oxy hóa thành điện, nhiệt và sản phẩm phản ứng; PEMFC dùng hydrogen và oxygen tạo nước. Hiệu suất phụ thuộc công nghệ, tải và việc tận dụng nhiệt; pin nhiên liệu cần cấp nhiên liệu liên tục và khác pin sạc.' },
         { t: 'SMR — Small Modular Reactor', d: 'Lò phản ứng hạt nhân module nhỏ; định nghĩa thường dùng của IAEA lấy mức công suất điện đến khoảng 300 MWe cho mỗi module, nhưng thiết kế và cách phân loại có thể khác. Sản xuất module, chi phí, thời gian xây dựng, cấp phép và khả năng thương mại còn phụ thuộc dự án; không mặc định xây nhanh hoặc rẻ hơn.' },
@@ -18967,13 +18962,13 @@ html[data-theme="light"] .cosmic-passby::before {
         { t: 'AI electricity demand — nhu cầu điện của AI', d: 'Trung tâm dữ liệu và hạ tầng AI có thể làm tăng nhu cầu điện tại một số khu vực. Mức tiêu thụ phụ thuộc quy mô, hiệu suất máy chủ, hệ thống làm mát, mức sử dụng và nguồn điện; đây là một trong nhiều yếu tố ảnh hưởng quy hoạch nguồn, không phải động lực duy nhất của điện hạt nhân.' },
         { t: 'Curtailment — cắt giảm công suất', d: 'Cắt giảm một phần công suất nguồn phát khả dụng khi hệ thống không thể tiếp nhận toàn bộ điện năng. Nguyên nhân có thể gồm tắc nghẽn truyền tải, giới hạn ổn định hoặc vận hành, dự phòng, mất cân bằng cung – cầu và thiếu nguồn linh hoạt. Không tồn tại một ngưỡng tỷ trọng tái tạo duy nhất khiến mọi lưới điện bắt đầu phải cắt giảm; cần đánh giá theo từng hệ thống và từng thời điểm.' },
         { t: 'Interconnection — đấu nối lưới', d: 'Quá trình đánh giá kỹ thuật, thỏa thuận và kết nối nguồn/tải vào lưới điện. Thời gian phụ thuộc quy định, nghiên cứu lưới, năng lực truyền tải, cấp phép và dự án cụ thể; không có một mốc 2–5 năm áp dụng cho mọi trường hợp.' },
-        { t: 'Capacity market — thị trường công suất', d: 'Cơ chế trả tiền cho nhà máy điện chỉ để "đứng đó chờ" phát khi cần, không nhất thiết phải phát điện. Giúp đảm bảo an ninh lưới.' },
+        { t: 'Capacity market — thị trường công suất', d: 'Cơ chế thiết kế thị trường nhằm trả giá trị cho khả năng sẵn sàng cung cấp công suất trong tương lai, tùy quy tắc từng thị trường. Không phải mọi hệ thống điện đều có thị trường công suất; đây không đơn giản là khoản trả cho nhà máy “đứng chờ”.' },
         { t: 'Merit order — thứ tự huy động', d: 'Nguyên tắc lưới điện huy động nguồn điện rẻ nhất trước. Điện mặt trời và gió thường có chi phí biên ngắn hạn thấp vì không cần nhiên liệu; tuy nhiên thứ tự huy động thực tế còn phụ thuộc điều kiện lưới, giới hạn kỹ thuật, dự phòng, hợp đồng và quy tắc thị trường.' },
         { t: 'Renewable curtailment', d: 'Cắt giảm công suất phát khả dụng khi hệ thống không thể tiếp nhận toàn bộ sản lượng, chẳng hạn do giới hạn truyền tải, ổn định hệ thống hoặc mất cân bằng cung – cầu. Không có một ngưỡng tỷ trọng tái tạo cố định áp dụng cho mọi lưới điện; mức cắt giảm phụ thuộc hạ tầng, phụ tải, lưu trữ, điều độ và độ linh hoạt của từng hệ thống.' },
         { t: 'Hydrogen blending — pha trộn hydro', d: 'Pha một tỷ lệ hydro vào mạng khí tự nhiên. Giới hạn pha trộn phải tính theo phần trăm thể tích và được đánh giá riêng cho vật liệu đường ống, máy nén, thiết bị đo, van, thiết bị sử dụng cuối và quy chuẩn an toàn. Một số mạng có thể tiếp nhận tỷ lệ thấp với điều chỉnh hạn chế, nhưng không thể kết luận mọi hạ tầng hiện hữu đều tương thích hoặc không cần nâng cấp. Mức giảm phát thải phụ thuộc nguồn hydro, tỷ lệ pha theo năng lượng và rò rỉ trong toàn chuỗi.' },
         { t: 'CCS — Carbon Capture and Storage', d: 'Thu giữ CO₂ từ một dòng khí công nghiệp hoặc quá trình phát thải, sau đó vận chuyển và lưu trữ lâu dài trong cấu trúc địa chất phù hợp. Tỷ lệ thu giữ không đồng nghĩa với tỷ lệ giảm phát thải toàn vòng đời: cần tính năng lượng bổ sung, phát thải còn lại, vận chuyển, tính toàn vẹn của kho chứa, giám sát và trách nhiệm dài hạn. Hiệu quả và chi phí phụ thuộc nguồn phát thải cùng thiết kế dự án.' },
         { t: 'CCUS — Carbon Capture, Utilization and Storage', d: 'Thu giữ CO₂ để sử dụng làm nguyên liệu hoặc lưu trữ. Việc sử dụng CO₂ không tự động tạo ra giảm phát thải lâu dài: cần xét nguồn CO₂, năng lượng của quá trình, sản phẩm thay thế, thời gian CO₂ được giữ lại và khả năng phát thải trở lại. Giá trị kinh tế và lợi ích khí hậu phải được đánh giá theo từng chuỗi công nghệ.' },
-        { t: 'Heat pump — bơm nhiệt', d: 'Thiết bị sưởi/làm lạnh hiệu suất 300-500% (COP 3-5). Hiệu quả hơn lò sưởi điện trực tiếp gấp 3-4 lần. Chìa khóa của electrification.' },
+        { t: 'Heat pump — bơm nhiệt', d: 'Thiết bị chuyển nhiệt giữa hai môi trường. COP là tỷ số nhiệt hữu ích truyền đi trên điện năng đầu vào, không phải hiệu suất nhiệt động học theo cách hiểu thông thường; COP thực tế thay đổi theo nhiệt độ nguồn, nhiệt độ cấp, tải và thiết kế. So sánh phải nêu điều kiện đo.' },
         { t: 'Electrification — điện khí hóa', d: 'Quá trình chuyển đổi các ngành dùng nhiên liệu hóa thạch sang dùng điện. Ví dụ: xe xăng → xe điện, lò gas → bơm nhiệt.' },
         { t: 'Green premium — phụ phí xanh', d: 'Chênh lệch giá giữa sản phẩm xanh (thép xanh, xi măng xanh) so với sản phẩm thường. Hiện 20-100%, đang giảm dần.' },
         { t: 'Stranded asset — tài sản mắc kẹt', d: 'Nhà máy điện than/dầu sẽ phải đóng cửa trước khi hết tuổi thọ vì chính sách khí hậu. Rủi ro tài chính lớn cho nhà đầu tư.' },
@@ -19180,16 +19175,43 @@ html[data-theme="light"] .cosmic-passby::before {
     }
     const FOUNDATION_SOURCE_LINKS = {
       m1: [{label:'U.S. Energy Information Administration — Energy Explained',url:'https://www.eia.gov/energyexplained/'}],
-      m2: [{label:'U.S. Department of Energy — Solar Photovoltaic Technology Basics',url:'https://www.energy.gov/eere/solar/solar-photovoltaic-technology-basics'},{label:'NREL — PVWatts Calculator',url:'https://pvwatts.nrel.gov/'}],
-      m3: [{label:'U.S. Department of Energy — Wind Energy Basics',url:'https://www.energy.gov/eere/wind/wind-energy-basics'},{label:'NREL — Wind Energy Publications',url:'https://www.nrel.gov/wind/techno-economic.html'}],
+      m2: [{label:'U.S. Department of Energy — Solar Photovoltaic Technology Basics',url:'https://www.energy.gov/eere/solar/solar-photovoltaic-technology-basics'},{label:'U.S. Department of Energy — Solar PV Performance and Efficiency Basics',url:'https://www.energy.gov/cmei/systems/solar-photovoltaic-performance-and-efficiency-basics'},{label:'NLR — PVWatts Calculator',url:'https://pvwatts.nlr.gov/pvwatts.php'}],
+      m3: [{label:'U.S. Department of Energy — Wind Energy Basics',url:'https://www.energy.gov/eere/wind/wind-energy-basics'},{label:'U.S. Department of Energy — Small Wind Guidebook (công thức công suất và giới hạn Betz)',url:'https://www.energy.gov/cmei/systems/windexchange/small-wind-guidebook'},{label:'NLR — Wind Energy Economic Analysis',url:'https://www.nlr.gov/wind/economic-analysis'}],
       m4: [{label:'U.S. Department of Energy — Energy Storage',url:'https://www.energy.gov/oe/energy-storage'},{label:'PyBaMM — battery modelling repository',url:'https://github.com/pybamm-team/PyBaMM'}],
-      m5: [{label:'U.S. Department of Energy — Hydrogen and Fuel Cell Technologies Office',url:'https://www.energy.gov/eere/fuelcells/hydrogen-and-fuel-cell-technologies-office'},{label:'U.S. Department of Energy — Fuel Cell Basics',url:'https://www.energy.gov/eere/fuelcells/fuel-cell-basics'}],
+      m5: [{label:'U.S. Department of Energy — Hydrogen and Fuel Cell Technologies Office',url:'https://www.energy.gov/eere/fuelcells/hydrogen-and-fuel-cell-technologies-office'},{label:'U.S. Department of Energy — Hydrogen: A Flexible Energy Carrier',url:'https://www.energy.gov/cmei/fuels/articles/hydrogen-flexible-energy-carrier'},{label:'U.S. Department of Energy — Fuel Cell Basics',url:'https://www.energy.gov/eere/fuelcells/fuel-cell-basics'}],
       m6: [{label:'U.S. Department of Energy — Grid Deployment Office',url:'https://www.energy.gov/gdo/grid-deployment-office'},{label:'EIA — Electricity explained',url:'https://www.eia.gov/energyexplained/electricity/'}]
     };
     function foundationCourseSourcesMarkup(moduleId) {
         const links = FOUNDATION_SOURCE_LINKS[moduleId] || [];
         if (!links.length) return '';
         return `<section class="foundation-sources"><h4>Nguồn kiểm chứng và đọc thêm</h4><ul>${links.map(item => `<li><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.label)} ↗</a></li>`).join('')}</ul><p>Đây là nguồn tham khảo; không được hiểu là giấy phép sao chép toàn bộ nội dung, hình hoặc biểu đồ trên trang nguồn.</p></section>`;
+    }
+
+    const FOUNDATION_ACCURACY_NOTES = {
+      m1: { title: 'Đọc đúng các khái niệm nền tảng', body: `Điện năng là dạng năng lượng thứ cấp/chất mang năng lượng; không gọi điện là nguồn tái tạo hay không tái tạo một cách độc lập. Tác động phát thải của điện phụ thuộc tổ hợp nguồn phát, thời điểm và ranh giới vòng đời. Nhiệt có thể là nguồn nhiệt sơ cấp hoặc được tạo ra trong quá trình chuyển đổi.
+
+Cần phân biệt công suất (W, kW) với điện năng (Wh, kWh), và hiệu suất với định luật bảo toàn: năng lượng toàn hệ không mất đi, nhưng phần năng lượng hữu ích có thể nhỏ hơn đầu vào. Tỷ trọng năng lượng sơ cấp toàn cầu phải gắn với năm, bộ dữ liệu và phương pháp quy đổi.` },
+      m2: { title: 'Điện mặt trời: số liệu phải gắn với điều kiện đo', body: `STC của module PV thường gồm bức xạ 1.000 W/m², nhiệt độ cell 25°C và phổ AM1.5. Công suất Wp là kết quả thử chuẩn, không phải công suất chắc chắn ngoài trời. Nhiệt độ cell cao thường làm giảm điện áp và Pmax; hãy dùng hệ số nhiệt độ trên datasheet đúng mã module.
+
+MPPT chỉ bám điểm công suất cực đại khả dụng trong điều kiện bức xạ, nhiệt độ và cấu hình đang có; không bảo đảm công suất nhãn, đặc biệt khi bóng che, clipping hoặc có nhiều cực đại cục bộ. Sản lượng cần dữ liệu khí tượng, hướng/nghiêng, bóng che và mô hình tổn hao.` },
+      m3: { title: 'Điện gió: phân biệt năng lượng luồng gió và sản lượng turbine', body: `P = ½ρAv³ là công suất động năng của gió qua diện tích quét rotor. Công suất rotor còn nhân hệ số Cₚ; giới hạn Betz 16/27 ≈ 59,3% chỉ là giới hạn lý tưởng, không phải hiệu suất của turbine hoặc nhà máy. Công suất điện thực còn phụ thuộc máy phát, bộ biến đổi, đường cong turbine và giới hạn vận hành.
+
+Tốc độ gió tăng gấp đôi làm công suất gió lý thuyết tăng tám lần khi giữ các yếu tố khác không đổi, nhưng turbine có vùng cut-in, rated và cut-out. Dự báo sản lượng phải dùng phân bố gió và đường cong công suất chứ không lấy công suất định mức nhân 8.760 giờ.` },
+      m4: { title: 'Pin và lưu trữ: không có một thông số đúng cho mọi cell', body: `Ah là điện lượng, kWh là năng lượng; phải biết điện áp trung bình và cấu hình trước khi chuyển đổi. Công suất (kW/MW) và dung lượng năng lượng (kWh/MWh) là hai thông số khác nhau. Hiệu suất vòng, tuổi thọ chu kỳ và mật độ năng lượng cần ghi rõ cell hay pack, DoD, C-rate, nhiệt độ và tiêu chí cuối đời.
+
+LFP thường có độ ổn định nhiệt thuận lợi hơn một số hóa học giàu nickel nhưng không miễn nhiễm rủi ro cháy/sự cố. BMS giám sát cell và giới hạn vận hành; EMS/điều khiển nhà máy mới thực hiện điều phối cấp hệ thống. Mọi thực hành với pin công suất lớn chỉ dùng mô phỏng hoặc phòng chuyên dụng có người phụ trách.` },
+      m5: { title: 'Hydrogen là chất mang năng lượng; cần đánh giá toàn chuỗi', body: `Hydrogen thường phải được sản xuất từ nguồn khác nên là chất mang năng lượng, không phải nguồn năng lượng sơ cấp phổ biến. Điện phân tiêu thụ điện; phát thải vòng đời phụ thuộc điện đầu vào, hiệu suất hệ thống, nén/làm lạnh, vận chuyển và rò rỉ. “Màu” hydrogen là nhãn mô tả tuyến sản xuất, không tự chứng minh cường độ phát thải.
+
+Trong PEM fuel cell dùng H₂, phản ứng tại điểm sử dụng tạo điện, nhiệt và nước; không có nghĩa toàn bộ chuỗi cung ứng không phát thải. Nội dung về bình chứa, áp suất, khí dễ cháy và hóa chất chỉ học qua nguyên lý/mô phỏng, không thử nghiệm thiết bị thật.` },
+      m6: { title: 'Lưới điện thông minh cần phối hợp nhiều lớp điều khiển', body: `BMS giám sát tình trạng và giới hạn an toàn của pin; EMS, bộ điều khiển nhà máy hoặc đơn vị điều độ quyết định lịch sạc/xả theo mục tiêu và quy tắc hệ thống. Không được dùng hai tên gọi thay thế cho nhau.
+
+Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng điều khiển và quy mô lưới; không có tỷ lệ cố định giữa MW mất đi và Hz giảm. VPP có thể tổng hợp nguồn phân tán theo kiến trúc tập trung hoặc phân cấp; quyền điều khiển và dịch vụ cung cấp phụ thuộc thiết bị, hợp đồng, truyền thông và quy định.` }
+    };
+    function foundationCourseAccuracyMarkup(moduleId) {
+      const note = FOUNDATION_ACCURACY_NOTES[moduleId];
+      if (!note) return '';
+      const paragraphs = note.body.split(/\n\s*\n/).map(part => `<p>${esc(part)}</p>`).join('');
+      return `<aside class="foundation-accuracy-note" aria-label="Điểm kiểm chứng kiến thức"><div class="foundation-accuracy-note__top"><span aria-hidden="true">✓</span><small>ĐIỂM CẦN HIỂU ĐÚNG · ${moduleId.toUpperCase()}</small></div><h4>${esc(note.title)}</h4>${paragraphs}<p class="foundation-accuracy-note__disclaimer">Các hệ số, giá trị minh họa và quy định có thể thay đổi theo công nghệ, địa điểm, thời gian và tài liệu gốc. Khi làm bài định lượng, hãy ghi giả định, đơn vị, ranh giới tính và ngày của dữ liệu.</p></aside>`;
     }
 
     function openLessonModal(lesson) {
@@ -19337,6 +19359,7 @@ html[data-theme="light"] .cosmic-passby::before {
         let saveTimer = 0;
         let transitionBusy = false;
         let fallbackTimer = 0;
+        let unlockTimer = 0;
 
         const applyTheme = (theme, animateFallback = false) => {
             const next = theme === 'light' ? 'light' : 'dark';
@@ -19361,6 +19384,8 @@ html[data-theme="light"] .cosmic-passby::before {
         applyTheme(saved === 'light' || saved === 'dark' ? saved : root.dataset.theme || 'dark');
 
         const finishTransition = () => {
+            window.clearTimeout(unlockTimer);
+            unlockTimer = 0;
             root.style.removeProperty('--theme-origin-x');
             root.style.removeProperty('--theme-origin-y');
             root.style.removeProperty('--theme-reveal-radius');
@@ -19380,6 +19405,9 @@ html[data-theme="light"] .cosmic-passby::before {
             }
 
             transitionBusy = true;
+            window.clearTimeout(unlockTimer);
+            /* Safety release: some embedded/older browsers may not settle View Transitions promptly. */
+            unlockTimer = window.setTimeout(finishTransition, 1050);
             const rect = button.getBoundingClientRect();
             const x = rect.left + rect.width / 2;
             const y = rect.top + rect.height / 2;
@@ -19674,27 +19702,6 @@ html[data-theme="light"] .cosmic-passby::before {
                 node.parentNode.replaceChild(fragment, node);
             });
         });
-    }
-    function initLoader() {
-        const ld = $('#loader'), num = $('#ldNum'), bar = $('#ldBar');
-        if (!ld || !num || !bar)
-            return;
-        const firstVisit = !safeGet('solara-visited');
-        safeSet('solara-visited', '1');
-        if (!firstVisit || reduced) {
-            ld.classList.add('done');
-            return;
-        }
-        let p = 0;
-        const iv = setInterval(() => {
-            p = Math.min(100, p + Math.random() * 18 + 5);
-            num.textContent = Math.floor(p) + '%';
-            bar.style.width = p + '%';
-            if (p >= 100) {
-                clearInterval(iv);
-                setTimeout(() => ld.classList.add('done'), 300);
-            }
-        }, 100);
     }
 
     const SOLARA_LEARNING_KEY = SOLARA_STATE_KEY;
@@ -20118,8 +20125,9 @@ html[data-theme="light"] .cosmic-passby::before {
                 <div class="course-scroll-flow__intro"><span><b>01</b><small>HỌC TỪNG BÀI</small></span><p>Mỗi bài bao gồm kiến thức trọng tâm, hoạt động thực hành an toàn, mục tiêu đầu ra và câu hỏi tự phản hồi.</p></div>
                 ${lessonMarkup}
               </div>
-              <p class="course-modal-footnote course-modal-footnote--wide">Tiến độ và danh sách bài đã lưu chỉ được lưu cục bộ trên trình duyệt này. Các chủ đề liên quan đến điện áp cao, pin công suất lớn và hydro chỉ nên học bằng mô phỏng hoặc trong phòng chuyên dụng có người hướng dẫn.</p>
+              <p class="course-modal-footnote course-modal-footnote--wide">Tiến độ và danh sách bài đã lưu chỉ được lưu cục bộ trên trình duyệt này. Các chủ đề liên quan đến điện áp cao, pin công suất lớn và hydro chỉ nên học bằng mô phỏng hoặc trong phòng chuyên dụng có người hướng dẫn. Số liệu minh họa phải đi kèm điều kiện, đơn vị và giả định; liên kết nguồn phục vụ kiểm chứng chứ không trao quyền sao chép nội dung, hình ảnh hay dữ liệu.</p>
               ${foundationCourseSourcesMarkup(module.id)}
+              ${foundationCourseAccuracyMarkup(module.id)}
             </main>
           </div>`;
 
@@ -20389,8 +20397,8 @@ html[data-theme="light"] .cosmic-passby::before {
                     color: palette[index % palette.length],
                     phase: Math.random() * Math.PI * 2,
                     drift: .35 + Math.random() * .65,
-                    vx: (Math.random() - .5) * (mobileLayout ? .11 : .18),
-                    vy: (Math.random() - .5) * (mobileLayout ? .08 : .14),
+                    vx: (Math.random() - .5) * (mobileLayout ? .09 : .15),
+                    vy: (Math.random() - .5) * (mobileLayout ? .07 : .12),
                     alpha: .30 + Math.random() * .20
                 });
             }
@@ -20412,10 +20420,10 @@ html[data-theme="light"] .cosmic-passby::before {
         function drawEnergyIcon(sprite, time) {
                                                                                
             ctx.save();
-            ctx.translate(sprite.x, sprite.y);
+            ctx.translate(sprite.x + (reduced ? 0 : Math.sin(time * .0055 * sprite.drift + sprite.phase) * 1.6), sprite.y + (reduced ? 0 : Math.cos(time * .0042 * sprite.drift + sprite.phase) * 1.2));
             ctx.rotate(0);
             ctx.scale(sprite.size / 22, sprite.size / 22);
-            ctx.globalAlpha = sprite.alpha;
+            ctx.globalAlpha = sprite.alpha * (reduced ? 1 : .86 + (Math.sin(time * .008 * sprite.drift + sprite.phase) + 1) * .07);
             ctx.strokeStyle = sprite.color;
             ctx.fillStyle = sprite.color;
             ctx.lineWidth = 1.45;
@@ -20717,10 +20725,10 @@ html[data-theme="light"] .cosmic-passby::before {
             ctx.clearRect(0, 0, width, height);
         }
         function addWave(point, speed, time) {
-            if (time - lastWaveAt < 92) return;
+            if (time - lastWaveAt < 128) return;
             lastWaveAt = time;
             waves.push({ x: point.x, y: point.y, born: time, strength: Math.min(1, speed / .75), angle: Math.atan2(point.vy, point.vx) });
-            while (waves.length > 6) waves.shift();
+            while (waves.length > 4) waves.shift();
         }
         function onMove(event) {
             if (reduced || document.hidden || window.innerWidth <= 760 || (event.pointerType && event.pointerType !== 'mouse' && event.pointerType !== 'pen')) return;
@@ -20737,7 +20745,7 @@ html[data-theme="light"] .cosmic-passby::before {
             }
             lastPoint = point;
             points.push(point);
-            while (points.length > 16) points.shift();
+            while (points.length > 13) points.shift();
             queueFrame();
         }
         function drawRibbon(side, time, glow) {
@@ -20749,8 +20757,8 @@ html[data-theme="light"] .cosmic-passby::before {
                 const dx = next.x - previous.x, dy = next.y - previous.y;
                 const length = Math.max(1, Math.hypot(dx, dy));
                 const normalX = -dy / length, normalY = dx / length;
-                const age = Math.max(0, Math.min(1, 1 - (time - points[i].t) / 680));
-                const spread = side * (4 + (1 - age) * 15 + Math.sin(i * .9 + time * .012) * 2.2);
+                const age = Math.max(0, Math.min(1, 1 - (time - points[i].t) / 760));
+                const spread = side * (6 + (1 - age) * 23 + Math.sin(i * .72 + time * .009) * 2.8);
                 path.push({ x: points[i].x + normalX * spread, y: points[i].y + normalY * spread, age });
             }
             if (path.length < 3) return;
@@ -20770,10 +20778,10 @@ html[data-theme="light"] .cosmic-passby::before {
             gradient.addColorStop(1, 'rgba(225,255,250,.96)');
             ctx.strokeStyle = gradient;
             ctx.lineCap = 'round'; ctx.lineJoin = 'round';
-            ctx.globalAlpha = glow ? .4 : .94;
-            ctx.lineWidth = glow ? 17 : 2.25;
-            ctx.shadowColor = side < 0 ? 'rgba(74,213,255,.9)' : 'rgba(81,255,208,.85)';
-            ctx.shadowBlur = glow ? 12 : 5;
+            ctx.globalAlpha = glow ? .52 : .98;
+            ctx.lineWidth = glow ? 21 : 2.8;
+            ctx.shadowColor = side < 0 ? 'rgba(74,225,255,.98)' : 'rgba(81,255,208,.95)';
+            ctx.shadowBlur = glow ? 17 : 8;
             ctx.stroke();
             ctx.restore();
         }
@@ -20781,22 +20789,22 @@ html[data-theme="light"] .cosmic-passby::before {
             running = false; raf = 0;
             if (reduced || document.hidden || window.innerWidth <= 760) { stop(); return; }
             ctx.clearRect(0, 0, width, height);
-            points = points.filter(point => time - point.t < 680);
+            points = points.filter(point => time - point.t < 760);
             drawRibbon(-1, time, true);
             drawRibbon(1, time, true);
             drawRibbon(-1, time, false);
             drawRibbon(1, time, false);
-            waves = waves.filter(wave => time - wave.born < 1180);
+            waves = waves.filter(wave => time - wave.born < 1420);
             waves.forEach(wave => {
-                const age = (time - wave.born) / 1180;
-                const radius = 7 + age * (44 + wave.strength * 30);
+                const age = (time - wave.born) / 1420;
+                const radius = 10 + age * (56 + wave.strength * 42);
                 ctx.save();
                 ctx.translate(wave.x, wave.y);
                 ctx.rotate(wave.angle);
-                ctx.globalAlpha = (1 - age) * .68;
-                ctx.strokeStyle = age < .55 ? '#8cefff' : '#8affd8';
-                ctx.lineWidth = Math.max(.7, 1.8 * (1 - age));
-                ctx.shadowColor = 'rgba(93,226,255,.75)'; ctx.shadowBlur = 6;
+                ctx.globalAlpha = (1 - age) * .82;
+                ctx.strokeStyle = age < .55 ? '#a7f5ff' : '#9affdf';
+                ctx.lineWidth = Math.max(.85, 2.35 * (1 - age));
+                ctx.shadowColor = 'rgba(93,226,255,.92)'; ctx.shadowBlur = 10;
                 ctx.beginPath();
                 ctx.ellipse(0, 0, radius * 1.45, radius * .58, 0, -.18, Math.PI * 1.82);
                 ctx.stroke();
@@ -20981,7 +20989,6 @@ html[data-theme="light"] .cosmic-passby::before {
             ['renderFaq', renderFaq],
             ['renderTicker', renderTicker],
             ['splitText', splitText],
-            ['initLoader', initLoader],
             ['initCanvas', initCanvas],
             ['initWaterWake', initWaterWake],
             ['initCursor', initCursor],
@@ -21003,8 +21010,7 @@ html[data-theme="light"] .cosmic-passby::before {
                 console.error(`[SOLARA] ${name} không khởi tạo được:`, error);
             }
         }
-        if (failures) $('#loader')?.classList.add('done');
-        console.log('%c[SOLARA V16.5] Website initialized', 'color:#45e0a2;font-weight:700;font-size:14px');
+        console.log('%c[SOLARA V16.8] Website initialized', 'color:#45e0a2;font-weight:700;font-size:14px');
         console.log(`[SOLARA] 68 bài học · 12 bài đọc · 70 thuật ngữ · 12 FAQ · hoạt động tự ôn tập trong bài học`);
     }
     if (document.readyState === 'loading')
@@ -21134,7 +21140,7 @@ html[data-theme="light"] .cosmic-passby::before {
       },
       {
         "title": "Module 5 · Ứng dụng & tiềm năng",
-        "detail": "Ứng dụng & tiềm năng: Theo IRENA (Renewable Capacity Statistics 2026), cuối năm 2025 thế giới có khoảng 16 GW công suất điện địa nhiệt và 2.397 TW công suất điện mặt trời trong cùng bộ thống kê. Điện mặt trời có quy mô lắp đặt lớn hơn nhiều; địa nhiệt có ưu thế khả năng phát điện ổn định tại các mỏ phù hợp. Hệ số công suất thực tế phụ thuộc công nghệ, nguồn nhiệt, quản lý mỏ và lịch bảo trì. Đây là công suất lắp đặt, không phải sản lượng điện; khi dùng ví dụ quốc gia cần ghi rõ năm và nguồn dữ liệu.",
+        "detail": "Ứng dụng & tiềm năng: Theo IRENA (Renewable Capacity Statistics 2026), cuối năm 2025 thế giới có 15,674 GW (15.674 MW) công suất điện địa nhiệt và khoảng 2,383 TW (2.383.162 MW) công suất điện mặt trời theo bảng IRENA 2026 trong cùng bộ thống kê. Điện mặt trời có quy mô lắp đặt lớn hơn nhiều; địa nhiệt có ưu thế khả năng phát điện ổn định tại các mỏ phù hợp. Hệ số công suất thực tế phụ thuộc công nghệ, nguồn nhiệt, quản lý mỏ và lịch bảo trì. Đây là công suất lắp đặt, không phải sản lượng điện; khi dùng ví dụ quốc gia cần ghi rõ năm và nguồn dữ liệu.",
         "time": "4h"
       },
       {
@@ -21641,7 +21647,7 @@ html[data-theme="light"] .cosmic-passby::before {
       },
       {
         "title": "Hệ gió nhỏ",
-        "detail": "Mô hình công suất gió lý tưởng trước tổn hao có dạng P = ½ρAv³; công suất điện thực tế còn phụ thuộc hệ số công suất khí động, đường cong công suất turbine, giới hạn vận hành, tổn hao và phân bố tốc độ gió. Không thể dùng một tốc độ gió trung bình duy nhất để dự báo chính xác sản lượng năm. Kết quả: Báo cáo tính toán hệ số công suất dựa theo thông số địa phương (tốc độ gió trung bình). Đọc: Tài liệu NREL về turbine gió nhỏ",
+        "detail": "Mô hình công suất gió lý tưởng trước tổn hao có dạng P = ½ρAv³; công suất điện thực tế còn phụ thuộc hệ số công suất khí động, đường cong công suất turbine, giới hạn vận hành, tổn hao và phân bố tốc độ gió. Không thể dùng một tốc độ gió trung bình duy nhất để dự báo chính xác sản lượng năm. Kết quả: Báo cáo tính toán hệ số công suất dựa theo thông số địa phương (tốc độ gió trung bình). Đọc: Tài liệu NLR về turbine gió nhỏ",
         "time": ""
       },
       {
@@ -21869,7 +21875,7 @@ html[data-theme="light"] .cosmic-passby::before {
     {
       "title": "Thực hành/lab",
       "lines": [
-        "Thử nghiệm mô phỏng điện phân với phần mềm *OpenModelica* hoặc *MATLAB/Simulink* (block sơ đồ PEM electrolyser). Với người học phổ thông, ưu tiên mô phỏng quá trình điện phân bằng phần mềm. Thiết bị điện phân, khí sinh ra, bình chứa và phép thử áp suất chỉ được quan sát trong phòng thí nghiệm chuyên dụng dưới sự giám sát trực tiếp của giáo viên và theo quy trình an toàn. *Công cụ gợi ý:* NREL’s H2A sang giá H₂, *Python-PyPSA* cho lưới + H₂."
+        "Thử nghiệm mô phỏng điện phân với phần mềm *OpenModelica* hoặc *MATLAB/Simulink* (block sơ đồ PEM electrolyser). Với người học phổ thông, ưu tiên mô phỏng quá trình điện phân bằng phần mềm. Thiết bị điện phân, khí sinh ra, bình chứa và phép thử áp suất chỉ được quan sát trong phòng thí nghiệm chuyên dụng dưới sự giám sát trực tiếp của giáo viên và theo quy trình an toàn. *Công cụ gợi ý:* NLR’s H2A sang giá H₂, *Python-PyPSA* cho lưới + H₂."
       ]
     },
     {
@@ -22203,7 +22209,7 @@ html[data-theme="light"] .cosmic-passby::before {
     {
       "title": "Thực hành/lab",
       "lines": [
-        "Dự án nhỏ: triển khai mô hình dự báo PV/Gió bằng Python (scikit-learn). Sử dụng bộ dữ liệu công khai *NREL* hoặc *Open Power System Data* (EU). Triển khai trên *Raspberry Pi* thu thập dữ liệu IoT (ESP32 gửi MQTT)."
+        "Dự án nhỏ: triển khai mô hình dự báo PV/Gió bằng Python (scikit-learn). Sử dụng bộ dữ liệu công khai của *NLR* (trước đây là NREL) hoặc *Open Power System Data* (EU). Triển khai trên *Raspberry Pi* thu thập dữ liệu IoT (ESP32 gửi MQTT)."
       ]
     },
     {
@@ -22298,7 +22304,7 @@ html[data-theme="light"] .cosmic-passby::before {
       "lines": [
         "- **Dự án tính LCOE:** Dùng Excel hoặc Python để tính LCOE cho mô-đun PV hoặc turbine gió dựa trên CAPEX, OPEX, suất phát điện (có sẵn weather data).",
         "- **Mô phỏng thị trường điện đơn giản:** Với Python, mô phỏng thị trường nguồn cung 2 nhà máy (hóa thạch và gió), tính giá cân bằng trong ngày. Sử dụng thư viện PyPSA hoặc code cơ bản.",
-        "- **Bài tập tình huống:** Tính toán NPV/IRR dự án solar farm tại miền Trung. Sử dụng số liệu giá đầu tư từ NREL, giả định chính sách carbon."
+        "- **Bài tập tình huống:** Tính toán NPV/IRR dự án solar farm tại miền Trung. Sử dụng số liệu giá đầu tư từ NLR (trước đây là NREL) khi có dữ liệu phù hợp, ghi rõ năm và phạm vi; các giả định chính sách carbon phải có nguồn và kịch bản."
       ]
     },
     {
@@ -22336,7 +22342,7 @@ html[data-theme="light"] .cosmic-passby::before {
         "- EPA (USA) – khái niệm LCA (môi trường), hữu ích cho so sánh vòng đời.",
         "- Wikipedia *Electricity market* – chỉ dùng để tra cứu ban đầu; nếu trích/adapt văn bản phải tuân thủ giấy phép CC BY-SA và ghi công theo đúng phiên bản.",
         "- Báo cáo ACER (EU) và EIA/AEO để tham khảo; không mặc định toàn bộ báo cáo, hình, bảng hay tài liệu đính kèm thuộc phạm vi công cộng. Kiểm tra điều khoản của đúng tài liệu trước khi tái sử dụng.",
-        "- NREL Open Data: kiểm tra điều khoản của từng bộ dữ liệu và phiên bản cụ thể trước khi dùng lại; trang công khai không tự động cấp quyền tái sử dụng mọi nội dung đi kèm."
+        "- NLR Open Data (trước đây thường gọi là NREL Open Data): kiểm tra điều khoản của từng bộ dữ liệu và phiên bản cụ thể trước khi dùng lại; trang công khai không tự động cấp quyền tái sử dụng mọi nội dung đi kèm."
       ]
     },
     {
@@ -22547,7 +22553,7 @@ html[data-theme="light"] .cosmic-passby::before {
       "title": "Nguồn tham khảo và điều khoản sử dụng",
       "lines": [
         "- Tài liệu hướng dẫn PyPSA (MIT License, Python code sample).",
-        "- NREL *System Advisor Model* (SAM): phần mềm miễn phí; mã nguồn được cấp phép BSD-3-Clause, nhưng dữ liệu và tài liệu đi kèm cần kiểm tra điều khoản riêng.",
+        "- NLR *System Advisor Model* (SAM): phần mềm miễn phí; mã nguồn được cấp phép BSD-3-Clause, nhưng dữ liệu và tài liệu đi kèm cần kiểm tra điều khoản riêng.",
         "- Bài giảng/slide *Renewable Energy Lab* từ các trường đại học (như MIT OpenCourseWare về Renewable Energy).",
         "- Dữ liệu gió/solar dạng EPW từ EnergyPlus hoặc nhà cung cấp khí tượng; kiểm tra nguồn gốc, phiên bản và điều khoản tái sử dụng của đúng tệp dữ liệu.",
         "- GridLAB-D — repository phần mềm và tài liệu chính thức; kiểm tra LICENSE của đúng phiên bản mã nguồn, giấy phép tài liệu và giấy phép phụ thuộc riêng biệt."
@@ -22566,7 +22572,7 @@ html[data-theme="light"] .cosmic-passby::before {
       "lines": [
         "1. *Nguyên lý thiết kế hệ PV off-grid:* Xác định nhu cầu tải điện (kWh/ngày), chọn số tấm pin và inverter dựa trên công suất đỉnh. *Kết quả:* Lập bảng tính công suất và thời gian hoạt động. *Đọc:* Tài liệu hướng dẫn PV có tên tác giả, đơn vị phát hành và điều khoản sử dụng rõ ràng; không tái sử dụng khi chưa xác định giấy phép.",
         "2. *Bố trí và cấu hình:* Xác định hướng nghiêng tối ưu theo vĩ độ; tính tổ hợp série/paralel của tấm pin. *Kết quả:* Bản vẽ sơ đồ kết nối các tấm. *Đọc:* Hướng dẫn kỹ thuật PV (VD: PVlib docs).",
-        "3. *Hệ gió nhỏ:* Mô hình công suất gió lý tưởng trước tổn hao có dạng P = ½ρAv³; công suất điện thực tế còn phụ thuộc hệ số công suất khí động, đường cong công suất turbine, giới hạn vận hành, tổn hao và phân bố tốc độ gió. Không thể dùng một tốc độ gió trung bình duy nhất để dự báo chính xác sản lượng năm. *Kết quả:* Báo cáo tính toán hệ số công suất dựa theo thông số địa phương (tốc độ gió trung bình). *Đọc:* Tài liệu NREL về turbine gió nhỏ.",
+        "3. *Hệ gió nhỏ:* Mô hình công suất gió lý tưởng trước tổn hao có dạng P = ½ρAv³; công suất điện thực tế còn phụ thuộc hệ số công suất khí động, đường cong công suất turbine, giới hạn vận hành, tổn hao và phân bố tốc độ gió. Không thể dùng một tốc độ gió trung bình duy nhất để dự báo chính xác sản lượng năm. *Kết quả:* Báo cáo tính toán hệ số công suất dựa theo thông số địa phương (tốc độ gió trung bình). *Đọc:* Tài liệu NLR về turbine gió nhỏ.",
         "4. *Điện mặt trời & gió kết hợp:* Cân đối sản lượng giữa PV và gió; tối ưu hoá đảm bảo không thiếu điện vào ban ngày/đêm. *Kết quả:* Bảng dự báo công suất hệ thống theo giờ của ngày điển hình.",
         "5. *Chi phí đầu tư và LCOE:* Tính chi phí vật liệu (pin, turbine, inverter, khung). Tính LCOE sơ bộ dựa trên công suất trung bình. *Kết quả:* Báo cáo phân tích chi phí. *Đọc:* EIA hoặc các case study chi phí (ví dụ bài báo CC về chi phí PV).",
         "6. *Thiết kế mini-grid:* Tích hợp vào lưới mini cục bộ; tính toán hệ thống chuyển đổi (DC/AC) và bảo vệ. *Kết quả:* Sơ đồ lắp đặt (các thành phần, công tắc, bảo vệ)."
@@ -22576,7 +22582,7 @@ html[data-theme="light"] .cosmic-passby::before {
       "title": "Thực hành",
       "lines": [
         "- Sử dụng Excel/Google Sheets để tính toán năng suất PV (theo công thức đơn giản: công suất tấm × giờ hiệu dụng) và gió.",
-        "- Công cụ thiết kế: các công cụ trực tuyến như PVWatts của NREL (công cụ tính toán trực tuyến có thể truy cập miễn phí) làm ước tính tham khảo; hoặc dùng phần mềm miễn phí như *SketchUp + Plugin* để bố trí PV.",
+        "- Công cụ thiết kế: các công cụ trực tuyến như PVWatts của NLR (công cụ tính toán trực tuyến có thể truy cập miễn phí) làm ước tính tham khảo; hoặc dùng phần mềm miễn phí như *SketchUp + Plugin* để bố trí PV.",
         "- Dữ liệu: Dùng công suất mô-đun theo datasheet (ví dụ 300–450 Wp chỉ để luyện đọc thông số); không đưa ra mức giá cố định theo W nếu không có báo giá, thời điểm và phạm vi thiết bị. Khi mô phỏng inverter, tra hiệu suất theo đường cong tải trong datasheet và nêu giả định. Ví dụ hệ 5 kW chỉ là tình huống tính toán trên giấy.",
         "- Bài tập: “Thiết kế hệ PV 5 kW cho nhà dân tại Đà Nẵng: Xác định số tấm, inverter, ước tính sản lượng hàng tháng; tính mức độ tự cung (self-sufficiency)”."
       ]
@@ -22608,7 +22614,7 @@ html[data-theme="light"] .cosmic-passby::before {
     {
       "title": "Nguồn tham khảo mở",
       "lines": [
-        "- **PVWatts Calculator** (NREL, công cụ web truy cập miễn phí); việc truy cập miễn phí không đồng nghĩa mọi đầu ra, ảnh chụp màn hình hoặc nội dung trên website được cấp quyền tái sử dụng không điều kiện.",
+        "- **PVWatts Calculator** (NLR, công cụ web truy cập miễn phí); việc truy cập miễn phí không đồng nghĩa mọi đầu ra, ảnh chụp màn hình hoặc nội dung trên website được cấp quyền tái sử dụng không điều kiện.",
         "- Wikipedia “Solar cell” để tra cứu thuật ngữ; kiểm tra giấy phép CC BY-SA và yêu cầu ghi công nếu tái sử dụng văn bản/hình.",
         "- Bảng giá thiết bị công khai (ví dụ trang mua bán CC).",
         "- Tài liệu thiết kế lưới điện có ghi rõ tác giả, đơn vị phát hành và giấy phép tái sử dụng; không suy đoán giấy phép từ việc tài liệu được chia sẻ công khai."
@@ -22669,7 +22675,7 @@ html[data-theme="light"] .cosmic-passby::before {
       "lines": [
         "- Tài liệu và repository PyBaMM; kiểm tra tệp LICENSE của đúng phiên bản mã nguồn và điều khoản riêng của tài liệu, dữ liệu hoặc ví dụ đi kèm.",
         "- Wikipedia và các bài báo khoa học về độ bền, vòng đời pin để tra cứu; chỉ tái sử dụng phần văn bản/hình có giấy phép phù hợp và tuân thủ điều kiện của từng bài.",
-        "- Báo cáo/dữ liệu NREL về chi phí pin; kiểm tra điều kiện tái sử dụng và phạm vi dữ liệu của từng ấn phẩm/bộ dữ liệu."
+        "- Báo cáo/dữ liệu của NLR (trước đây là NREL) về chi phí pin; kiểm tra điều kiện tái sử dụng và phạm vi dữ liệu của từng ấn phẩm/bộ dữ liệu."
       ]
     },
     {
@@ -23004,9 +23010,9 @@ html[data-theme="light"] .cosmic-passby::before {
     14: [{label:'NIST — Smart Grid program and cybersecurity resources',url:'https://www.nist.gov/programs-projects/smart-grid'}],
     16: [{label:'EIA — Electricity explained',url:'https://www.eia.gov/energyexplained/electricity/'}],
     17: [{label:'U.S. EPA — Life Cycle Assessment',url:'https://www.epa.gov/lca'}],
-    18: [{label:'Văn bản hợp nhất 07/VBHN-VPQH (05/02/2026) — Luật Điện lực, Công báo Chính phủ',url:'https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-07-vbhn-vpqh-468936/62703.htm'},{label:'Luật Điện lực số 61/2024/QH15 — Cổng văn bản Chính phủ',url:'https://vanban.chinhphu.vn/?docid=212489&pageid=27160'},{label:'Nghị định 57/2025/NĐ-CP — Cơ chế mua bán điện trực tiếp',url:'https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-57-2025-nd-cp-44534.htm'},{label:'Quyết định 768/QĐ-TTg — Điều chỉnh Quy hoạch điện VIII',url:'https://vanban.chinhphu.vn/?classid=2&docid=213388&pageid=27160'}],
+    18: [{label:'Văn bản hợp nhất 07/VBHN-VPQH (05/02/2026) — Luật Điện lực, Công báo Chính phủ',url:'https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-07-vbhn-vpqh-468936/62703.htm'},{label:'Luật Điện lực số 61/2024/QH15 — Cổng văn bản Chính phủ',url:'https://vanban.chinhphu.vn/?docid=212489&pageid=27160'},{label:'Nghị định 57/2025/NĐ-CP — Cơ chế mua bán điện trực tiếp',url:'https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-57-2025-nd-cp-44534.htm'},{label:'Quyết định 768/QĐ-TTg — Điều chỉnh Quy hoạch điện VIII',url:'https://vanban.chinhphu.vn/?classid=2&docid=213388&pageid=27160'},{label:'Thông tư 29/2026/TT-BCT — hiệu lực 20/07/2026',url:'https://congbao.chinhphu.vn/van-ban/thong-tu-so-29-2026-tt-bct-469692/65629.htm'}],
     19: [{label:'National Laboratory of the Rockies — SAM source code and BSD-3-Clause license',url:'https://github.com/NatLabRockies/SAM'},{label:'PyPSA — source code and MIT license',url:'https://github.com/PyPSA/PyPSA'}],
-    20: [{label:'NREL — PVWatts Calculator',url:'https://pvwatts.nrel.gov/'},{label:'National Laboratory of the Rockies — SAM',url:'https://sam.nrel.gov/'},{label:'NREL — Wind Energy Publications',url:'https://www.nrel.gov/wind/techno-economic.html'}],
+    20: [{label:'NLR — PVWatts Calculator',url:'https://pvwatts.nlr.gov/pvwatts.php'},{label:'National Laboratory of the Rockies — SAM',url:'https://sam.nlr.gov/'},{label:'NLR — Wind Energy Economic Analysis',url:'https://www.nlr.gov/wind/economic-analysis'}],
     21: [{label:'PyBaMM — battery modelling repository; inspect LICENSE for the selected version',url:'https://github.com/pybamm-team/PyBaMM'}],
     22: [{label:'GridLAB-D — official source repository; check LICENSE and dependencies',url:'https://github.com/gridlab-d/gridlab-d'},{label:'OpenDSS — official project documentation',url:'https://opendss.epri.com/'}],
     23: [{label:'Quyết định 768/QĐ-TTg — Điều chỉnh Quy hoạch điện VIII',url:'https://vanban.chinhphu.vn/?classid=2&docid=213388&pageid=27160'}]
@@ -23021,7 +23027,7 @@ html[data-theme="light"] .cosmic-passby::before {
     6: {
       title: 'Đính chính ba điểm quan trọng khi tính dung lượng và so sánh pin',
       body: 'Với cell danh định 3,2 V – 100 Ah, năng lượng lý tưởng của một cell là 0,32 kWh. Cần 125 cell nối tiếp để đạt khoảng 400 V; một chuỗi 125 cell có năng lượng danh định 40 kWh. Để đạt ít nhất 500 kWh danh định cần làm tròn lên 13 chuỗi song song, tức 1.625 cell và khoảng 520 kWh danh định. Con số này chưa phải dung lượng sử dụng được: thiết kế thật còn phải xét giới hạn SOC, hiệu suất, công suất, nhiệt độ, suy giảm và dự phòng.\n\nMột ví dụ khác trong tài liệu ghi 40 bình 12 V – 208 Ah tương đương khoảng 1 MWh là chưa đúng: mỗi bình có năng lượng danh định 12 × 208 = 2.496 Wh = 2,496 kWh; 40 bình chỉ đạt khoảng 99,84 kWh danh định. Số lượng và cách chia chuỗi thực tế còn phụ thuộc điện áp DC yêu cầu.\n\nPhần so sánh khối lượng cũng bị đảo chiều: với cùng năng lượng lưu trữ, pin lithium-ion thường nhẹ hơn pin chì, không phải nặng hơn 3–4 lần. UNCTAD nêu một ví dụ so sánh trung bình khoảng 6 kg/kWh cho lithium-ion và 30 kg/kWh cho chì-axit; đây là mức tham khảo theo loại pin và không thay thế thông số nhà sản xuất.',
-      source: 'NREL System Advisor Model (SAM) – cách tính cell nối tiếp/song song; UNCTAD 2025 – so sánh khối lượng LIB và lead-acid.' ,
+      source: 'National Laboratory of the Rockies (NLR) System Advisor Model (SAM) – cách tính cell nối tiếp/song song; UNCTAD 2025 – so sánh khối lượng LIB và lead-acid.' ,
       url: 'https://samrepo.nlr.gov/help/battery_storage_btm.html'
     },
     7: {
@@ -23052,7 +23058,7 @@ html[data-theme="light"] .cosmic-passby::before {
   COURSE_ACCURACY_NOTES[7].body += '\n\nHiệu suất điện phân không phải một con số cố định cho mọi công nghệ. Cần nêu cơ sở HHV/LHV, tính tại stack hay toàn hệ thống, điều kiện tải và phụ tải phụ trợ. Với HHV khoảng 39,4 kWh/kg H₂, phép tính 39,4/0,75 ≈ 52,5 kWh điện/kg H₂ chỉ là phép chia minh họa theo hiệu suất 75% HHV; không phải suất tiêu thụ bảo đảm cho mọi thiết bị. Các nội dung về hydro trong khóa này chỉ phục vụ phân tích khái niệm và mô phỏng, không thực hành với khí nén hoặc thiết bị áp suất.';
   COURSE_ACCURACY_NOTES[8] = {
     title: 'Địa nhiệt: phân biệt phát điện, nhiệt hữu ích và điều kiện địa chất',
-    body: 'Không có một độ sâu khoan, nhiệt độ hay hệ số công suất áp dụng cho mọi địa điểm. Nguồn địa nhiệt phụ thuộc gradient nhiệt, độ thấm, lưu lượng, thành phần chất lưu và điều kiện địa chất. Hơi khô, flash steam và binary cycle là các cấu hình khác nhau; ranh giới áp dụng thay đổi theo thiết kế và tài nguyên. Bơm nhiệt địa nhiệt nông thường dùng để trao đổi nhiệt cho công trình, không đồng nghĩa với nhà máy phát điện địa nhiệt.\\n\\nIRENA ghi nhận khoảng 16 GW công suất địa nhiệt lắp đặt toàn cầu vào cuối năm 2025 và khoảng 0,3 GW công suất bổ sung trong năm 2025. Đây là công suất điện, không phải công suất nhiệt trực tiếp; cần đọc đúng định nghĩa thống kê. Tác động môi trường có thể gồm sử dụng nước, khí không ngưng, nước muối khoáng và địa chấn kích thích ở một số cấu hình. Nội dung khóa chỉ yêu cầu phân tích dữ liệu và mô hình, không hướng dẫn khoan hoặc vận hành giếng.',
+    body: 'Không có một độ sâu khoan, nhiệt độ hay hệ số công suất áp dụng cho mọi địa điểm. Nguồn địa nhiệt phụ thuộc gradient nhiệt, độ thấm, lưu lượng, thành phần chất lưu và điều kiện địa chất. Hơi khô, flash steam và binary cycle là các cấu hình khác nhau; ranh giới áp dụng thay đổi theo thiết kế và tài nguyên. Bơm nhiệt địa nhiệt nông thường dùng để trao đổi nhiệt cho công trình, không đồng nghĩa với nhà máy phát điện địa nhiệt.\\n\\nIRENA ghi nhận 15,674 GW công suất địa nhiệt lắp đặt toàn cầu vào cuối năm 2025, tăng khoảng 0,259 GW (259 MW) trong năm 2025. Đây là công suất điện, không phải công suất nhiệt trực tiếp; cần đọc đúng định nghĩa thống kê. Tác động môi trường có thể gồm sử dụng nước, khí không ngưng, nước muối khoáng và địa chấn kích thích ở một số cấu hình. Nội dung khóa chỉ yêu cầu phân tích dữ liệu và mô hình, không hướng dẫn khoan hoặc vận hành giếng.',
     source: 'IRENA Renewable Capacity Statistics 2026; U.S. Department of Energy — Geothermal Electricity Generation and Environmental Analysis.',
     url: 'https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026'
   };
@@ -23070,7 +23076,7 @@ html[data-theme="light"] .cosmic-passby::before {
   };
   COURSE_ACCURACY_NOTES[18] = {
     title: 'Pháp luật và quy hoạch điện phải ghi phiên bản, ngày hiệu lực và ngày tra cứu',
-    body: 'Luật Điện lực số 61/2024/QH15 có hiệu lực từ ngày 01/02/2025; Văn phòng Quốc hội đã ban hành Văn bản hợp nhất 07/VBHN-VPQH ngày 05/02/2026. Khi mô tả cơ chế thị trường, mua bán điện trực tiếp, giá điện, cấp phép hoặc quy hoạch, cần đọc bản hợp nhất cùng văn bản hướng dẫn, sửa đổi và văn bản mới hơn còn hiệu lực tại ngày nghiên cứu. Ngày ban hành văn bản hợp nhất không tự động đồng nghĩa mọi quy định trong đó cùng có một ngày hiệu lực mới. Quyết định 768/QĐ-TTg ngày 15/04/2025 phê duyệt Điều chỉnh Quy hoạch điện VIII; chỉ tiêu trong quy hoạch là mục tiêu/kịch bản quy hoạch, không phải sản lượng hay công suất đã đạt.\\n\\nMột bài học pháp lý cần ghi số hiệu văn bản, cơ quan ban hành, ngày ban hành, ngày hiệu lực và phạm vi điều chỉnh. Không lấy bản tin báo chí hoặc một con số trong đề cương cũ để kết luận quyền đấu nối, biểu giá hay nghĩa vụ pháp lý hiện hành. Phần này là tài liệu giáo dục, không thay thế tư vấn pháp lý.',
+    body: 'Luật Điện lực số 61/2024/QH15 có hiệu lực từ ngày 01/02/2025; Văn phòng Quốc hội đã ban hành Văn bản hợp nhất 07/VBHN-VPQH ngày 05/02/2026. Khi mô tả cơ chế thị trường, mua bán điện trực tiếp, giá điện, cấp phép hoặc quy hoạch, cần đọc bản hợp nhất cùng văn bản hướng dẫn, sửa đổi và văn bản mới hơn còn hiệu lực tại ngày nghiên cứu. Ngày ban hành văn bản hợp nhất không tự động đồng nghĩa mọi quy định trong đó cùng có một ngày hiệu lực mới. Quyết định 768/QĐ-TTg ngày 15/04/2025 phê duyệt Điều chỉnh Quy hoạch điện VIII; chỉ tiêu trong quy hoạch là mục tiêu/kịch bản quy hoạch, không phải sản lượng hay công suất đã đạt.\\n\\nMột bài học pháp lý cần ghi số hiệu văn bản, cơ quan ban hành, ngày ban hành, ngày hiệu lực và phạm vi điều chỉnh. Thông tư 29/2026/TT-BCT ban hành ngày 02/06/2026, có hiệu lực 20/07/2026, quy định vận hành thị trường bán buôn điện cạnh tranh; chỉ viện dẫn khi nội dung bài học đúng phạm vi điều chỉnh của văn bản này. Không lấy bản tin báo chí hoặc một con số trong đề cương cũ để kết luận quyền đấu nối, biểu giá hay nghĩa vụ pháp lý hiện hành. Phần này là tài liệu giáo dục, không thay thế tư vấn pháp lý.',
     source: 'Luật Điện lực số 61/2024/QH15; Quyết định 768/QĐ-TTg ngày 15/04/2025; cổng văn bản Chính phủ.',
     url: 'https://vanban.chinhphu.vn/?docid=212489&pageid=27160'
   };
@@ -23078,8 +23084,57 @@ html[data-theme="light"] .cosmic-passby::before {
   COURSE_ACCURACY_NOTES[20] = {
     title: 'Tính toán hệ PV – gió lai cần dữ liệu đồng bộ theo thời gian',
     body: 'Không lấy công suất định mức nhân 8.760 giờ để suy ra điện năng thực tế. Điện mặt trời cần dữ liệu bức xạ trên mặt phẳng mô-đun, nhiệt độ và tổn hao; điện gió cần chuỗi vận tốc ở độ cao hub, phân bố gió và đường cong công suất turbine. Khi ghép hai nguồn, cần dùng chuỗi dữ liệu đồng bộ theo giờ hoặc bước thời gian phù hợp để đánh giá bổ trợ, thiếu hụt, cắt giảm và nhu cầu lưu trữ. Hệ số công suất trung bình năm không mô tả đầy đủ thời điểm phát điện.\\n\\nBài định cỡ trong khóa chỉ là mô hình giấy/mô phỏng. Thiết kế thật phải đánh giá kết cấu, chống sét, bảo vệ điện, đấu nối, an toàn cháy, quy hoạch mặt bằng và hồ sơ kỹ thuật bởi người có chuyên môn.',
-    source: 'NREL — PVWatts; NREL — Wind Energy techno-economic publications; National Laboratory of the Rockies — SAM.',
-    url: 'https://pvwatts.nrel.gov/'
+    source: 'NLR — PVWatts; NLR — Wind Energy Economic Analysis; National Laboratory of the Rockies — SAM.',
+    url: 'https://pvwatts.nlr.gov/pvwatts.php'
+  };
+
+  COURSE_ACCURACY_NOTES[12] = {
+    title: 'Microgrid: ranh giới hệ thống và khả năng vận hành độc lập',
+    body: 'Microgrid là một nhóm phụ tải và nguồn phân tán có thể vận hành như một thực thể được điều khiển trong một ranh giới điện xác định; khả năng tách khỏi lưới và vận hành độc lập phụ thuộc thiết kế, bảo vệ, điều khiển, dự phòng và quy trình chuyển trạng thái. Không phải mọi hệ PV cộng pin đều tự động là microgrid.\n\nKhi phân tích cần xác định điểm kết nối chung, chế độ nối lưới/đảo, cân bằng công suất, dự trữ năng lượng, tải ưu tiên và hành vi khi nguồn hoặc truyền thông mất. Bài mô phỏng không thay thế nghiên cứu bảo vệ, ổn định và thiết kế đấu nối do kỹ sư có thẩm quyền thực hiện.',
+    source: 'U.S. Department of Energy — Microgrids; IEEE 2030.7 về chức năng bộ điều khiển microgrid.',
+    url: 'https://www.energy.gov/oe/microgrids'
+  };
+  COURSE_ACCURACY_NOTES[14] = {
+    title: 'An ninh mạng lưới điện: phân biệt IT, OT và yêu cầu theo phạm vi',
+    body: 'Hệ thống IT quản lý dữ liệu và ứng dụng doanh nghiệp; OT giám sát hoặc điều khiển quá trình vật lý. Mạng điều khiển điện lực có yêu cầu về tính sẵn sàng, an toàn vận hành, phân vùng, quản lý truy cập, cập nhật, sao lưu và ứng phó sự cố khác với website thông thường. Không đưa ví dụ trong khóa học vào hệ thống thật hoặc thử quét/kiểm thử thiết bị ngoài môi trường được cấp phép.\n\nNIST và IEC cung cấp khung/tiêu chuẩn tham khảo, nhưng tiêu chuẩn nào bắt buộc phụ thuộc quốc gia, đơn vị vận hành, loại tài sản và hợp đồng. Không mô tả một tiêu chuẩn nước ngoài là quy định pháp luật mặc nhiên áp dụng tại Việt Nam.',
+    source: 'NIST Smart Grid/Cybersecurity resources; IEC 62351 family — security for power system information exchange.',
+    url: 'https://www.nist.gov/programs-projects/smart-grid'
+  };
+  COURSE_ACCURACY_NOTES[16] = {
+    title: 'Thống kê năng lượng: công suất lắp đặt không phải điện năng phát ra',
+    body: 'GW biểu thị công suất; GWh/TWh biểu thị năng lượng tạo ra trong một khoảng thời gian. Công suất lắp đặt là khả năng danh định tại một thời điểm, không cho biết nhà máy đã phát bao nhiêu điện. Sản lượng còn phụ thuộc tài nguyên, thời gian sẵn sàng, giới hạn lưới, bảo trì và điều độ.\n\nSố liệu toàn cầu có thể khác nhau do thời điểm chốt dữ liệu, phạm vi công nghệ, quy đổi năng lượng sơ cấp, ước tính và lần hiệu chỉnh. Khi trích số liệu, ghi rõ năm, đơn vị, phạm vi, trạng thái sơ bộ/chính thức và cơ quan công bố; không so sánh trực tiếp số liệu công suất với sản lượng.',
+    source: 'EIA — Electricity Explained; IRENA — Renewable Capacity Statistics 2026; IEA — Global Energy Review 2026.',
+    url: 'https://www.eia.gov/energyexplained/electricity/'
+  };
+  COURSE_ACCURACY_NOTES[17] = {
+    title: 'Đánh giá vòng đời (LCA): phải thống nhất ranh giới và đơn vị chức năng',
+    body: 'LCA đánh giá tác động môi trường theo các giai đoạn trong chuỗi vòng đời, nhưng kết quả phụ thuộc mục tiêu nghiên cứu, ranh giới hệ thống, đơn vị chức năng, dữ liệu nền, phân bổ đồng sản phẩm và phương pháp đánh giá tác động. So sánh 1 kWh điện giữa hai công nghệ cần cùng ranh giới và cùng cách tính.\n\nKhông đồng nhất phát thải tại ống khói với phát thải vòng đời; điện tái tạo vẫn có phát thải vật liệu, sản xuất, xây dựng, vận chuyển và cuối vòng đời. Một con số g CO₂e/kWh phải kèm công nghệ, địa điểm, năm dữ liệu và giả định hệ số tải/sản lượng.',
+    source: 'U.S. EPA — Life Cycle Assessment; IPCC — lifecycle greenhouse-gas emissions methodology.',
+    url: 'https://www.epa.gov/lca'
+  };
+  COURSE_ACCURACY_NOTES[19] = {
+    title: 'Phần mềm mô phỏng: kiểm tra phiên bản, giấy phép và quyền của dữ liệu',
+    body: 'Kết quả mô phỏng phụ thuộc phiên bản phần mềm, mô hình vật lý, solver, bước thời gian, dữ liệu đầu vào và giả định của người dùng. Cần lưu file cấu hình, phiên bản, nguồn dataset, đơn vị và nhật ký xử lý để người khác có thể tái lập. Kết quả mô phỏng không phải số đo hiện trường.\n\nGiấy phép phần mềm và giấy phép dữ liệu là hai vấn đề riêng. Một phần mềm mã nguồn mở không làm cho mọi dữ liệu, ảnh, plugin hoặc tài liệu đi kèm trở thành tự do sử dụng; phải đọc LICENSE, điều khoản dataset và điều kiện phân phối của đúng phiên bản.',
+    source: 'SAM / National Laboratory of the Rockies; PyPSA project; OpenDSS EPRI documentation. Kiểm tra LICENSE của từng phiên bản trước khi phân phối.',
+    url: 'https://github.com/PyPSA/PyPSA'
+  };
+  COURSE_ACCURACY_NOTES[21] = {
+    title: 'Mô hình pin: cân bằng năng lượng, suy giảm và an toàn',
+    body: 'Mô hình cell, module và pack không thể thay thế nhau. Cần định nghĩa điện áp danh định/điện áp làm việc, năng lượng danh định/năng lượng dùng được, SOC min/max, DoD, hiệu suất sạc/xả và giới hạn công suất. Kiểm tra bảo toàn năng lượng qua từng bước thời gian và không cho SOC vượt ngưỡng.\n\nSuy giảm phụ thuộc nhiệt độ, mức SOC, C-rate, DoD và thời gian. Dữ liệu mô hình không xác nhận tình trạng pin thật; pin tái sử dụng cần đánh giá chuyên môn và tuân thủ tiêu chuẩn an toàn. Bài thực hành chỉ sử dụng mô phỏng hoặc dữ liệu công khai, không mở pack hay thử nghiệm cell.',
+    source: 'U.S. DOE — Energy Storage; PyBaMM — battery modelling documentation.',
+    url: 'https://www.energy.gov/oe/energy-storage'
+  };
+  COURSE_ACCURACY_NOTES[22] = {
+    title: 'Mô phỏng lưới: phải nêu giả định, base và giới hạn của mô hình',
+    body: 'Kết quả power flow phụ thuộc topology, base kV/kVA, loại bus, cấu hình pha, thông số đường dây/máy biến áp, mô hình tải và chế độ điều khiển inverter. Sai đơn vị hoặc base có thể làm kết quả sai nhiều bậc. Cần kiểm tra điện áp, dòng nhánh, tổn thất, cân bằng công suất và hội tụ của solver.\n\nSCADA là lớp giám sát/thu thập dữ liệu và có thể bao gồm chức năng điều khiển từ xa; PMU/AMI có mục đích đo khác nhau. Dữ liệu trong bài học là giả lập, không kết nối hoặc gửi lệnh đến lưới điện, thiết bị điều khiển hay hạ tầng thật.',
+    source: 'U.S. DOE — Grid Deployment Office; NIST Smart Grid resources; GridLAB-D / OpenDSS documentation.',
+    url: 'https://www.energy.gov/gdo/grid-deployment-office'
+  };
+  COURSE_ACCURACY_NOTES[23] = {
+    title: 'Đồ án cuối khóa: tính tái lập, trung thực dữ liệu và quyền sử dụng',
+    body: 'Một đồ án tốt phải tách dữ liệu đo, dữ liệu công khai, kết quả mô phỏng và giả định của người học. Ghi ngày truy cập, phiên bản, đơn vị, bước thời gian, phương pháp xử lý dữ liệu, tiêu chí loại ngoại lệ và phân tích độ nhạy. Không trình bày số liệu tự tạo hoặc kết quả mô phỏng như số liệu vận hành thật.\n\nTrích dẫn nguồn không đồng nghĩa được phép sao chép hình, bảng, mã, nội dung hoặc dataset. Cần tuân thủ giấy phép và điều khoản tái sử dụng; khi không rõ quyền, hãy dẫn liên kết và tự diễn giải bằng lời của mình thay vì sao chép nguyên văn.',
+    source: 'Quyết định 768/QĐ-TTg — Điều chỉnh Quy hoạch điện VIII; tài liệu nguồn và giấy phép gốc của từng dataset/phần mềm.',
+    url: 'https://vanban.chinhphu.vn/?classid=2&docid=213388&pageid=27160'
   };
 
   function catalogAccuracyMarkup(course) {
@@ -24135,9 +24190,6 @@ html[data-theme="light"] .cosmic-passby::before {
   syncMotion();
 
   const markReady = () => {
-    root.classList.add('solara-v16-ready');
-    const loader = $('#loader');
-    if (loader && !loader.classList.contains('done')) loader.classList.add('done');
     const modal = $('#modal');
     const catalog = $('#catalogModal');
     [modal, catalog].filter(Boolean).forEach(dialog => {
@@ -24319,7 +24371,7 @@ html[data-theme="light"] .cosmic-passby::before {
     enumerable: false,
     writable: false,
     value: Object.freeze({
-      version: '16.5',
+      version: '16.8',
       get reducedMotion() { return state.reduced; },
       get pageHidden() { return state.hidden; },
       get activeRipples() { return state.rippleCount; }
