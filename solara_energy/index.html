@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html data-theme="dark" lang="vi" data-solara-version="16.8">
+<html data-theme="dark" lang="vi" data-solara-version="16.11">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
@@ -31,7 +31,7 @@ try {
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="SOLARA Academy — Học viện Năng lượng Tái tạo" name="twitter:title"/>
 <meta content="68 bài học nền tảng, bài học chuyên sâu, tổng quan năng lượng theo vùng và phòng mô phỏng tương tác." name="twitter:description"/>
-<title>SOLARA Academy — Học viện Năng lượng Tái tạo · V16.8 · Vertical Meteor & Learning Accuracy</title>
+<title>SOLARA Academy — Học viện Năng lượng Tái tạo · V16.11 · Fine Cursor & Learning Studio</title>
 <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6.5' fill='%2345e0a2'/%3E%3Cg stroke='%23f4c24f' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M16 2v4M16 26v4M2 16h4M26 16h4M6 6l2.8 2.8M23.2 23.2L26 26M26 6l-2.8 2.8M8.8 23.2L6 26'/%3E%3C/g%3E%3C/svg%3E" rel="icon"/>
 
 <style id="solara-styles">
@@ -17473,7 +17473,7 @@ html.perf-lite .cosmic-meteor--eleven { display: none !important; }
   }
 }
 
-/* SOLARA V16.8 — restrained vertical meteor, clearer water wake and responsive motion polish */
+/* SOLARA V16.11 — restrained vertical meteor, clearer water wake and responsive motion polish */
 .cosmic-meteor,
 .cosmic-meteor--single {
   position: absolute !important;
@@ -17573,6 +17573,205 @@ html.perf-lite .cosmic-meteor--eleven { display: none !important; }
   .cosmic-meteor,.cosmic-meteor--single { animation:none !important; display:none !important; }
   #waterCanvas { opacity:0 !important; }
   :where(.catalog-course-intro,.catalog-scroll-lesson,.catalog-module-expansion,.catalog-accuracy-card,.catalog-course-sources,.foundation-deep-dive,.foundation-sources,.foundation-accuracy-note,.course-scroll-lesson,.course-modal-headline,.foot-thanks) { transition:none !important; }
+}
+
+
+
+/* SOLARA V16.11 — fine-line cursor, content studio and motion discipline */
+.cursor-dot {
+  width: 4.5px !important;
+  height: 4.5px !important;
+  border: 1px solid rgba(246,255,255,.98) !important;
+  background: #f7ffff !important;
+  box-shadow: 0 0 0 1px rgba(68,211,238,.34), 0 0 7px 1px rgba(92,222,255,.58) !important;
+}
+.cursor-ring {
+  width: 34px !important;
+  height: 34px !important;
+  border: 1px solid rgba(159,235,250,.94) !important;
+  background: radial-gradient(circle, rgba(90,210,235,.045), transparent 72%) !important;
+  box-shadow: 0 0 0 1px rgba(92,218,240,.12), 0 0 9px rgba(77,200,228,.16), inset 0 0 5px rgba(95,221,242,.08) !important;
+}
+.cursor-ring::before,
+.cursor-ring::after {
+  border-width: 1px !important;
+  box-shadow: 0 0 3px rgba(94,216,239,.18) !important;
+}
+.cursor-ring::before { inset: -5px !important; border-color: rgba(118,222,242,.68) !important; }
+.cursor-ring::after { inset: 5px !important; border-color: rgba(134,240,211,.48) !important; }
+.cursor-ring.hover {
+  width: 38px !important;
+  height: 38px !important;
+  border-width: 1px !important;
+  border-color: rgba(141,242,218,.98) !important;
+  background: radial-gradient(circle, rgba(105,231,206,.075), transparent 72%) !important;
+  box-shadow: 0 0 0 2px rgba(92,221,201,.07), 0 0 11px rgba(77,211,190,.20), inset 0 0 6px rgba(92,221,201,.08) !important;
+}
+.cursor-ring.water-fast {
+  width: 36px !important;
+  height: 36px !important;
+  border: 1px solid rgba(158,241,251,.98) !important;
+  border-radius: 50% !important;
+  filter: drop-shadow(0 0 4px rgba(92,220,244,.26)) !important;
+  box-shadow: 0 0 0 1px rgba(92,219,240,.12), 0 0 12px rgba(67,202,230,.22), inset 0 0 6px rgba(80,224,238,.09) !important;
+}
+.cursor-ring.water-fast::before { inset: -6px !important; border-color: rgba(120,228,248,.74) !important; }
+.cursor-ring.water-fast::after { inset: 6px !important; border-color: rgba(127,244,213,.48) !important; }
+#waterCanvas { opacity: .78 !important; }
+
+.catalog-project-studio {
+  position: relative;
+  isolation: isolate;
+  margin: clamp(24px, 3.4vw, 42px) 0;
+  padding: clamp(18px, 3vw, 32px);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--acc) 23%, var(--line));
+  border-radius: 25px;
+  background:
+    radial-gradient(ellipse at 95% 0%, color-mix(in srgb, var(--palette-cyan) 12%, transparent), transparent 38%),
+    radial-gradient(ellipse at 0% 100%, color-mix(in srgb, var(--palette-violet) 10%, transparent), transparent 45%),
+    linear-gradient(145deg, color-mix(in srgb, var(--surface) 97%, var(--acc) 3%), var(--surface2));
+  box-shadow: 0 20px 55px -44px var(--glow), inset 0 1px 0 rgba(255,255,255,.045);
+  animation: solara-studio-enter .72s cubic-bezier(.2,.75,.25,1) both;
+}
+.catalog-project-studio::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 260px;
+  height: 260px;
+  right: -125px;
+  top: -145px;
+  border: 1px solid color-mix(in srgb, var(--acc) 16%, transparent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 24px color-mix(in srgb, var(--acc) 3%, transparent), 0 0 0 50px color-mix(in srgb, var(--acc) 2%, transparent);
+  pointer-events: none;
+}
+.catalog-project-studio__head { display:grid; grid-template-columns:48px minmax(0,1fr); gap:15px; align-items:start; }
+.catalog-project-studio__mark { display:grid; place-items:center; width:44px; height:44px; border:1px solid color-mix(in srgb,var(--acc) 36%,var(--line)); border-radius:15px; color:var(--acc); background:color-mix(in srgb,var(--surface) 72%,var(--acc) 8%); box-shadow:0 7px 22px color-mix(in srgb,var(--acc) 10%,transparent); font-size:1.2rem; }
+.catalog-project-studio__head small { color:var(--acc); font-size:.68rem; font-weight:850; letter-spacing:.13em; }
+.catalog-project-studio__head h3 { margin:7px 0 8px; color:var(--ink); font-size:clamp(1.12rem,2.1vw,1.45rem); line-height:1.35; text-wrap:balance; }
+.catalog-project-studio__head p { max-width:78ch; margin:0; color:var(--soft); font-size:.9rem; line-height:1.8; }
+.catalog-project-studio__grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:22px; }
+.catalog-project-studio__panel { min-width:0; padding:17px; border:1px solid var(--line); border-radius:17px; background:color-mix(in srgb,var(--surface) 88%,transparent); transition:transform .36s cubic-bezier(.2,.75,.25,1), border-color .3s ease, box-shadow .3s ease; }
+.catalog-project-studio__panel--check { background:linear-gradient(145deg,color-mix(in srgb,var(--surface) 88%,var(--acc) 5%),color-mix(in srgb,var(--surface2) 90%,transparent)); }
+.catalog-project-studio__index { display:block; color:var(--acc); font-size:.65rem; font-weight:850; letter-spacing:.12em; }
+.catalog-project-studio__panel h4 { margin:9px 0 10px; color:var(--ink); font-size:.94rem; line-height:1.45; }
+.catalog-project-studio__panel p,.catalog-project-studio__panel li { color:var(--soft); font-size:.83rem; line-height:1.78; }
+.catalog-project-studio__panel p { margin:0; }
+.catalog-project-studio__panel ol { margin:0; padding-left:1.2rem; }
+.catalog-project-studio__panel li + li { margin-top:7px; }
+.catalog-project-studio__foot { margin:16px 0 0; padding-top:13px; border-top:1px solid var(--line); color:var(--muted); font-size:.76rem; line-height:1.7; }
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  .catalog-project-studio__panel:hover { transform:translateY(-3px); border-color:color-mix(in srgb,var(--acc) 34%,var(--line)); box-shadow:0 14px 34px -28px color-mix(in srgb,var(--acc) 42%,transparent); }
+}
+@keyframes solara-studio-enter { from {opacity:0; transform:translateY(13px); filter:blur(2px)} to {opacity:1; transform:translateY(0); filter:blur(0)} }
+@media (max-width:760px) {
+  .catalog-project-studio { padding:18px; border-radius:19px; }
+  .catalog-project-studio__grid { grid-template-columns:1fr; gap:10px; margin-top:17px; }
+  .catalog-project-studio__panel { padding:15px; }
+}
+@media (max-width:380px) {
+  .catalog-project-studio__head { grid-template-columns:36px minmax(0,1fr); gap:11px; }
+  .catalog-project-studio__mark { width:35px; height:35px; border-radius:12px; }
+  .catalog-project-studio__head p { font-size:.83rem; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .catalog-project-studio { animation:none !important; }
+  .catalog-project-studio__panel { transition:none !important; }
+  .cursor-ring,.cursor-dot { transition:none !important; }
+  .cursor-ring.water-fast::before,.cursor-ring.water-fast::after { animation:none !important; }
+}
+
+
+/* SOLARA V16.11 — precise cursor, single vertical meteor, course-content corrections */
+.cursor-dot {
+  width: 4px !important; height: 4px !important;
+  border: 1px solid rgba(250,255,255,.98) !important;
+  background: #ffffff !important;
+  mix-blend-mode: normal !important;
+  box-shadow: 0 0 0 1px rgba(81,215,231,.28), 0 0 4px rgba(98,226,242,.46) !important;
+  opacity: 1;
+}
+.cursor-ring {
+  width: 32px !important; height: 32px !important;
+  border: 1px solid rgba(180,235,244,.94) !important;
+  background: radial-gradient(circle, rgba(84,208,224,.025), transparent 70%) !important;
+  box-shadow: 0 0 0 1px rgba(79,205,219,.10), 0 0 6px rgba(76,203,218,.13) !important;
+  transition: transform .16s cubic-bezier(.2,.7,.2,1), width .22s ease, height .22s ease, border-color .22s ease, box-shadow .22s ease !important;
+}
+.cursor-ring::before,.cursor-ring::after {
+  border-width: 1px !important;
+  box-shadow: 0 0 2px rgba(94,216,232,.13) !important;
+}
+.cursor-ring::before { inset: -4px !important; border-color: rgba(140,222,235,.50) !important; }
+.cursor-ring::after { inset: 4px !important; border-color: rgba(143,232,211,.34) !important; }
+.cursor-ring.hover {
+  width: 34px !important; height: 34px !important;
+  border-width: 1px !important; border-color: rgba(157,242,224,.96) !important;
+  background: radial-gradient(circle, rgba(104,226,207,.045), transparent 72%) !important;
+  box-shadow: 0 0 0 1px rgba(92,221,201,.10), 0 0 7px rgba(77,211,190,.17) !important;
+}
+.cursor-ring.water-fast {
+  width: 32px !important; height: 32px !important;
+  border: 1px solid rgba(172,238,246,.96) !important;
+  border-radius: 50% !important;
+  filter: none !important;
+  box-shadow: 0 0 0 1px rgba(92,219,240,.12), 0 0 8px rgba(67,202,230,.18) !important;
+}
+.cursor-ring.water-fast::before { inset: -4px !important; border-color: rgba(120,228,248,.58) !important; }
+.cursor-ring.water-fast::after { inset: 4px !important; border-color: rgba(127,244,213,.34) !important; }
+#waterCanvas { opacity: .82 !important; }
+
+/* Only the dedicated single element is allowed to render a meteor. The old multi-meteor set stays hidden. */
+.cosmic-meteor:not(.cosmic-meteor--single) {
+  display: none !important;
+  animation: none !important;
+}
+.cosmic-meteor--single {
+  display: block !important;
+  position: absolute !important;
+  left: 28% !important; top: -28vh !important;
+  width: 1.5px !important; height: clamp(145px, 23vh, 230px) !important;
+  opacity: 0 !important; border-radius: 999px !important;
+  transform: translate3d(0,0,0) !important;
+  transform-origin: center top !important;
+  background: linear-gradient(180deg, transparent 0%, rgba(116,211,255,.08) 22%, rgba(151,229,255,.68) 74%, rgba(255,255,255,.96) 100%) !important;
+  box-shadow: 0 0 5px rgba(112,218,255,.34), 0 0 11px rgba(92,193,255,.16) !important;
+  animation: solara-single-vertical-meteor 4s linear infinite !important;
+  animation-delay: 0s !important;
+}
+@keyframes solara-single-vertical-meteor {
+  0%, 3% { left: 28%; opacity: 0; transform: translate3d(0,-8vh,0); }
+  5% { opacity: .9; }
+  13% { left: 28%; opacity: 0; transform: translate3d(0,142vh,0); }
+  13.01%, 100% { left: 72%; opacity: 0; transform: translate3d(0,142vh,0); }
+}
+
+/* More refined content rhythm: gentle depth, readable focus, no layout jumps. */
+.catalog-reference-card,.catalog-project-studio__panel,.catalog-module-expansion,
+.catalog-accuracy-card,.foundation-deep-dive,.foundation-project-studio,
+.catalog-course-intro,.course-scroll-lesson {
+  transition: transform .42s cubic-bezier(.2,.72,.18,1), border-color .34s ease,
+              box-shadow .42s cubic-bezier(.2,.72,.18,1), background-color .34s ease;
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  .catalog-reference-card:hover,.catalog-project-studio__panel:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb,var(--acc) 34%,var(--line));
+    box-shadow: 0 16px 38px -28px color-mix(in srgb,var(--acc) 30%,transparent);
+  }
+  .catalog-reference-card__head h3::after,.catalog-flow-heading h3::after {
+    content:""; display:block; width:34px; height:1px; margin-top:9px;
+    background: linear-gradient(90deg,var(--acc),transparent);
+    transition: width .38s cubic-bezier(.2,.72,.18,1);
+  }
+  .catalog-reference-card:hover .catalog-reference-card__head h3::after,
+  .catalog-reference-card:hover .catalog-flow-heading h3::after { width:70px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .cursor-dot,.cursor-ring,.catalog-reference-card,.catalog-project-studio__panel { transition:none !important; }
+  .cosmic-meteor--single { animation:none !important; display:none !important; }
 }
 
 </style>
@@ -18895,7 +19094,7 @@ html.perf-lite .cosmic-meteor--eleven { display: none !important; }
         { id: 4, tag: 'ĐỌC HIỂU', title: 'Hiểu hóa đơn tiền điện trong 5 phút', desc: 'Bậc thang giá điện, kWh là gì, vì sao cùng dùng như nhau mà tiền khác nhau — cách tự kiểm tra chỉ số công-tơ.', min: 5, icon: '<path class="ic-stroke" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path class="ic-stroke" d="M14 2v6h6"/>', content: 'Hóa đơn điện thường ghi lượng điện tiêu thụ theo đơn vị kWh, còn gọi là kilowatt-giờ. Đây là đơn vị đo điện năng, không phải công suất. Ví dụ, một thiết bị công suất 1.000 W, tức 1 kW, hoạt động trong 2 giờ sẽ tiêu thụ 2 kWh điện nếu chạy liên tục ở công suất đó.\n\nĐể kiểm tra lượng điện sử dụng giữa hai kỳ, hãy lấy chỉ số công tơ kỳ mới trừ chỉ số kỳ trước, sau khi xác nhận các chỉ số được ghi đúng. Tiền điện không chỉ phụ thuộc vào tổng số kWh mà còn phụ thuộc vào biểu giá áp dụng, các bậc giá điện sinh hoạt và những khoản tính kèm theo. Vì vậy, hai tháng có mức sử dụng khác nhau có thể tạo ra hóa đơn chênh lệch đáng kể. Bạn có thể bắt đầu tiết kiệm bằng cách theo dõi các thiết bị tiêu thụ nhiều điện như điều hòa, bình nóng lạnh và tủ lạnh, sau đó điều chỉnh thời gian sử dụng và thói quen vận hành.' },
         { id: 5, tag: 'TOÁN HỌC', title: 'Đọc hiểu LCOE: Vì sao điện mặt trời ngày càng cạnh tranh?', desc: 'Đi qua công thức LCOE từng bước, cách tính chi phí vòng đời và đọc số liệu có mốc năm, đơn vị rõ ràng.', min: 9, icon: '<circle cx="12" cy="12" r="9" class="ic-stroke"/><path class="ic-stroke" d="M12 7v10"/>', content: 'LCOE là viết tắt của Levelized Cost of Electricity, nghĩa là chi phí điện quy dẫn. Chỉ số này giúp ước tính chi phí trung bình để sản xuất một đơn vị điện trong suốt vòng đời của một dự án. Khi tính LCOE, người ta xem xét chi phí xây dựng, vận hành, bảo dưỡng, nhiên liệu nếu có, tuổi thọ thiết bị và lượng điện dự kiến tạo ra.\n\nVới các phép tính đầy đủ, chi phí và sản lượng trong tương lai được quy đổi về cùng một thời điểm. Công thức khái quát là LCOE bằng tổng chi phí vòng đời đã chiết khấu chia cho tổng điện năng vòng đời đã chiết khấu. Chỉ số thấp thường cho thấy chi phí sản xuất điện thuận lợi hơn theo các giả định được sử dụng.\n\nĐiện mặt trời ngày càng cạnh tranh nhờ chi phí thiết bị giảm và công nghệ cải tiến. Tuy nhiên, LCOE không phản ánh toàn bộ giá trị của điện vào mọi thời điểm, cũng không tự bao gồm mọi chi phí bổ sung cho lưu trữ, truyền tải và cân bằng lưới điện. Do đó, khi so sánh các nguồn điện, cần xem cả điều kiện địa phương và mục tiêu của hệ thống.' },
         { id: 6, tag: 'VẬT LÝ', title: 'Đường cong I–V và điểm MPP: trái tim của tấm pin', desc: 'Vì sao MPP không nằm ở hai đầu cực trị, và vì sao MPPT là tính năng quan trọng nhất của inverter.', min: 8, icon: '<path class="ic-stroke" d="M3 3v18h18"/><path class="ic-stroke" d="M3 18c0-12 6-15 18-15"/>', content: 'Mỗi tấm pin mặt trời có một đường cong đặc trưng gọi là I–V (dòng–áp). Đường cong này mô tả mối quan hệ giữa dòng điện (I) và điện áp (V) mà tấm pin có thể cung cấp trong những điều kiện ánh sáng nhất định. Điểm công suất cực đại — gọi tắt là MPP (Maximum Power Point) — là vị trí trên đường cong mà tại đó tích I × V đạt giá trị lớn nhất.\n\nVí dụ cụ thể: một tế bào quang điện nhỏ có Isc = 0,124 A và Voc = 6,407 V. Nếu bạn nhân dòng với áp tại từng điểm trên đường cong, bạn sẽ thấy công suất đạt cực đại P ≈ 0,491 W tại điện áp V ≈ 4,934 V. Điểm này không nằm ở hai đầu cực trị (Voc hay Isc) mà ở giữa đường cong.\n\nVì sao cần MPPT? Điều kiện ánh sáng thay đổi liên tục — mây, bóng cây, góc mặt trời — khiến MPP dịch chuyển. Bộ MPPT (Maximum Power Point Tracking) trong inverter liên tục dò tìm và điều chỉnh điện trở tải để hệ thống luôn hoạt động gần MPP nhất có thể. Không có MPPT, hệ thống có thể mất 10–20% sản lượng chỉ vì làm việc ở điểm không tối ưu.' },
-        { id: 7, tag: 'KỸ THUẬT', title: 'Betz và giới hạn 59,3%: vì sao không thể lấy hết gió', desc: 'Định luật vật lý đẹp nhất của năng lượng tái tạo — và vì sao turbine hiện đại chỉ đạt 40–50% hiệu suất.', min: 7, icon: '<path class="ic-stroke" d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/>', content: 'Định luật Betz là một trong những định luật vật lý đẹp nhất của ngành năng lượng tái tạo. Được công bố bởi Albert Betz năm 1919, định luật này phát biểu rằng một turbine gió lý tưởng — không có ma sát, không có tổn thất cơ học — cũng không thể lấy được nhiều hơn 16/27 (khoảng 59,3%) động năng của luồng gió đi qua nó.\n\nVì sao có giới hạn này? Nếu turbine lấy hết 100% động năng của gió, không khí phía sau turbine sẽ đứng yên — nhưng khi đó nó sẽ chặn không cho gió mới đi vào. Để tiếp tục hoạt động, turbine phải để lại một phần năng lượng trong luồng gió ra, đủ để gió thoát ra và nhường chỗ cho gió mới. Điểm cân bằng tối ưu chính là 59,3%.\n\nCông thức Betz: P_max = (16/27) × ½ × ρ × A × V³. Trong đó ρ là mật độ không khí, A là diện tích quét của rotor, V là vận tốc gió. Hệ số 16/27 ≈ 0,593 chính là giới hạn Betz.\n\nTrong thực tế, turbine hiện đại chỉ đạt hiệu suất 40–50% — tức chỉ khoảng 70–85% của giới hạn lý thuyết. Phần mất mát còn lại đến từ ma sát cơ học, tổn thất hộp số, tổn thất máy phát và điện trở dây dẫn.' },
+        { id: 7, tag: 'KỸ THUẬT', title: 'Betz và giới hạn 59,3%: vì sao không thể lấy hết gió', desc: 'Giới hạn Betz 59,3% và ý nghĩa của hệ số công suất khí động Cp.', min: 7, icon: '<path class="ic-stroke" d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/>', content: 'Định luật Betz là một trong những định luật vật lý đẹp nhất của ngành năng lượng tái tạo. Được công bố bởi Albert Betz năm 1919, định luật này phát biểu rằng một turbine gió lý tưởng — không có ma sát, không có tổn thất cơ học — cũng không thể lấy được nhiều hơn 16/27 (khoảng 59,3%) động năng của luồng gió đi qua nó.\n\nVì sao có giới hạn này? Nếu turbine lấy hết 100% động năng của gió, không khí phía sau turbine sẽ đứng yên — nhưng khi đó nó sẽ chặn không cho gió mới đi vào. Để tiếp tục hoạt động, turbine phải để lại một phần năng lượng trong luồng gió ra, đủ để gió thoát ra và nhường chỗ cho gió mới. Điểm cân bằng tối ưu chính là 59,3%.\n\nCông thức Betz: P_max = (16/27) × ½ × ρ × A × V³. Trong đó ρ là mật độ không khí, A là diện tích quét của rotor, V là vận tốc gió. Hệ số 16/27 ≈ 0,593 chính là giới hạn Betz.\n\nVới turbine gió nhỏ, DOE nêu dải hệ số công suất khí động Cp cực đại điển hình khoảng 0,25–0,45; giá trị phụ thuộc thiết kế và điểm vận hành. Cp là tỷ số công suất khí động lấy từ gió trên công suất động năng của dòng gió qua diện tích quét rotor, không phải hiệu suất điện toàn hệ thống. Công suất điện còn chịu tổn hao cơ, máy phát, bộ biến đổi và giới hạn vận hành.' },
         { id: 8, tag: 'CÔNG NGHỆ', title: 'LFP vs NMC: vì sao xe điện và nhà máy pin đang chia hai phe', desc: 'Cuộc chiến giữa hai hóa chất pin lithium-ion đang định hình tương lai của xe điện và lưu trữ năng lượng.', min: 10, icon: '<rect x="2" y="7" width="18" height="10" rx="2" class="ic-stroke"/><path class="ic-stroke" d="M22 11v2M6 11v2M10 11v2"/>', content: 'Trong thế giới pin lithium-ion, hai hóa chất cạnh tranh khốc liệt nhất là LFP (Lithium Iron Phosphate — LiFePO₄) và NMC (Nickel Manganese Cobalt — LiNiMnCoO₂). Hiểu sự khác biệt giữa chúng là hiểu được cách ngành công nghiệp pin đang định hình tương lai.\n\nLFP — "bền, an toàn, rẻ": cực dương từ sắt-phosphate, cực âm graphite. Mật độ năng lượng 80–120 Wh/kg (thấp hơn NMC). Tuổi thọ trên 2.000 chu kỳ sạc-xả. An toàn: ổn định nhiệt cao, khó cháy nổ ngay cả khi bị đâm thủng. Điện áp cell 3,2V. Chi phí rẻ hơn đáng kể (không cần cobalt).\n\nNMC — "mạnh, nhẹ, đắt": cực dương từ niken-mangan-cobalt. Mật độ năng lượng 150–250 Wh/kg (cao hơn nhiều). Tuổi thọ khoảng 1.000–1.500 chu kỳ. An toàn: cần BMS phức tạp, có nguy cơ cháy nổ nếu quản lý nhiệt kém. Điện áp cell 3,7V. Chi phí đắt hơn do cobalt.\n\nVì sao phân chia? NMC được ưa chuộng trong xe điện cao cấp vì mật độ năng lượng cao. LFP thống trị lưu trữ năng lượng tĩnh (BESS, pin gia đình) vì chi phí thấp, an toàn cháy nổ, tuổi thọ cao — những yếu tố quan trọng hơn mật độ năng lượng khi pin đặt cố định.\n\nXu hướng 2025–2030: LFP đang chiếm thị phần ngày càng lớn ngay cả trong xe điện tầm trung, nhờ công nghệ cải tiến (cell-to-pack) và giá cobalt tăng cao. Pin natri-ion (Na-ion) đang nổi lên như thế hệ tiếp theo, hứa hẹn rẻ hơn cả LFP nhờ nguyên liệu muối ăn phổ biến.' },
         { id: 9, tag: 'THỰC TẾ', title: 'Điện mặt trời có thật sự rẻ nhất?', desc: 'Phân tích chi phí quy dẫn, các khoản phụ phí và lý do kết luận "rẻ nhất" phụ thuộc điều kiện so sánh.', min: 8, icon: '<path class="ic-stroke" d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>', content: 'Điện mặt trời thường được gọi là "nguồn điện rẻ", nhưng cần hỏi rõ đang nói đến chỉ số nào. LCOE (chi phí điện quy dẫn) ước tính chi phí trung bình của mỗi đơn vị điện trong vòng đời dự án theo các giả định về vốn, vận hành, tuổi thọ và sản lượng; nó không phải là giá điện hộ gia đình trả hàng tháng.\n\nTheo báo cáo *Renewable Power Generation Costs in 2025* của IRENA (công bố tháng 7/2026), LCOE bình quân gia quyền toàn cầu của các dự án mới năm 2025 khoảng 44 USD/MWh với điện mặt trời quy mô nhà máy, 33 USD/MWh với điện gió trên bờ và 62 USD/MWh với thủy điện. Đây là các giá trị bình quân toàn cầu tính theo USD năm 2025, không phải giá bán lẻ điện hay báo giá cho một dự án cụ thể.\n\nIRENA cho biết hơn 90% dự án tái tạo quy mô nhà máy được đưa vào vận hành trong năm 2025 có chi phí điện thấp hơn nhà máy nhiên liệu hóa thạch mới rẻ nhất tại thị trường tương ứng. Đây là kết quả theo tập dự án và giả định của báo cáo, không có nghĩa mọi dự án tái tạo đều rẻ hơn trong mọi hệ thống điện.\n\nLCOE có những giới hạn: chi phí truyền tải, lưu trữ, cân bằng hệ thống và giá trị của điện theo từng giờ có thể chưa được phản ánh đầy đủ. Kết quả còn phụ thuộc địa điểm, chi phí vốn, tài nguyên nắng/gió, tuổi thọ thiết bị và phương pháp tính. Do đó, khi so sánh các nguồn điện, hãy dùng cùng phạm vi, cùng năm và giả định tương đương, đồng thời đọc phương pháp của báo cáo gốc.' },
         { id: 10, tag: 'DỰ BÁO', title: 'Điện hạt nhân có quay trở lại?', desc: 'Sau thảm họa Fukushima, điện hạt nhân tưởng như đã chết. Nhưng SMR và nhu cầu AI đang hồi sinh nó.', min: 10, icon: '<circle cx="12" cy="12" r="3" fill="currentColor"/><ellipse cx="12" cy="12" rx="10" ry="4" class="ic-stroke"/><ellipse cx="12" cy="12" rx="10" ry="4" class="ic-stroke" transform="rotate(60 12 12)"/>', content: "Điện hạt nhân đang được nhiều quốc gia quan tâm trở lại trong bối cảnh cần giảm phát thải, tăng an ninh năng lượng và đáp ứng nhu cầu điện tăng. Đây là nguồn điện carbon thấp có thể điều độ và thường đạt hệ số công suất cao, nhưng không phải nguồn carbon thấp duy nhất có thể cung cấp công suất tương đối ổn định: địa nhiệt, sinh khối khi có nguồn nhiên liệu bền vững và thủy điện hồ chứa cũng có thể đóng vai trò điều độ. Nhà máy hạt nhân vẫn phải dừng theo lịch để bảo dưỡng, thay nhiên liệu và kiểm tra an toàn.\n\nSMR (Small Modular Reactor) là nhóm lò phản ứng công suất nhỏ hơn so với nhiều tổ máy hạt nhân truyền thống; định nghĩa và dải công suất thay đổi giữa các tổ chức và thiết kế. SMR được nghiên cứu với mục tiêu chế tạo theo module, linh hoạt về quy mô và có thể giảm một số rào cản xây dựng. Tuy nhiên, không thể mặc định SMR luôn rẻ hơn, xây nhanh hơn hoặc đã chứng minh lợi thế thương mại: số dự án vận hành còn hạn chế, chi phí vốn, chuỗi cung ứng, cấp phép, nhân lực, quản lý chất thải và sự chấp thuận của cộng đồng đều quan trọng. Các thiết kế cũng không có một cấu hình an toàn duy nhất; mỗi loại phải được cơ quan quản lý đánh giá riêng.\n\nNhu cầu điện của trung tâm dữ liệu và AI làm tăng sự quan tâm tới nguồn điện ổn định, ít carbon. Một ví dụ là thỏa thuận mua điện dài hạn giữa Microsoft và Constellation để hỗ trợ kế hoạch khởi động lại tổ máy Unit 1 tại địa điểm Three Mile Island, nay mang tên Christopher M. Crane Clean Energy Center. Cần phân biệt Unit 1 với Unit 2 từng gặp sự cố năm 1979. Unit 1 đã ngừng phát điện từ tháng 9/2019; Constellation đặt mục tiêu khởi động lại vào năm 2027, nhưng việc trở lại vận hành còn phụ thuộc phê duyệt của NRC, khôi phục các hạng mục và kiểm tra theo quy định. Vì vậy, không mô tả nhà máy là đã khởi động lại.\n\nTại Việt Nam, Quyết định 768/QĐ-TTg ngày 15/04/2025 phê duyệt Điều chỉnh Quy hoạch điện VIII, đặt định hướng đưa các nhà máy điện hạt nhân Ninh Thuận 1 và 2 vào vận hành giai đoạn 2030–2035 với quy mô quy hoạch 4.000–6.400 MW. Đây là chỉ tiêu quy hoạch, không phải công suất đã xây dựng hoặc bảo đảm chắc chắn hoàn thành. Tiến độ phụ thuộc quyết định đầu tư, thẩm định dự án, đối tác, tài chính, công nghệ, nhân lực, quy định và yêu cầu an toàn. Khi cập nhật bài học, phải ghi rõ ngày tra cứu và phân biệt mục tiêu quy hoạch với tiến độ thực tế." },
@@ -19212,6 +19411,20 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
       if (!note) return '';
       const paragraphs = note.body.split(/\n\s*\n/).map(part => `<p>${esc(part)}</p>`).join('');
       return `<aside class="foundation-accuracy-note" aria-label="Điểm kiểm chứng kiến thức"><div class="foundation-accuracy-note__top"><span aria-hidden="true">✓</span><small>ĐIỂM CẦN HIỂU ĐÚNG · ${moduleId.toUpperCase()}</small></div><h4>${esc(note.title)}</h4>${paragraphs}<p class="foundation-accuracy-note__disclaimer">Các hệ số, giá trị minh họa và quy định có thể thay đổi theo công nghệ, địa điểm, thời gian và tài liệu gốc. Khi làm bài định lượng, hãy ghi giả định, đơn vị, ranh giới tính và ngày của dữ liệu.</p></aside>`;
+    }
+
+    const FOUNDATION_STUDIO_GUIDES = {
+      m1: { title:'Bản đồ năng lượng của một ngày sinh hoạt', scenario:'Dùng một gia đình giả định để phân tích năng lượng đi vào, năng lượng hữu ích và phần tổn hao trong các hoạt động thường ngày.', steps:['Liệt kê 5–7 hoạt động tiêu thụ năng lượng bằng dữ liệu giả định hoặc nhãn thiết bị được công bố.','Phân biệt công suất (W/kW), thời gian sử dụng và điện năng (Wh/kWh).','Phân loại nguồn sơ cấp, chất mang năng lượng và dạng năng lượng cuối cùng.'], output:'Bảng năng lượng theo hoạt động và sơ đồ nguồn → chuyển đổi → sử dụng.', check:'Kiểm tra đơn vị, không gọi kW là kWh; ghi rõ đây là ước lượng từ giả định, không phải hóa đơn thật.' },
+      m2: { title:'Đọc datasheet và ước tính PV bằng dữ liệu giả lập', scenario:'Tìm hiểu vì sao công suất danh định của tấm PV khác với công suất tức thời và sản lượng điện thực tế.', steps:['Đọc các đại lượng Voc, Isc, Vmp, Imp, Pmax, hệ số nhiệt độ và điều kiện STC trên một datasheet công khai.','Dùng chuỗi bức xạ/nhiệt độ giả lập để mô tả sự thay đổi công suất theo thời gian.','So sánh kịch bản không bóng che với kịch bản có bóng che giả định.'], output:'Bảng đọc datasheet, đồ thị công suất PV và danh sách các nguồn gây suy hao.', check:'STC là điều kiện chuẩn thử nghiệm, không phải điều kiện vận hành đảm bảo; MPPT không tạo thêm năng lượng.' },
+      m3: { title:'Từ gió lý thuyết đến đường cong turbine', scenario:'Dùng dãy vận tốc gió giả lập để thấy vì sao không thể lấy tốc độ gió trung bình nhân với công suất định mức.', steps:['Tính công suất động năng gió qua diện tích quét bằng mật độ không khí, diện tích và lập phương vận tốc.','Phân biệt giới hạn Betz với hiệu suất thực của rotor, máy phát và hệ thống.','Đọc một đường cong công suất mẫu để nhận diện cut-in, rated và cut-out.'], output:'Bảng tính theo vận tốc và biểu đồ công suất turbine mẫu.', check:'Giữ đúng đơn vị và điều kiện; giới hạn Betz 16/27 là giới hạn lý tưởng của năng lượng gió qua rotor, không phải hệ số công suất của nhà máy.' },
+      m4: { title:'Theo dõi SOC trong một mô hình pin', scenario:'Mô phỏng pin cấp điện cho tải giả định theo thời gian và kiểm tra bảo toàn năng lượng.', steps:['Phân biệt công suất bộ biến đổi với dung lượng năng lượng của pin.','Tạo chuỗi sạc/xả theo từng giờ và áp giới hạn SOC min/max giả định.','Tính năng lượng hữu ích sau hiệu suất và so sánh hai kịch bản tải.'], output:'Đồ thị SOC, bảng năng lượng nạp/xả và tổng tổn hao.', check:'Không lấy Ah làm kWh nếu chưa biết điện áp; dữ liệu mô phỏng không chứng minh tình trạng pin thật.' },
+      m5: { title:'Đánh giá chuỗi chuyển đổi điện – hydrogen', scenario:'So sánh năng lượng điện đầu vào và năng lượng hóa học của hydrogen theo một cơ sở nhiệt trị nhất quán.', steps:['Ghi rõ HHV hoặc LHV và dùng cùng cơ sở trong toàn bộ phép tính.','Lập sơ đồ điện phân → xử lý/lưu trữ → ứng dụng cuối; đánh dấu các công đoạn có tổn hao.','So sánh một kịch bản dùng điện trực tiếp với kịch bản dùng hydrogen.'], output:'Sơ đồ dòng năng lượng và bảng hiệu suất theo ranh giới hệ thống.', check:'Hydrogen là chất mang năng lượng; không suy ra “xanh” chỉ từ tên gọi và không thực hành với khí hoặc thiết bị áp suất.' },
+      m6: { title:'Cân bằng nguồn – tải trong một lưới điện mẫu', scenario:'Dùng bảng phụ tải và nguồn phát giả lập để hiểu vì sao hệ thống điện cần cân bằng và điều độ.', steps:['Vẽ sơ đồ nhà máy, truyền tải, phân phối, nguồn phân tán và phụ tải.','Tạo biểu đồ cung – cầu theo từng giờ với dữ liệu giả định.','Thêm một kịch bản PV biến động và thảo luận vai trò lưu trữ, dự phòng và đáp ứng nhu cầu.'], output:'Sơ đồ dòng điện khái niệm, biểu đồ cân bằng công suất và bảng giải pháp.', check:'Phân biệt công suất với điện năng; BMS không phải EMS; không kết nối mô phỏng với lưới điện thật.' }
+    };
+    function foundationStudioGuideMarkup(moduleId) {
+      const guide = FOUNDATION_STUDIO_GUIDES[moduleId];
+      if (!guide) return '';
+      return `<section class="catalog-project-studio foundation-project-studio" aria-label="Bài vận dụng nền tảng"><div class="catalog-project-studio__head"><span class="catalog-project-studio__mark" aria-hidden="true">✦</span><div><small>FOUNDATION STUDIO · BÀI VẬN DỤNG AN TOÀN</small><h3>${esc(guide.title)}</h3><p>${esc(guide.scenario)}</p></div></div><div class="catalog-project-studio__grid"><article class="catalog-project-studio__panel"><span class="catalog-project-studio__index">01 / QUY TRÌNH</span><h4>Thực hiện theo từng bước</h4><ol>${guide.steps.map(step => `<li>${esc(step)}</li>`).join('')}</ol></article><article class="catalog-project-studio__panel"><span class="catalog-project-studio__index">02 / SẢN PHẨM</span><h4>Đầu ra cần hoàn thành</h4><p>${esc(guide.output)}</p></article><article class="catalog-project-studio__panel catalog-project-studio__panel--check"><span class="catalog-project-studio__index">03 / KIỂM CHỨNG</span><h4>Tự kiểm tra trước khi kết luận</h4><p>${esc(guide.check)}</p></article></div><p class="catalog-project-studio__foot">Chỉ sử dụng dữ liệu giả lập, tài liệu công khai hoặc mô phỏng. Không tự thao tác với điện lưới, hệ pin công suất lớn, khí hydrogen hoặc thiết bị nguy hiểm.</p></section>`;
     }
 
     function openLessonModal(lesson) {
@@ -20128,6 +20341,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
               <p class="course-modal-footnote course-modal-footnote--wide">Tiến độ và danh sách bài đã lưu chỉ được lưu cục bộ trên trình duyệt này. Các chủ đề liên quan đến điện áp cao, pin công suất lớn và hydro chỉ nên học bằng mô phỏng hoặc trong phòng chuyên dụng có người hướng dẫn. Số liệu minh họa phải đi kèm điều kiện, đơn vị và giả định; liên kết nguồn phục vụ kiểm chứng chứ không trao quyền sao chép nội dung, hình ảnh hay dữ liệu.</p>
               ${foundationCourseSourcesMarkup(module.id)}
               ${foundationCourseAccuracyMarkup(module.id)}
+              ${foundationStudioGuideMarkup(module.id)}
             </main>
           </div>`;
 
@@ -20563,7 +20777,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
             for (let index = 0; index < 3; index++) {
                 const cap = mobileLayout ? 6 : 12;
                 while (ripples.length >= cap) ripples.shift();
-                ripples.push({ x, y, radius: 5 + index * 7, alpha: .42 - index * .065, speed: 2.1 + index * .26, max: 95 + index * 26, color: palette[index % palette.length], width: 1.35 });
+                ripples.push({ x, y, radius: 5 + index * 7, alpha: .52 - index * .10, speed: 2.0 + index * .22, max: 88 + index * 24, color: palette[index % palette.length], width: .98 });
             }
         }
 
@@ -20865,9 +21079,9 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
             ringY += (targetY - ringY) * .19;
             const lag = Math.hypot(targetX - ringX, targetY - ringY);
             const pointerStep = Math.hypot(targetX - lastX, targetY - lastY);
-            motionEnergy = Math.max(motionEnergy * .88, Math.min(1, pointerStep / 27));
-            ring.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%) scale(${1 + motionEnergy * .07 + Math.min(lag / 140, .035)})`;
-            ring.classList.toggle('water-fast', motionEnergy > .16);
+            motionEnergy = Math.max(motionEnergy * .84, Math.min(1, pointerStep / 42));
+            ring.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%) scale(${1 + motionEnergy * .018 + Math.min(lag / 400, .012)})`;
+            ring.classList.toggle('water-fast', motionEnergy > .24);
             ring.classList.toggle('water-calm', motionEnergy <= .16);
             lastX = targetX;
             lastY = targetY;
@@ -21010,7 +21224,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
                 console.error(`[SOLARA] ${name} không khởi tạo được:`, error);
             }
         }
-        console.log('%c[SOLARA V16.8] Website initialized', 'color:#45e0a2;font-weight:700;font-size:14px');
+        console.log('%c[SOLARA V16.11] Website initialized', 'color:#45e0a2;font-weight:700;font-size:14px');
         console.log(`[SOLARA] 68 bài học · 12 bài đọc · 70 thuật ngữ · 12 FAQ · hoạt động tự ôn tập trong bài học`);
     }
     if (document.readyState === 'loading')
@@ -21038,7 +21252,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
       },
       {
         "title": "Module 2 · Cơ sở hoá – lý của ắc-quy điện hoá",
-        "detail": "Công thức chính: $Q=I\cdot t$ (Ah khi dùng A và h); $E_{nom}\approx V_{nom}\cdot C_{Ah}/1000$ (kWh). Đây là năng lượng danh định gần đúng; năng lượng sử dụng được còn phụ thuộc giới hạn SOC/DoD, hiệu suất, nhiệt độ và suy giảm.",
+        "detail": "Công thức chính: $Q=Icdot t$ (Ah khi dùng A và h); $E_{nom}approx V_{nom}cdot C_{Ah}/1000$ (kWh). Đây là năng lượng danh định gần đúng; năng lượng sử dụng được còn phụ thuộc giới hạn SOC/DoD, hiệu suất, nhiệt độ và suy giảm.",
         "time": "6 giờ"
       },
       {
@@ -21119,33 +21333,33 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     "prerequisite": "",
     "items": [
       {
-        "title": "Module 1 · Khái niệm & nguồn nhiệt địa nhiệt (phân tầng nhiệt độ, vị trí gióng địa chất)",
-        "detail": "Khái niệm & nguồn nhiệt địa nhiệt (phân tầng nhiệt độ, vị trí gióng địa chất). Công thức nhiệt độ theo độ sâu. Giải thích: địa nhiệt chủ yếu từ Phân hủy phóng xạ trong đá và nguồn năng lượng còn sót lại của Trái Đất.",
+        "title": "Module 1 · Khái niệm & nguồn nhiệt địa nhiệt (phân tầng nhiệt độ, vị trí đới đứt gãy và bối cảnh địa chất)",
+        "detail": "Khái niệm & nguồn nhiệt địa nhiệt (phân tầng nhiệt độ, vị trí đới đứt gãy và bối cảnh địa chất). Công thức nhiệt độ theo độ sâu. Giải thích: địa nhiệt chủ yếu từ Phân hủy phóng xạ trong đá và nguồn năng lượng còn sót lại của Trái Đất.",
         "time": "3h"
       },
       {
         "title": "Module 2 · Các loại nhà máy điện",
-        "detail": "Các loại nhà máy điện:  \n• Dry Steam (hơi khô): lấy hơi tự nhiên (VD: Larderello, Ý).  \n• Flash Steam: nước siêu nóng (≥180°C) đột ngột giảm áp sinh hơi, chạy tua-bin.  \n• Binary Cycle: nước địa nhiệt (<170°C) trao nhiệt cho dung môi hạ áp (như isobutene) để chạy tua-bin. Không tiếp xúc trực tiếp với môi trường (ít phát thải).  \n• Mỗi dạng: hiệu suất động cơ hơi ~10–20% (theo Carnot), nhưng điện lượng ổn định. Nhiệt độ thấp dùng bơm nhiệt địa nhiệt (ground source heat pump).",
+        "detail": "Các loại nhà máy điện địa nhiệt:\n• **Dry steam (hơi khô):** dùng hơi địa nhiệt tự nhiên phù hợp để dẫn động turbine.\n• **Flash steam:** đưa chất lưu nóng ở áp suất cao qua quá trình giảm áp để một phần chất lỏng hóa hơi; hơi được tách và dùng cho turbine. DOE mô tả nhiều hệ flash điển hình với nguồn nhiệt trên khoảng 182°C, nhưng đây không phải ngưỡng cứng áp dụng cho mọi thiết kế.\n• **Binary cycle:** chất lưu địa nhiệt truyền nhiệt qua bộ trao đổi nhiệt sang một chất lưu thứ cấp có nhiệt độ sôi thấp hơn. Chất lưu địa nhiệt không đi qua turbine; điều này không đồng nghĩa toàn dự án không phát thải.\nKhông gán hiệu suất 10–20% hoặc một nhiệt độ ranh giới cho tất cả nhà máy. Hiệu suất điện ròng phụ thuộc nhiệt độ nguồn/làm mát, lưu lượng, chu trình, phụ tải tự dùng và điều kiện mỏ. Bơm nhiệt nguồn đất dùng trao đổi nhiệt cho công trình, không đồng nhất với nhà máy phát điện.",
         "time": "6h"
       },
       {
         "title": "Module 3 · Tính toán sản lượng",
-        "detail": "Tính toán sản lượng: Biểu thức công suất $P=\\dot m c_p \\Delta T$ của dòng nước ngầm. Ví dụ: Mật độ nước 1000 kg/m³, $c_p=4.18\\text{ kJ/kgK}$. Công suất nhiệt dòng 10 l/s, ΔT=50 K → P = 10 kg/s × 4,18 kJ/(kg·K) × 50 K = 2.090 kW nhiệt; nếu hiệu suất chuyển đổi điện giả định 15%, công suất điện khoảng 314 kW.",
+        "detail": "Tính công suất nhiệt của dòng chất lưu: $P_{th}=\\dot m c_p\\Delta T$. Với lưu lượng khối lượng 10 kg/s, $c_p=4,18$ kJ/(kg·K), độ giảm nhiệt hữu ích 50 K, công suất nhiệt xấp xỉ 2.090 kW nhiệt. Nếu dùng hiệu suất điện ròng giả định 15%, công suất điện minh họa khoảng 314 kW trước khi xét chính xác các phụ tải tự dùng nếu chúng chưa nằm trong định nghĩa hiệu suất. Ghi rõ đây là bài toán giả định; không xem 15% là hiệu suất phổ quát.",
         "time": "4h"
       },
       {
         "title": "Module 4 · Thăm dò và khoan",
-        "detail": "Thăm dò và khoan: phương pháp địa vật lý, áp suất đột ngột (EGS – Stimulation). Chi phí khoan nhiều triệu USD/km. Tính toán: Thiệt hại chảy (porosity, permeability), tuổi thọ giếng.",
+        "detail": "Thăm dò kết hợp bản đồ địa chất, địa hóa, địa vật lý, đo nhiệt độ và mô hình tầng chứa. Độ rỗng (porosity) mô tả phần thể tích rỗng; độ thấm (permeability) mô tả khả năng chất lưu đi qua đá. Hai đại lượng có liên quan nhưng không đồng nhất. Các phương pháp kích thích tầng chứa trong EGS là công việc kỹ thuật chuyên sâu, có rủi ro môi trường và địa chấn; nội dung học tập chỉ phân tích dữ liệu, mô hình và quản trị rủi ro.",
         "time": "5h"
       },
       {
         "title": "Module 5 · Ứng dụng & tiềm năng",
-        "detail": "Ứng dụng & tiềm năng: Theo IRENA (Renewable Capacity Statistics 2026), cuối năm 2025 thế giới có 15,674 GW (15.674 MW) công suất điện địa nhiệt và khoảng 2,383 TW (2.383.162 MW) công suất điện mặt trời theo bảng IRENA 2026 trong cùng bộ thống kê. Điện mặt trời có quy mô lắp đặt lớn hơn nhiều; địa nhiệt có ưu thế khả năng phát điện ổn định tại các mỏ phù hợp. Hệ số công suất thực tế phụ thuộc công nghệ, nguồn nhiệt, quản lý mỏ và lịch bảo trì. Đây là công suất lắp đặt, không phải sản lượng điện; khi dùng ví dụ quốc gia cần ghi rõ năm và nguồn dữ liệu.",
+        "detail": "Theo IRENA, cuối năm 2025 công suất điện địa nhiệt lắp đặt toàn cầu xấp xỉ **15,7 GW**; công suất điện mặt trời PV khoảng **2.383 GW**. Đây là công suất lắp đặt tại thời điểm thống kê, không phải sản lượng điện trong năm. Địa nhiệt có thể cung cấp nguồn điện điều độ được tại những mỏ phù hợp; hệ số công suất và sản lượng phụ thuộc tài nguyên, công nghệ, vận hành và bảo trì. Nguồn: IRENA, *Renewable Capacity Statistics 2026*; khi tái sử dụng bảng/hình cần tuân thủ điều kiện bản quyền và ghi công của IRENA.",
         "time": "4h"
       },
       {
         "title": "Module 6 · Các mối nguy môi trường",
-        "detail": "Các mối nguy môi trường: khí thải H₂S, CO₂ giải phóng; sụt lún đất. Giới thiệu dự án khoan EGS thập niên 2010 thất bại (Basel, 2006) do địa chấn.",
+        "detail": "Tác động có thể gồm khí không ngưng (ví dụ CO₂, H₂S), nước muối khoáng, nhu cầu nước, sụt lún hoặc địa chấn kích thích trong một số dự án. Rủi ro không giống nhau ở mọi mỏ; cần đánh giá thành phần chất lưu, xử lý khí, tái bơm, giám sát nước và nền địa chấn. Basel (Thụy Sĩ) là ví dụ dự án EGS bị dừng sau các sự kiện địa chấn kích thích; hãy ghi đúng bối cảnh và không suy rộng thành mọi dự án địa nhiệt.",
         "time": "2h"
       }
     ]
@@ -21161,32 +21375,32 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     "items": [
       {
         "title": "Module 1 · Năng lượng thủy triều",
-        "detail": "Năng lượng thủy triều: động học và thế năng. Công thức công suất từ bậc triều: $P_{\\rm avg} = \\frac{\\rho g A R^2}{2T}$ (A = diện tích hồ chứa, R = chênh lệch mực nước trung bình, T = chu kỳ thủy triều). Ví dụ lý tưởng: diện tích hồ A=10 km², chênh lệch mực nước R=5 m, chu kỳ T=12 giờ; với ρ=1.000 kg/m³ và g=9,81 m/s², P_avg = ρgAR²/(2T) ≈ 28,4 MW. Giá trị này chưa tính hiệu suất turbine, tổn thất và giới hạn vận hành theo thủy triều.",
+        "detail": "Thủy triều có thể khai thác thế năng do chênh lệch mực nước (barrage/lagoon) hoặc động năng của dòng triều (tidal stream). Một mô hình hồ đơn giản có thể ước tính năng lượng thế năng theo chênh lệch mực nước, nhưng công suất trung bình phụ thuộc cách định nghĩa biên độ, diện tích hồ, mật độ nước, chu kỳ và lịch phát. Sản lượng thực tế còn chịu hiệu suất turbine, tổn thất, thời gian nước đủ cột áp và giới hạn môi trường. Tính dự báo của thủy triều không có nghĩa phát điện liên tục 24/7.",
         "time": "3h"
       },
       {
         "title": "Module 2 · Thiết bị thủy triều",
-        "detail": "Thiết bị thủy triều: Đập chắn, thủy triều tràn (barrage), tua-bin trôi (tidal stream). Ưu nhược: lực quán tính lớn, có thể chính xác dự đoán.",
+        "detail": "Thiết bị chính gồm đập chắn/barrage, lagoon và turbine dòng triều. Barrage/lagoon khai thác chênh lệch mực nước; turbine dòng triều lấy động năng dòng nước mà không cần đập kín toàn cửa sông. Đánh giá địa điểm phải xét vận tốc dòng theo chu kỳ, độ sâu, luồng tàu, trầm tích, sinh vật, ăn mòn và khả năng bảo trì. Không kết luận công nghệ nào tốt nhất chỉ từ tốc độ dòng hoặc biên độ triều riêng lẻ.",
         "time": "4h"
       },
       {
         "title": "Module 3 · Năng lượng sóng",
-        "detail": "Năng lượng sóng nước sâu: với biển có phổ sóng ngẫu nhiên, công suất trung bình trên một mét đỉnh sóng có thể ước tính gần đúng bằng $P \\approx 0,49 H_s^2 T_e$ (kW/m), trong đó $H_s$ là chiều cao sóng có ý nghĩa và $T_e$ là chu kỳ năng lượng. Ví dụ: $H_s=2$ m, $T_e=8$ s cho $P \\approx 15,7$ kW/m trong giả định nước sâu. Đây là mật độ công suất sóng lý thuyết, không phải điện năng thiết bị chắc chắn thu được. Thiết bị: phao dao động, cột nước dao động.",
+        "detail": "Với sóng nước sâu không đều, mật độ công suất sóng trung bình trên một mét đỉnh sóng có thể ước tính gần đúng bằng $P\\approx0,49H_s^2T_e$ kW/m, trong đó $H_s$ là chiều cao sóng có ý nghĩa và $T_e$ là chu kỳ năng lượng. Ví dụ $H_s=2$ m, $T_e=8$ s cho khoảng 15,7 kW/m. Đây là tài nguyên sóng tới trên mỗi mét đỉnh sóng, không phải công suất điện của thiết bị. Muốn dự báo điện đầu ra cần đường cong công suất/capture width, hiệu suất, hướng sóng, mức sẵn sàng, giới hạn vận hành và tổn hao.",
         "time": "3h"
       },
       {
         "title": "Module 4 · Năng lượng dòng hải lưu",
-        "detail": "Năng lượng dòng hải lưu: Tương tự điện gió dưới nước, $P=\\tfrac12\\rho A v^3 C_p$. Dự án thử nghiệm (ORPC) dòng vịnh Maine: v~3m/s, P~kW/m².",
+        "detail": "Công suất động năng của dòng nước qua diện tích quét $A$ trước tổn thất được mô tả bởi $P_{flow}=\\frac12\\rho Av^3$. Công suất turbine khả dụng còn phụ thuộc hệ số thu năng lượng $C_p$, thiết kế rotor, giới hạn vận hành và tổn hao. Với nước biển $\\rho≈1025$ kg/m³ và vận tốc giả định 3 m/s, mật độ công suất dòng chảy là khoảng 13,8 kW/m² trước khi nhân $C_p$; không nhầm con số này với công suất điện thực tế.",
         "time": "3h"
       },
       {
         "title": "Module 5 · OTEC (Ocean Thermal Energy Conversion)",
-        "detail": "OTEC (Ocean Thermal Energy Conversion): Sử dụng chênh lệch T bề mặt – sâu (ví dụ 25°C – 5°C, ΔT=20K). Hiệu suất Carnot ~$\\eta =\\frac{ΔT}{T_{\\rm hầu}}$ ~ 20/300 ~ 6–7%. Nhu cầu khổng lồ diện tích, giá thành cao.",
+        "detail": "OTEC khai thác chênh lệch nhiệt độ giữa nước biển bề mặt ấm và nước sâu lạnh. Các cấu hình gồm chu trình kín, chu trình hở và lai. Giới hạn Carnot lý tưởng là $1-T_c/T_h$ với nhiệt độ tính bằng kelvin; nếu nguồn nóng 25°C và nguồn lạnh 5°C thì giới hạn lý tưởng khoảng 6,7%, nhưng hiệu suất điện ròng thấp hơn do thiết bị và phụ tải bơm nước. Vì chênh nhiệt nhỏ, cần lưu lượng nước lớn và đường ống sâu; hiệu quả phải đánh giá theo công suất ròng và điều kiện địa điểm.",
         "time": "2h"
       },
       {
         "title": "Module 6 · Tiềm năng & môi trường",
-        "detail": "Tiềm năng & môi trường: Ý tưởng phong phú nhưng lượng nhỏ (dưới 1% nhu cầu toàn cầu). Vấn đề: mài mòn do muối, tác động đến sinh vật biển.",
+        "detail": "Tiềm năng năng lượng biển phải phân biệt tài nguyên lý thuyết, tiềm năng kỹ thuật và sản lượng có thể khai thác kinh tế. Không dùng tỷ lệ “dưới 1% nhu cầu toàn cầu” nếu không có nguồn, năm, phạm vi công nghệ và phương pháp tính thống nhất. Các vấn đề môi trường có thể gồm ăn mòn, tiếng ồn, cáp ngầm, sinh vật biển, trầm tích và ảnh hưởng tới hoạt động hàng hải; mức độ phụ thuộc địa điểm và thiết kế.",
         "time": "2h"
       }
     ]
@@ -21202,27 +21416,27 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     "items": [
       {
         "title": "Module 1 · Cơ sở mạch AC",
-        "detail": "Cơ sở mạch AC: khái niệm điện áp hiệu dụng (RMS), Công suất P=UI\\cos\\phi, Q=UI\\sin\\phi. Phân tích sóng sin (phasor), RLC nối tiếp/ song song. Tính $Z = R + j(X_L - X_C)$. Bài giảng mẫu: Tính dòng và công suất trong mạch RL.",
+        "detail": "Cơ sở mạch AC hình sin: trị hiệu dụng (RMS), trở kháng phức và độ lệch pha. Với tải một pha, công suất tác dụng $P=UI\\cos\\varphi$, công suất phản kháng $Q=UI\\sin\\varphi$, công suất biểu kiến $S=UI$; $U$ và $I$ là giá trị RMS. Với mạch RLC nối tiếp, $Z=R+j(X_L-X_C)$, trong đó $X_L=2\\pi fL$ và $X_C=1/(2\\pi fC)$. Cần xác định loại tải và cách mắc trước khi tính.",
         "time": "4h"
       },
       {
         "title": "Module 2 · Mạch 3 pha",
-        "detail": "Mạch 3 pha: hệ 3 pha Y/Δ, công thức: $P_{\\rm 3p}= \\sqrt{3}U_{L}I_{L}\\cos\\phi$. Tính ngắn mạch 3 pha. Ví dụ: Một tải 3 pha 20 kW, cosφ=0.9, $U_L=400V$: $I_L =\\frac{P}{\\sqrt3 U\\cos\\phi} ≈ 32.1$ A.",
+        "detail": "Mạch ba pha cân bằng có thể đấu Y hoặc Δ. Với điện áp dây RMS $U_L$, dòng dây RMS $I_L$ và hệ số công suất $\\cos\\varphi$, công suất tác dụng tổng là $P=\\sqrt3U_LI_L\\cos\\varphi$. Ví dụ tải 20 kW, 400 V dây–dây, hệ số công suất 0,9: $I_L≈32,1$ A nếu bỏ qua tổn hao và giả định hệ thống cân bằng. Phân biệt điện áp dây với điện áp pha trước khi dùng công thức.",
         "time": "4h"
       },
       {
         "title": "Module 3 · Máy điện cơ bản",
-        "detail": "Máy điện cơ bản: máy phát xoay chiều (synchronous), máy phát dao động (Induction generator) dùng ở gió. Mô tả sơ đồ vector Flux, công thức tần số: $f = (p/2)\\omega$ (p cực, ω tốc độ rotor). Ví dụ: Máy gió 20 kW, tần số 50 Hz, p=2 → ω=314 rad/s (~3000 rpm).",
+        "detail": "Phân biệt máy phát đồng bộ (synchronous generator) và máy phát không đồng bộ (induction generator). Với máy phát đồng bộ, tần số điện $f=P n_m/120$, trong đó $P$ là tổng số cực và $n_m$ là tốc độ cơ học tính bằng vòng/phút; tương đương $\\omega_e=(P/2)\\omega_m$. Ví dụ máy 2 cực ở 50 Hz có tốc độ đồng bộ 3.000 vòng/phút (khoảng 314 rad/s). Máy không đồng bộ có độ trượt; trong turbine gió dùng bộ biến đổi công suất, tần số phía máy phát có thể khác tần số lưới.",
         "time": "6h"
       },
       {
         "title": "Module 4 · Biến áp",
-        "detail": "Biến áp: tỉ số vòng quấn Np/Ns, công thức $V_s/V_p = N_s/N_p$. Khái niệm điện trở tĩnh $R_{eq}$, tổn hao sắt và đồng. Ví dụ: biến áp 10 kVA, 4000/400 V, thử nghiệm tải.",
+        "detail": "Biến áp: tỉ số vòng quấn Np/Ns, công thức $V_s/V_p = N_s/N_p$. Khái niệm điện trở và điện kháng tương đương quy đổi $R_{eq}$, $X_{eq}$; tổn hao đồng trong dây quấn và tổn hao lõi do từ trễ/dòng điện xoáy. Ví dụ: biến áp 10 kVA, 4000/400 V, thử nghiệm tải.",
         "time": "5h"
       },
       {
         "title": "Module 5 · Điện tử công suất",
-        "detail": "Điện tử công suất:  \n• Điện trở tự do (Rectifier): Diode 1 chiều (single-phase, 3-phase). Mạch chỉnh lưu 6 diode. Tính dòng DC ra: $I_{\\rm DC} ≈ 0.9 I_{\\rm AC}$ (sơ lược).  \n• IGBT & MOSFET: Nguyên lý đóng ngắt transistor công suất. Tính $V_{DS}$, $I_{D}$, loss conduction/switching. Ví dụ: IGBT 1200V, 100A, công suất tỏa nhiệt.  \n• Biến tần (Inverter): PWM điều chế xung, tạo dạng sóng AC. Luật điều khiển Space Vector PWM. Công thức tần số đầu ra, độ rộng xung. Ví dụ: biến tần 3 pha 5 kW, tải R.",
+        "detail": "Điện tử công suất gồm chỉnh lưu, bộ biến đổi DC–DC và nghịch lưu. Với cầu chỉnh lưu một pha toàn sóng lý tưởng, không có tụ lọc và tải thuần trở, điện áp DC trung bình là $V_{DC,avg}=2V_m/\\pi≈0,90V_{AC,RMS}$. Với cầu ba pha sáu xung, dòng tải liên tục, bỏ qua sụt áp diode và chồng dẫn, $V_{DC,avg}≈1,35U_{LL,RMS}$ (tương đương khoảng $2,34U_{pha,RMS}$). Dòng tải DC phải tính từ điện áp và tải; không dùng quy tắc chung $I_{DC}=0,9I_{AC}$. PWM điều khiển trạng thái đóng/ngắt của linh kiện bán dẫn; thông số thực tế phải theo datasheet và thiết kế chuyên môn.",
         "time": "6h"
       },
       {
@@ -21232,7 +21446,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
       },
       {
         "title": "Module 7 · An toàn điện",
-        "detail": "An toàn điện: tiếp đất, chống sét cho hệ thống điện cao áp, cách ly nhị pha, tiêu chuẩn an toàn lao động (IEC 60364).",
+        "detail": "An toàn điện ở mức khái niệm: phân biệt cách điện, nối đất bảo vệ, thiết bị bảo vệ quá dòng, chống dòng rò, chống sét và cô lập nguồn. Không coi nối đất thay thế cách điện hoặc bảo vệ quá dòng. Bài học chỉ dùng sơ đồ và tình huống giả lập; không tự đo, đấu nối hay thử nghiệm lưới điện, inverter hoặc mạch công suất. Tiêu chuẩn cần trích đúng phiên bản và phạm vi áp dụng.",
         "time": "4h"
       }
     ]
@@ -21330,7 +21544,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     "items": [
       {
         "title": "Module 1 · Kiến thức cơ bản",
-        "detail": "Kiến thức cơ bản: phân loại EV (BEV, PHEV, HEV). Cấu trúc pin ô tô (pack gồm cell Li-ion nối tiếp/song song), công thức NCell × VCell = UPack. Số cell trong một bộ pin phụ thuộc mẫu xe, dạng cell (trụ, túi, lăng trụ), hóa học, điện áp pack và thiết kế nhà sản xuất; không dùng một con số cho mọi xe hoặc mọi pack 100 kWh.",
+        "detail": "Phân loại BEV, PHEV và HEV. Bộ pin xe điện gồm cell nối tiếp/song song tạo module và pack; điện áp pack gần bằng tổng điện áp các cell nối tiếp trong cùng cấu hình, còn nhánh song song tăng dung lượng/dòng cho phép. Số cell phụ thuộc hóa học, dạng cell, điện áp và thiết kế từng mẫu xe; không có con số cell cố định cho mọi pack 100 kWh. Ah là điện lượng, kWh là năng lượng; cần điện áp trung bình để quy đổi.",
         "time": "3h"
       },
       {
@@ -21340,12 +21554,12 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
       },
       {
         "title": "Module 3 · Hệ thống sạc",
-        "detail": "Phân biệt sạc AC và sạc DC; công suất nạp phụ thuộc bộ sạc trên xe, EVSE, điện áp, dòng điện và giới hạn nhiệt. Các tên Level 1/Level 2 là cách phân loại thường dùng tại Bắc Mỹ, không được đồng nhất trực tiếp với điện áp lưới Việt Nam. Ví dụ lý tưởng: P = V × I, nên 50 kW tại 400 V tương ứng 125 A nếu bỏ qua tổn hao và hệ số điều chỉnh; đây là phép tính minh họa, không phải chỉ dẫn đấu nối.",
+        "detail": "Phân biệt sạc AC (bộ sạc trên xe chuyển AC thành DC) và sạc DC (bộ sạc ngoài xe cấp DC phù hợp cho pack). Công suất phụ thuộc EVSE, bộ sạc trên xe, điện áp, dòng, nhiệt độ và đường cong sạc. Ví dụ lý tưởng $P=VI$: 50 kW ở 400 V tương ứng 125 A nếu bỏ qua tổn hao. Đây chỉ là phép tính minh họa, không dùng để chọn dây dẫn, đầu nối hay bảo vệ. Các nhãn Level 1/Level 2 chủ yếu thuộc cách phân loại Bắc Mỹ, không đồng nhất máy móc với điện áp Việt Nam.",
         "time": "4h"
       },
       {
         "title": "Module 4 · Giao thức & V2G",
-        "detail": "Giao thức & V2G: Chuẩn truyền thông ISO 15118 (Plug&Charge), OCPP cho trạm sạc thông minh. Vehicle-to-Grid (V2G) cho phép xe tương thích trao đổi điện hai chiều với lưới thông qua bộ sạc và quy trình được phê duyệt. Công suất và năng lượng có thể xả phụ thuộc mẫu xe, SOC dự phòng, giới hạn pin, bộ sạc, hợp đồng và quy định kết nối; 60 kWh là dung lượng năng lượng, không tự xác định được công suất xả.",
+        "detail": "ISO 15118 định nghĩa truyền thông giữa xe và EVSE cho các chức năng sạc; OCPP là giao thức trao đổi giữa trạm sạc và hệ thống quản lý trạm. V2G cho phép trao đổi điện hai chiều khi xe, EVSE, giao thức, nhà sản xuất và quy định kết nối đều hỗ trợ. Dung lượng pin kWh không tự xác định công suất xả kW; phải xét SOC dự phòng, giới hạn pin, thời gian xe kết nối, hiệu suất và điều kiện thị trường.",
         "time": "4h"
       },
       {
@@ -21355,7 +21569,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
       },
       {
         "title": "Module 6 · Thử thách kỹ thuật",
-        "detail": "Thử thách kỹ thuật: tải đỉnh gây ra do EV, giải pháp cân bằng. Tính ví dụ: 100 xe đi làm 8h sáng (mỗi xe 7 kW sạc) gây thêm 700 kW cho lưới. Biện pháp điều khiển: App phát lệnh triệt tiêu (smart charging).",
+        "detail": "Phân tích ảnh hưởng của sạc đồng thời đến phụ tải đỉnh. Ví dụ giả định 100 xe cùng sạc ở 7 kW thì tổng công suất danh định là 700 kW nếu tất cả hoạt động đồng thời; đây không phải dự báo phụ tải thực tế nếu chưa xét hệ số đồng thời, mức sạc thực tế và quản lý tải. So sánh sạc không điều phối với smart charging bằng dữ liệu theo giờ; không gửi lệnh tới trạm sạc hoặc hệ thống thật.",
         "time": "4h"
       }
     ]
@@ -21509,7 +21723,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
       },
       {
         "title": "Mô đun: LCA PV và gió",
-        "detail": "Tính toán thực tế LCA cho tấm pin mặt trời (độ bền 25 năm, sản lượng năng lượng, phát thải). Kết quả: So sánh lượng CO2e/kWh giữa PV, gió, than, khí. Đọc: Nghiên cứu LCA năng lượng mở (tìm trên Google Scholar)",
+        "detail": "Lập so sánh vòng đời PV và gió bằng cùng đơn vị chức năng (ví dụ 1 kWh điện AC giao tại điểm quy định), cùng ranh giới hệ thống và phương pháp đánh giá tác động. Nêu rõ tuổi thọ giả định, sản lượng, suy giảm, thay thế inverter/thiết bị, vận chuyển, xây dựng và xử lý cuối vòng. Kết quả g CO₂e/kWh phụ thuộc địa điểm, công nghệ, nguồn điện sản xuất vật liệu, hệ số công suất và giả định; không dùng một con số duy nhất như hằng số cho mọi dự án.",
         "time": ""
       },
       {
@@ -21575,7 +21789,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
       },
       {
         "title": "Case study Việt Nam",
-        "detail": "Đối chiếu Điều chỉnh Quy hoạch điện VIII theo Quyết định 768/QĐ-TTg ngày 15/04/2025 cùng các văn bản pháp luật, hướng dẫn và cập nhật còn hiệu lực tại ngày nghiên cứu; ghi rõ mốc tra cứu và phân biệt chỉ tiêu quy hoạch với kết quả thực tế. Kết quả: phân tích các kịch bản nguồn điện, lưới truyền tải, năng lượng tái tạo và năng lượng mới theo đúng phạm vi, giả định và mốc thời gian trong văn bản. Đọc: Quyết định 768/QĐ-TTg và văn bản hướng dẫn thực hiện còn hiệu lực tại ngày nghiên cứu.",
+        "detail": "Đối chiếu Điều chỉnh Quy hoạch điện VIII theo Quyết định 768/QĐ-TTg ngày 15/04/2025. Mục tiêu đến năm 2030 là tỷ trọng nguồn năng lượng tái tạo (không bao gồm thủy điện) trong cơ cấu nguồn điện khoảng 28–36%; đây không phải tỷ trọng năng lượng sơ cấp hay số liệu vận hành thực tế. Phân tích kịch bản nguồn điện, lưới truyền tải, năng lượng tái tạo, năng lượng mới và điều kiện triển khai theo đúng mốc thời gian và giả định trong văn bản. Ghi ngày tra cứu, kiểm tra văn bản sửa đổi/hướng dẫn còn hiệu lực và dẫn nguồn chính thức.",
         "time": ""
       }
     ]
@@ -21719,7 +21933,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     "items": [
       {
         "title": "Giới thiệu mô phỏng lưới",
-        "detail": "Sử dụng OpenDSS hoặc GridLAB-D để xây dựng lưới phân phối mẫu (nhiều bus, tải, máy phát). Kết quả: Biết định nghĩa hệ thống mô phỏng lưới. Đọc: Hướng dẫn nhanh OpenDSS (KiCad hoặc hỗ trợ EV)",
+        "detail": "Sử dụng OpenDSS hoặc GridLAB-D để xây dựng lưới phân phối mẫu (nhiều bus, tải, máy phát). Kết quả: Biết định nghĩa hệ thống mô phỏng lưới. Đọc: tài liệu chính thức EPRI OpenDSS và hướng dẫn GridLAB-D; phân biệt phần mềm mô phỏng lưới với công cụ thiết kế mạch/PCB như KiCad.",
         "time": ""
       },
       {
@@ -21848,7 +22062,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Tóm tắt bài giảng",
       "lines": [
-        "Hydro xanh (điện phân bằng NLTT) là năng lượng lưu trữ lâu dài cho lưới. Khóa học đi sâu **định lượng**: năng lượng đầu vào, hiệu suất, và các đại lượng quan trọng. Ví dụ: Với electrolyser Alkaline, sản lượng H₂ lý thuyết theo Faraday: $Q = I \\cdot t$, $n_{H2} = \\frac{It}{2F}$ (F: điện tích Faraday). Vật lý pin nhiên liệu: hoạt động ngược với điện phân, tại cực anot giải phóng electron qua mạch ngoài. Giới thiệu tiêu chuẩn an toàn EIGA/ISO 19880 cho trạm hydro."
+        "Hydro sản xuất bằng điện tái tạo là một chất mang năng lượng; trong một số hệ thống, hydro có thể hỗ trợ lưu trữ dài hạn hoặc cung cấp nguyên liệu công nghiệp, nhưng hiệu suất và chi phí của toàn chuỗi phải được tính đến. Khóa học đi sâu **định lượng**: năng lượng đầu vào, hiệu suất, và các đại lượng quan trọng. Ví dụ: Với electrolyser Alkaline, sản lượng H₂ lý thuyết theo Faraday: $Q = I \\cdot t$, $n_{H2} = \\frac{It}{2F}$ (F: điện tích Faraday). Vật lý pin nhiên liệu: hoạt động ngược với điện phân, tại cực anot giải phóng electron qua mạch ngoài. Giới thiệu tiêu chuẩn an toàn EIGA/ISO 19880 cho trạm hydro."
       ]
     },
     {
@@ -21887,7 +22101,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Thận trọng",
       "lines": [
-        "Hydro dễ cháy, phải có hệ thống xả gas, tránh tia lửa. Pin nhiên liệu hoạt động ở áp suất và nhiệt độ cao, cần quạt làm mát. Tuân thủ tiêu chuẩn ISO 22734 (PEM electrolyzer) và IEC 62282 (fuel cells)."
+        "Hydro là khí dễ cháy; thiết bị điện phân, pin nhiên liệu và hệ thống lưu trữ cần thiết kế an toàn, thông gió, phát hiện rò rỉ, kiểm soát nguồn mồi cháy và đánh giá áp suất bởi người có chuyên môn. Người học chỉ phân tích sơ đồ, dữ liệu và mô phỏng; không thao tác với khí, bình chứa hoặc thiết bị thật. Khi trích tiêu chuẩn, phải kiểm tra đúng phiên bản, phạm vi áp dụng và tình trạng hiệu lực."
       ]
     }
   ],
@@ -21895,34 +22109,34 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Tóm tắt bài giảng",
       "lines": [
-        "Địa nhiệt cung cấp nguồn năng lượng **ổn định**, không theo mùa. Trong nhà máy *binary*, thiết bị trao đổi nhiệt (heat exchanger) làm nóng vòng chu kỳ thứ cấp. Sản lượng điện *P* ước tính qua nhiệt năng dòng ra: $P = \\dot m\\,c_p\\,\\Delta T \\cdot \\eta_{\\rm hệ}$. Ví dụ: Dòng nước địa nhiệt 30 kg/s tăng 60°C, $c_p≈4.2$ kJ/kgK, $\\eta=0.12$, thì $P≈30×4.2×60×0.12≈907$ kW."
+        "Địa nhiệt có thể cung cấp nguồn điện điều độ được tại mỏ phù hợp; sản lượng vẫn phụ thuộc nhiệt độ, lưu lượng, áp suất, quản lý mỏ, bảo trì và giới hạn môi trường. Trong nhà máy *binary*, thiết bị trao đổi nhiệt truyền năng lượng từ chất lưu địa nhiệt sang chất lưu thứ cấp. Công suất nhiệt gần đúng $P_{th}=\\dot m c_p\\Delta T$. Ví dụ giả định: 30 kg/s, $c_p≈4,2$ kJ/(kg·K), độ giảm nhiệt hữu ích 60 K cho 7.560 kW nhiệt. Nếu hiệu suất điện ròng giả định 12%, điện đầu ra khoảng 907 kW; phải trừ phụ tải tự dùng nếu chưa được tính trong hiệu suất. Đây không phải đặc tính chung của mọi nhà máy."
       ]
     },
     {
       "title": "Ví dụ minh họa",
       "lines": [
-        "Tính công suất điện thu được từ giếng địa nhiệt: Lưu lượng 20 kg/s, nhiệt độ 150°C, trả về 70°C, hiệu suất 10%. Điện nhiệt: $P = 20×4.2×(150-70)×0.10 ≈ 672$ kW điện."
+        "Tính công suất nhiệt và điện theo dữ liệu giả định: lưu lượng khối lượng 20 kg/s, nhiệt độ vào 150°C, nhiệt độ ra 70°C, $c_p=4,2$ kJ/(kg·K), hiệu suất điện ròng giả định 10%. Khi đó công suất nhiệt là $20×4,2×80=6.720$ kW nhiệt; điện đầu ra theo giả định là 672 kW. Kết quả chỉ là bài toán cân bằng năng lượng giản lược; nhiệt độ nguồn, hiệu suất và phụ tải phụ thuộc thiết kế thực tế."
       ]
     },
     {
       "title": "Bài tập & Đáp án",
       "lines": [
-        "- *BT1:* Một dự án địa nhiệt có 2 giếng: mỗi giếng khai thác 15 kg/s, nhiệt độ 200°C (đưa lên 90°C). Tính công suất nhiệt (MW) và điện (MW), nếu hiệu suất tổng 12%. *Đáp:* Nhiệt $=30×4.2×110 ≈ 13.86$ MW; Điện ≈1.66 MW.",
-        "- *BT2:* So sánh *flash* và *binary* về: nhiệt độ tối ưu, áp lực hơi, phát thải. *Đáp:* Flash dùng T≥180°C, áp suất ngưng thải cao hơn, có xả khí ra môi trường; Binary dùng T thấp hơn (80–150°C), kín khít, ít ô nhiễm."
+        "- *BT1:* Hai giếng địa nhiệt mỗi giếng có lưu lượng 15 kg/s; chất lưu được làm nguội từ 200°C xuống 90°C. Cho $c_p=4,2$ kJ/(kg·K), hiệu suất điện ròng giả định 12%. *Đáp:* Tổng lưu lượng 30 kg/s; công suất nhiệt $P_{th}=30×4,2×110≈13,86$ MW nhiệt; công suất điện giản lược $≈1,66$ MW nếu 12% là hiệu suất ròng đã bao gồm các phụ tải theo ranh giới bài toán.",
+        "- *BT2:* So sánh flash và binary về nguồn nhiệt, áp suất, cách truyền nhiệt và tác động môi trường. *Đáp:* DOE mô tả nhiều hệ flash phổ biến với chất lưu trên khoảng 182°C; binary có thể khai thác nguồn nhiệt thấp hơn nhờ vòng chất lưu thứ cấp. Mốc nhiệt độ chỉ mang tính điển hình, không phải ranh giới bắt buộc; cả hai cấu hình đều cần đánh giá khí không ngưng, nước, chất lưu, phụ tải và điều kiện địa chất."
       ]
     },
     {
       "title": "Câu hỏi trắc nghiệm",
       "lines": [
-        "1. *Nhận định nào đúng về hệ số công suất địa nhiệt?* (A) Luôn cố định 90%; (B) Phụ thuộc tài nguyên, thiết kế và bảo trì, có thể cao ở mỏ phù hợp; (C) Luôn bằng 30%. *(Đáp: B)*.",
-        "2. *Hiệu suất nhiệt – điện (Carnot) lý thuyết cho 150°C ra 70°C* ~ (A) 45% (B) 10% (C) 25%. *(Đáp: B, khoảng 12%).*",
-        "3. *Loại nhà máy địa nhiệt nào cần nhiệt độ cao nhất?* (A) Binary (B) Flash (C) Dry Steam. *(Đáp: C, Dry Steam lấy trực tiếp hơi khô ~dưới đất, thường ≥200°C).*"
+        "1. *Nhận định nào đúng về hệ số công suất địa nhiệt?* (A) Luôn cố định 90%; (B) Phụ thuộc tài nguyên, thiết kế và bảo trì; (C) Luôn bằng 30%. *(Đáp: B).*",
+        "2. *Giới hạn Carnot lý tưởng giữa nguồn nóng 150°C và nguồn lạnh 70°C là bao nhiêu?* Dùng Kelvin: $1-343,15/423,15≈18,9\\%$. Đây là giới hạn lý tưởng, không phải hiệu suất điện ròng của nhà máy thực tế. *(Đáp: khoảng 18,9%).*",
+        "3. *Loại nhà máy nào sử dụng hơi địa nhiệt tự nhiên để dẫn động turbine?* (A) Binary (B) Flash (C) Dry steam. *(Đáp: C; điều kiện nguồn hơi phải phù hợp, không gán một ngưỡng nhiệt độ tuyệt đối chung cho mọi mỏ).*"
       ]
     },
     {
       "title": "Thực hành/lab",
       "lines": [
-        "Sử dụng **RETScreen** (miễn phí) hoặc *Python* (ví dụ dùng Pandas/PyPlot) để mô phỏng tính toán năng suất một nhà máy *binary* dựa trên dữ liệu nhiệt độ tại Việt Nam (nguồn: Giám sát địa nhiệt EVN). Cụ thể: cho nhiệt độ tầng nông 60°C (GT pump), thiết kế bơm nhiệt gia đình."
+        "Dùng RETScreen hoặc Python để mô phỏng công suất nhiệt và công suất điện ròng của một nhà máy binary giả định. Ghi rõ lưu lượng, nhiệt độ vào/ra, nhiệt độ làm mát, hiệu suất chu trình, điện tự dùng và độ nhạy khi các biến thay đổi. Với bơm nhiệt nguồn đất, dùng chuỗi nhiệt độ đất theo dữ liệu địa phương; không giả định tầng nông luôn ở 60°C. Chỉ mô phỏng hoặc xử lý dữ liệu công khai, không thao tác với giếng hay thiết bị thật."
       ]
     },
     {
@@ -21934,8 +22148,8 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Tham khảo",
       "lines": [
-        "- Wikipedia *Năng lượng địa nhiệt*.",
-        "- Báo cáo IRENA “Geothermal Energy Technology” (2022)."
+        "- U.S. Department of Energy — Geothermal Electricity Generation: https://www.energy.gov/hgeo/geothermal/geothermal-electricity-generation",
+        "- IRENA — Renewable Capacity Statistics 2026 (công suất lắp đặt 2016–2025; © IRENA 2026): https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026"
       ]
     }
   ],
@@ -21943,46 +22157,47 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Tóm tắt bài giảng",
       "lines": [
-        "Năng lượng biển đa dạng nhưng thường phức tạp kỹ thuật. Ví dụ thủy triều: nhà máy *barrage* có thể đạt ~30–50% công suất thủy điện (mức chênh mực) nhờ biến thiên hai lần/ ngày. Sóng: mật độ năng lượng phụ thuộc H²T (phương trình trên), cách khai thác: dùng phao trữ năng. **Công thức ví dụ sóng:** *$P_{\\rm wave} ≈ \\frac{\\rho g^2}{64\\pi}H^2 T$* (deep water) cho công suất trên 1 m rộng."
+        "Năng lượng biển gồm thủy triều, dòng triều, sóng, dòng hải lưu và OTEC; mỗi loại có cơ chế tài nguyên và giới hạn công nghệ khác nhau. Không so sánh công suất barrage với thủy điện bằng một tỷ lệ cố định. Với sóng nước sâu không đều, mật độ công suất trung bình gần đúng là $P≈0,49H_s^2T_e$ kW/m, trong đó $H_s$ là chiều cao sóng có ý nghĩa và $T_e$ là chu kỳ năng lượng. Đây là tài nguyên sóng tới trên mỗi mét đỉnh sóng, không phải điện năng thu được của thiết bị."
       ]
     },
     {
       "title": "Ví dụ minh họa",
       "lines": [
-        "Tính công suất sóng cho biển Việt Nam: giả sử $H=1.5$ m, $T=8$ s, $\\rho=1025$ kg/m³: $P\\approx \\frac{1025*9.81^2}{64\\pi}(1.5)^2*8≈2.8$ kW/m. Với công suất máy ~200 kW trên mỗi 100m bề mặt thu sóng."
+        "Tính mật độ công suất sóng nước sâu: giả sử $H_s=1,5$ m và $T_e=8$ s. Khi đó $P≈0,49×1,5^2×8≈8,82$ kW/m. Đây là công suất sóng tới trên mỗi mét đỉnh sóng, không phải công suất điện của bộ chuyển đổi. Muốn ước tính điện đầu ra phải có capture width/đường cong công suất, hiệu suất, hướng sóng, mức sẵn sàng, giới hạn vận hành và tổn hao."
       ]
     },
     {
       "title": "Bài tập & Đáp án",
       "lines": [
-        "- *BT1:* Tính điện năng trung bình một ngày (kWh) từ một cơ cấu thủy triều barrage: lưu vực 5 km², R=3 m, T=12 h, công suất khai thác 40%. *Đáp:* Tiềm năng lý thuyết từ phương trình trên: $\\approx 5e6*9.81*3^2/(2*43200)≈5.1$ MW. Khai thác 40% ⇒ ~2.04 MW. Trên 24 giờ là khoảng 48,96 MWh (xấp xỉ 49 MWh), không phải 49 kWh.",
-        "- *BT2:* So sánh năng lượng từ sóng và thủy triều ở Việt Nam (bờ biển miền Trung): diện tích thả thiết bị đồng nhất 1 km². Thủy triều cơ bản <1m (công suất thấp), sóng H trung bình ~2 m ⇒ sóng áp đảo."
+        "- *BT1:* Bài toán hồ triều lý tưởng hóa có diện tích $A=5×10^6$ m², biên độ chênh mực nước $R=3$ m, chu kỳ $T=43.200$ s; lấy $ρ=1.000$ kg/m³, $g=9,81$ m/s². Dùng mô hình $P_{ideal}=ρgAR^2/(2T)$. *Đáp:* $P_{ideal}≈5,11$ MW trung bình trong chu kỳ 12 giờ. Nếu hệ số khai thác tổng hợp giả định 40%, công suất mô hình khoảng 2,04 MW. Giả sử hai chu kỳ tương đương trong 24 giờ, điện năng mô hình khoảng 49 MWh/ngày. Đây là ước tính lý tưởng, không phải dự báo dự án.",
+        "- *BT2:* So sánh sóng và thủy triều ở một địa điểm giả định. Cần chuỗi dữ liệu nhiều mùa về $H_s$, $T_e$, biên độ triều, vận tốc dòng, độ sâu, đường cong thiết bị, hiệu suất, mức sẵn sàng, môi trường và chi phí. So sánh điện năng ròng trong cùng ranh giới; không kết luận công nghệ nào tốt hơn chỉ từ một đại lượng."
       ]
     },
     {
       "title": "Câu hỏi trắc nghiệm",
       "lines": [
-        "1. *Ưu điểm lớn nhất của thủy triều so với gió:* (A) Ổn định (B) Dễ xây dựng (C) Hiệu suất cao (D) Phát thải thấp. *(Đáp: A; thủy triều có chu kỳ cố định).)*",
-        "2. *Phương trình ước tính công suất sóng (per meter):* $P=\\frac{\\rho g^2}{64\\pi}H^2 T$. Nếu H tăng gấp đôi, P tăng gấp *không chỉ* 4 lần, vì H² xuất hiện. *(Đáp: H² → tăng 4 lần).)*",
-        "3. *Năng lượng từ chênh nhiệt đại dương (OTEC)* yếu vì (A) chi phí cao (B) hiệu suất Carnot thấp (C) cần diện tích lớn. *(Đáp: B).*"
+        "1. *Ưu điểm quan trọng của thủy triều so với gió là gì?* (A) Thời điểm và chu kỳ có thể dự báo tốt hơn (B) Luôn dễ xây dựng hơn (C) Luôn có hiệu suất cao hơn (D) Không có tác động môi trường. *(Đáp: A; khả năng dự báo không đồng nghĩa sản lượng liên tục hoặc không có tác động).*",
+        "2. *Với sóng nước sâu, nếu $H_s$ tăng gấp đôi còn $T_e$ và điều kiện khác giữ nguyên, mật độ công suất thay đổi thế nào?* *(Đáp: tăng gấp 4 lần vì $P∝H_s^2T_e$).*",
+        "3. *OTEC có giới hạn hiệu suất nhiệt động lý tưởng thấp chủ yếu vì:* (A) Chênh lệch nhiệt độ nguồn nóng – lạnh nhỏ (B) Không dùng turbine (C) Không cần bơm. *(Đáp: A; hệ thực tế còn chịu phụ tải bơm nước và tổn hao).*"
       ]
     },
     {
       "title": "Thực hành/lab",
       "lines": [
-        "Thực nghiệm phần cứng mô hình thu sóng: dùng phao dao động gắn trên bể sóng (đa dụng ở khoa Cơ khí). Tính toán và mô phỏng bằng MATLAB: động lực sóng và lực kéo thiết bị."
+        "Ưu tiên mô phỏng động lực sóng, tài nguyên theo mùa và đáp ứng của bộ chuyển đổi bằng dữ liệu giả lập hoặc dữ liệu công khai có quyền sử dụng rõ ràng. Ghi đơn vị, nguồn, năm, độ sâu và loại chu kỳ sóng. Mô hình bể sóng chỉ là hoạt động minh họa trong môi trường học tập do giáo viên phụ trách; không tự chế thiết bị điện hoặc cơ cấu tải."
       ]
     },
     {
       "title": "Đánh giá",
       "lines": [
-        "(1) Lý thuyết và đoán nguồn (30%); (2) Tính toán lượng/so sánh (30%); (3) Thực hành mô hình/mô phỏng (40%)."
+        "(1) Lý thuyết và đánh giá nguồn tài nguyên (30%); (2) Tính toán lượng/so sánh (30%); (3) Thực hành mô hình/mô phỏng (40%)."
       ]
     },
     {
       "title": "Tham khảo",
       "lines": [
-        "Báo cáo ORE (Ocean Renewable Energy) – UK; Wikipedia *Tidal power*, *Wave power*."
+        "- U.S. DOE — Marine Energy Basics: https://www.energy.gov/cmei/water/marine-energy-basics",
+        "- Neumann et al. — Joint Modelling of Wave Energy Flux and Wave Direction (công thức nước sâu $0,49H_s^2T_e$): https://www.mdpi.com/2227-9737/9/3/460"
       ]
     }
   ],
@@ -21990,29 +22205,29 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Tóm tắt bài giảng",
       "lines": [
-        "Năng lượng tái tạo cần **điện tử công suất** để biến đổi DC từ pin/PV sang AC hòa lưới. Bài giảng tổng hợp công thức tính mạch cơ bản (Định luật Kirchhoff, phasor, hệ số công suất) và **công thức chuyển đổi** (Như $V_{DC}= V_{rms} \\sqrt{2}$ cho chỉnh lưu đơn pha). Chiếu lệ, công suất điều khiển (IGBT/MOSFET) đóng vai trò cốt lõi. Ví dụ, trong điện mặt trời, Bộ nghịch lưu 3 pha phải đáp ứng *ĐN 110kW*, đỉnh điện áp ra 380V, do đó $I_{\\rm AC, Lin}= 110e3/(√3×380)≈167$ A."
+        "Điện tử công suất biến đổi và điều khiển năng lượng DC/AC trong hệ PV, pin và lưới điện. Với sóng sin, $V_{peak}=\\sqrt2V_{RMS}$; đây là điện áp đỉnh, không phải điện áp DC trung bình của mọi mạch chỉnh lưu. Cầu chỉnh lưu một pha toàn sóng lý tưởng, không lọc, có điện áp trung bình khoảng $0,90V_{AC,RMS}$. Cầu chỉnh lưu ba pha sáu xung với dòng tải liên tục, bỏ qua sụt áp diode và chồng dẫn, có $V_{DC,avg}≈1,35U_{LL,RMS}$. Ví dụ inverter ba pha 110 kW ở 380 V RMS dây–dây, hệ số công suất 1 và bỏ qua tổn hao: dòng dây khoảng 167 A."
       ]
     },
     {
       "title": "Ví dụ minh họa",
       "lines": [
-        "Thiết kế mạch ba pha 5 kW: Với 400 V, cosφ=1. Dòng pha: $I = P/(√3·U)=5e3/(√3×400)=7.22$ A. Nếu dùng biến áp nhôm (Δ/Y) 400V/230V, tính TDL (tổn hao điện áp do R)."
+        "Tải ba pha cân bằng 5 kW ở 400 V RMS dây–dây, hệ số công suất bằng 1: dòng dây lý tưởng $I_L=P/(\\sqrt3U_{LL}\\cos\\varphi)≈7,22$ A, bỏ qua tổn hao. Nếu phân tích biến áp Δ/Y, phải phân biệt điện áp dây với điện áp pha: phía Y có $U_{pha}=U_{dây}/\\sqrt3$; thông số cuộn dây và tỷ số vòng phải nhất quán với sơ đồ đấu."
       ]
     },
     {
       "title": "Bài tập & Đáp án",
       "lines": [
-        "- *BT1:* Tính công suất thực tiêu thụ khi nối RLC theo đường chéo: R=100 Ω, L=50 mH (tần số 50 Hz), C=100 μF, U=220 V. (Tính $X_L=2πfL$, $X_C=1/(2πfC)$, suy ra cosφ và P.)",
-        "- *BT2:* Nối 6 diode trong mạch ba pha để chỉnh lưu DC. Viết công thức điện áp đầu ra DC trung bình (≈0.95×U_phase).",
-        "- Đáp án chi tiết: (kèm giải hệ phasor, dao động)."
+        "- *BT1:* Mạch RLC nối tiếp có $R=100$ Ω, $L=50$ mH, $C=100$ μF, $f=50$ Hz và nguồn 220 V RMS. Tính $X_L=2πfL≈15,71$ Ω, $X_C=1/(2πfC)≈31,83$ Ω; $Z=R+j(X_L-X_C)$ nên $|Z|≈101,29$ Ω; $I≈2,17$ A; hệ số công suất $≈0,987$ (tính dung, dòng dẫn trước áp); công suất thực $P=I^2R≈472$ W.",
+        "- *BT2:* Cầu chỉnh lưu ba pha sáu diode, tải có dòng liên tục và bỏ qua sụt áp diode/chồng dẫn: $V_{DC,avg}≈1,35U_{LL,RMS}$, tương đương $2,34U_{pha,RMS}$. Không dùng hệ số 0,95×Upha cho cấu hình này.",
+        "- *Lưu ý:* Dòng DC phụ thuộc tải và điện áp DC; không tồn tại một hệ số đổi dòng AC sang DC áp dụng cho mọi mạch chỉnh lưu."
       ]
     },
     {
       "title": "Câu hỏi trắc nghiệm",
       "lines": [
-        "1. *Máy phát điện xoay chiều lý tưởng* chuyển cơ năng thành điện năng với *công suất thực*: (A) $P=UI$ (B) $P=UI\\cos\\phi$ (C) $P=VI^2$. *(Đáp: B)*.",
-        "2. *Nếu biến áp biến đổi 220/110 V (tỉ số 2:1)* thì (A) $V_s=V_p/2$ và $I_s=2I_p$. *(Đáp: A đúng, $V_s/V_p=1/2$, và vì $P$ không đổi, $I_s = 2 I_p$.)*",
-        "3. *Modulation PWM tạo sóng AC từ DC chủ yếu bằng cách:* (A) Liên tục thay đổi biên độ DC (B) Điều chỉnh độ rộng xung (C) Thay đổi tần số AC đầu ra. *(Đáp: B)*."
+        "1. *Với mạch AC một pha hình sin, công suất tác dụng là:* (A) $P=UI$ (B) $P=UI\\cos\\varphi$ (C) $P=UI^2$. *(Đáp: B; U và I là giá trị RMS. Mạch ba pha cân bằng dùng $P=\\sqrt3U_LI_L\\cos\\varphi$).*",
+        "2. *Biến áp lý tưởng có tỷ số điện áp 220/110 V. Nếu tải thứ cấp tiêu thụ dòng 2 A, dòng sơ cấp lý tưởng xấp xỉ:* (A) 1 A (B) 2 A (C) 4 A. *(Đáp: A; bảo toàn công suất lý tưởng, bỏ qua tổn hao).*",
+        "3. *PWM trong nghịch lưu chủ yếu điều khiển điều gì?* (A) Độ rộng và mẫu đóng/ngắt xung (B) Tạo thêm năng lượng (C) Xóa sóng hài tuyệt đối. *(Đáp: A; lọc và điều chế quyết định chất lượng điện áp đầu ra).*"
       ]
     },
     {
@@ -22030,7 +22245,8 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Tham khảo",
       "lines": [
-        "Bản vẽ mạch điện AC/DC, giáo trình Kỹ thuật điện xoay chiều – ĐHBK (nội bộ), IEC 60204 (điện tử công suất)."
+        "- IIT Delhi Virtual Labs — Three-phase uncontrolled bridge rectifier: https://pe1-iitd.vlabs.ac.in/exp/three-phase-uncontrolled/theory.html",
+        "- IIT Kharagpur Virtual Labs — Full-wave rectification: https://be-iitkgp.vlabs.ac.in/exp/full-wave-rectification/theory.html"
       ]
     }
   ],
@@ -22135,28 +22351,28 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Tóm tắt bài giảng",
       "lines": [
-        "Xe điện là **nguồn tiêu thụ công suất lớn**, nhưng cũng là lưu trữ di động. Giải thích mạch sạc AC-DC: dùng bộ điều khiển PWM DC-DC để nạp pin. Chuẩn CCS dùng hai cổng (3 pha AC hoặc DC+DC). Ví dụ tính: Sạc 50 kW DC (380V/125A), cần dây 125 A và hệ thống điều khiển 500 V. Quản lý ổn định: cần cân đối pha do xe sạc bất đồng bộ."
+        "Xe điện là phụ tải có thể điều khiển theo thời gian; một số xe có thể tham gia trao đổi điện hai chiều nếu xe, EVSE, giao thức và điều kiện kết nối đều hỗ trợ. Sạc AC dùng bộ sạc trên xe để biến đổi AC; sạc DC dùng bộ biến đổi ngoài xe cấp DC cho pack. CCS là hệ thống đầu nối kết hợp: đầu nối Combo bổ sung hai tiếp điểm DC bên cạnh giao diện AC; Combo 1/Combo 2 và khả năng sử dụng phụ thuộc thị trường và thiết bị tương thích. Ví dụ lý tưởng $P=VI$: sạc DC 50 kW ở 400 V cần khoảng 125 A nếu bỏ qua tổn hao; đây không phải chỉ dẫn chọn dây hoặc bảo vệ."
       ]
     },
     {
       "title": "Ví dụ minh họa",
       "lines": [
-        "Thiết kế trạm sạc 22 kW AC 3 pha: Yêu cầu mỗi pha ~ 32 A (400 V). Cho 10 cổng sạc, tổng công suất 220 kW, đòi hỏi mạch phân phối lớn."
+        "Trạm sạc AC ba pha 22 kW ở điện áp dây 400 V RMS, hệ số công suất 1 có dòng dây lý tưởng khoảng 31,8 A. Mười cổng có tổng công suất danh định 220 kW; công suất đồng thời thực tế còn phụ thuộc quản lý tải, giới hạn nguồn, hệ số công suất, thiết bị và cấu hình bảo vệ."
       ]
     },
     {
       "title": "Bài tập & Đáp án",
       "lines": [
-        "- *BT1:* Tính điện năng tiêu thụ khi sạc pin 60 kWh từ 20% lên 80% trong 1 giờ. (Đáp: 36 kWh trong 1h, công suất ~36 kW).",
-        "- *BT2:* Một EV 70 kWh xả 20 kW ra lưới liên tục 3h, hỗ trợ đặt tải: bao nhiêu kWh và công suất? (Đáp: 60 kWh điện đã xả)."
+        "- *BT1:* Pin danh định 60 kWh được sạc từ 20% lên 80%. Theo phép tính lý tưởng, phần năng lượng tăng là $0,60×60=36$ kWh. Nếu hoàn thành trong 1 giờ, công suất trung bình lưu vào pin là 36 kW; điện lưới cần cấp cao hơn do tổn hao và không nhất thiết bằng công suất sạc cực đại trong toàn thời gian.",
+        "- *BT2:* EV có pack danh định 70 kWh cấp 20 kW AC trong 3 giờ. Điện năng phía AC theo phép nhân lý tưởng là 60 kWh; năng lượng rút khỏi pack lớn hơn do tổn hao. Pack 70 kWh danh định không bảo đảm luôn thực hiện được: cần xét dung lượng khả dụng, SOC dự phòng, công suất xả, nhiệt độ và giới hạn EV/EVSE."
       ]
     },
     {
       "title": "Câu hỏi trắc nghiệm",
       "lines": [
-        "1. *Lợi ích của V2G:* (A) Kéo dài tuổi thọ pin (B) Dùng pin EV hỗ trợ lưới lúc cần (C) Tăng công suất động cơ. *(Đáp: B)*.",
-        "2. *Xe điện thải bao nhiêu CO₂ khi sạc từ lưới có 70% điện tái tạo:* (A) 0 (B) Cực thấp ~ (C) Cao như xe xăng. *(Đáp: B; gần bằng 0 so với đốt nhiên liệu).)*",
-        "3. *Yếu tố CHÍNH gây tăng đỉnh tải lưới:* (A) Đèn đường (B) Xe điện đồng loạt sạc giờ cao điểm (C) Nóng lạnh. *(Đáp: B)*."
+        "1. *Lợi ích tiềm năng của V2G là gì?* (A) Luôn kéo dài tuổi thọ pin (B) Cho phép xe tương thích hỗ trợ lưới theo điều kiện kỹ thuật và hợp đồng (C) Tăng công suất động cơ. *(Đáp: B).*",
+        "2. *Phát thải vòng đời của EV sạc từ lưới có 70% điện tái tạo:* (A) Bằng 0 tuyệt đối (B) Phụ thuộc cường độ phát thải điện, thời điểm sạc, sản xuất xe/pin và ranh giới LCA (C) Luôn bằng xe xăng. *(Đáp: B; tỷ lệ điện tái tạo không làm phát thải vòng đời tự động bằng 0).*",
+        "3. *Một yếu tố có thể làm tăng đỉnh tải lưới là:* (A) EV sạc đồng loạt vào giờ cao điểm (B) Quản lý sạc lệch giờ (C) Giảm đồng thời phụ tải. *(Đáp: A).*"
       ]
     },
     {
@@ -22174,7 +22390,8 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Tham khảo",
       "lines": [
-        "EV-Volumes (báo cáo thị trường), chuẩn OCPP/IEC 61851."
+        "- CharIN — CCS FAQ and connector architecture: https://www.charin.global/faq-section/",
+        "- U.S. DOE Alternative Fuels Data Center — Electric Vehicle Basics: https://afdc.energy.gov/vehicles/electric_basics.html"
       ]
     }
   ],
@@ -22182,7 +22399,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Tóm tắt bài giảng",
       "lines": [
-        "AI/IoT là chìa khóa cho Lưới 4.0. Giải thích pipeline: Cảm biến thu thập dữ liệu (công suất, nhiệt độ, tốc độ gió), kết nối qua IoT (MQTT/REST), đưa vào mô hình ML để dự báo. Công thức: *Sai số RMSE = $\\sqrt{\\frac{1}{N}\\sum (y_{pred}-y_{true})^2}$*. Ví dụ: Sử dụng thư viện *TensorFlow* hoặc *scikit-learn*."
+        "AI/ML trong năng lượng có thể hỗ trợ dự báo phụ tải, bức xạ, gió và phát hiện bất thường trong dữ liệu. Pipeline điển hình gồm: xác định bài toán và baseline → thu thập/kiểm tra dữ liệu → chia tập theo thời gian → huấn luyện → đánh giá → theo dõi drift. RMSE là $\\sqrt{\\frac1N\\sum(y_{pred}-y_{true})^2}$ và có cùng đơn vị với biến mục tiêu; cần báo cáo thêm MAE, baseline và sai số theo mùa/giờ. Dự báo không tự động chứng minh quan hệ nhân quả hoặc đủ an toàn để điều khiển hệ thống thật."
       ]
     },
     {
@@ -22195,7 +22412,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
       "title": "Bài tập & Đáp án",
       "lines": [
         "- *BT1:* Cho dữ liệu 1 năm công suất điện lượng thời tiết, lập mô hình hồi quy tuyến tính để dự đoán công suất ngày mai. *(Hướng dẫn: Python/Pandas, LinearRegression).*",
-        "- *BT2:* Bài tập an toàn: liệt kê 3 kịch bản tấn công IoT và biện pháp. *(Đáp gợi ý: tấn công DDoS, code nhúng độc, SSL)*."
+        "- *BT2:* Bài tập phòng vệ: nhận diện ba nhóm rủi ro an ninh mạng ở mức khái niệm (mất tính sẵn sàng, phần mềm không đáng tin cậy, xác thực/truyền thông yếu) và đề xuất kiểm soát phòng ngừa, giám sát, sao lưu, phân quyền. Không mô phỏng tấn công hoặc thử nghiệm trên thiết bị/hệ thống thật."
       ]
     },
     {
@@ -22209,7 +22426,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Thực hành/lab",
       "lines": [
-        "Dự án nhỏ: triển khai mô hình dự báo PV/Gió bằng Python (scikit-learn). Sử dụng bộ dữ liệu công khai của *NLR* (trước đây là NREL) hoặc *Open Power System Data* (EU). Triển khai trên *Raspberry Pi* thu thập dữ liệu IoT (ESP32 gửi MQTT)."
+        "Dùng Python với scikit-learn hoặc một công cụ mô phỏng tương đương để dự báo công suất PV 24 giờ tiếp theo từ dữ liệu công khai/giả lập. Chia train/validation/test theo thứ tự thời gian để tránh rò rỉ tương lai; so sánh với baseline đơn giản, báo cáo MAE/RMSE, kiểm tra mùa vụ, dữ liệu thiếu và drift. Không kết nối mô hình vào thiết bị hoặc hệ thống OT thật."
       ]
     },
     {
@@ -22235,7 +22452,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Ví dụ minh họa",
       "lines": [
-        "Bài tập mô phỏng dự án gió 20 MW: CAPEX giả định 600 tỷ đồng, OPEX giả định 1% CAPEX/năm và thời hạn phân tích 20 năm. Không gán mức FiT 8,5 USc/kWh thành cơ chế giá đang áp dụng tại Việt Nam. Để tính IRR phải bổ sung hệ số công suất/chuỗi sản lượng theo năm, giá trị doanh thu hoặc cơ chế hợp đồng, tỷ giá, thuế, chi phí vốn, suy giảm, đại tu, lịch giải ngân và giá trị cuối kỳ. Với dữ liệu thiếu, chỉ lập danh sách biến đầu vào hoặc phân tích độ nhạy; không công bố IRR 9% như đáp án duy nhất."
+        "Bài toán mô phỏng dự án gió 20 MW: CAPEX giả định 600 tỷ đồng, OPEX giả định bằng 1% CAPEX/năm và thời hạn phân tích 20 năm. Các dữ kiện này chưa đủ để tính IRR/NPV duy nhất. Cần bổ sung chuỗi sản lượng hoặc hệ số công suất theo năm, giá bán/cơ chế hợp đồng, suy giảm, đại tu/thay thế, thuế, tỷ giá, cấu trúc vốn, lịch giải ngân, giá trị cuối kỳ và tỷ lệ chiết khấu. Khi thiếu dữ liệu, hãy lập bảng giả định và phân tích độ nhạy; không tự tạo một IRR “đáp án chuẩn”."
       ]
     },
     {
@@ -22248,9 +22465,8 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Câu hỏi trắc nghiệm",
       "lines": [
-        "1. *Một chỉ tiêu tài chính đánh giá hiệu quả dự án năng lượng:* (A) COP (B) NPV (C) Thời gian hồi vốn (Payback). *(Đáp: B/C đều đúng; ưu tiên dùng NPV/IRR).)*",
-        "2. *Mục đích lập báo cáo ĐTM:* (A) Đầu tư nhanh (B) Đảm bảo an sinh môi trường (C) Xây dựng hiệu quả. *(Đáp: B; theo Luật Môi trường).)*",
-        "3. *LCOE thường được đo bằng:* (A) VND/kWh hoặc USD/MWh (B) %. *(Đáp: A; ví dụ [49†]).*"
+        "1. *Chỉ tiêu nào thường dùng để đánh giá giá trị hiện tại của dòng tiền dự án?* (A) COP (B) NPV (C) Đường kính rotor. *(Đáp: B; IRR và payback cũng có vai trò riêng, nhưng không thay thế NPV).*",
+        "2. *LCOE thường được biểu diễn bằng:* (A) VND/kWh hoặc USD/MWh (B) % (C) MW/năm. *(Đáp: A; phải nêu năm giá, ranh giới chi phí, sản lượng và tỷ lệ chiết khấu).*"
       ]
     },
     {
@@ -22437,7 +22653,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
         "4. *Chuyển dịch năng lượng công bằng:* Khái niệm “Just Transition” (công bằng xã hội trong chuyển dịch), áp dụng tại các quốc gia khai thác than. *Kết quả:* Thảo luận mô hình chính sách tái đào tạo công nhân, hỗ trợ cộng đồng. *Đọc:* Báo cáo ILO về chuyển dịch năng lượng.",
         "5. *Định giá carbon:* So sánh thuế carbon và ETS. *Kết quả:* Hiểu ưu nhược của mỗi loại, tác động thị trường. *Đọc:* Ví dụ chương trình ETS EU hoặc cam kết carbon của VN.",
         "6. *Công cụ tài chính và đầu tư xanh:* Trái phiếu xanh, ESG, quỹ đầu tư năng lượng tái tạo. *Kết quả:* Nêu cơ chế phát hành trái phiếu xanh; vai trò của ngân hàng phát triển. *Đọc:* Báo cáo Ngân hàng Thế giới về tài chính xanh (mở).",
-        "7. *Case study Việt Nam:* Định hướng Quy hoạch điện VIII, lộ trình tăng tỷ lệ điện tái tạo. *Kết quả:* Bàn luận mục tiêu 15% điện từ tái tạo đến 2030, kịch bản hydro. *Đọc:* Quyết định 4283/QĐ-BCT, báo cáo EVN."
+        "7. *Case study Việt Nam:* Định hướng Quy hoạch điện VIII, lộ trình tăng tỷ lệ điện tái tạo. *Kết quả:* Phân tích mục tiêu trong Điều chỉnh Quy hoạch điện VIII: tỷ trọng nguồn năng lượng tái tạo (không bao gồm thủy điện) khoảng 28–36% vào năm 2030 theo Quyết định 768/QĐ-TTg; phân biệt tỷ trọng trong cơ cấu nguồn điện với tỷ trọng năng lượng sơ cấp và kết quả thực tế. *Đọc:* Quyết định 768/QĐ-TTg ngày 15/04/2025, báo cáo EVN."
       ]
     },
     {
@@ -22487,11 +22703,8 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     {
       "title": "Nguồn tham khảo mở",
       "lines": [
-        "- Báo cáo IPCC AR6 để kiểm chứng kiến thức; xem giấy phép và thông báo quyền riêng của từng báo cáo, hình, bảng và tệp đính kèm trước khi tái sử dụng.",
-        "- Văn bản Thỏa thuận Paris và tài liệu UNFCCC để tham khảo nội dung chính sách; kiểm tra điều khoản quyền tác giả của đúng bản phát hành trước khi sao chép hoặc chỉnh sửa.",
-        "- Trang **IEA Net Zero 2050** (mô tả lộ trình – không CC nhưng có thể dẫn ý).",
-        "- Báo cáo **Ngân hàng Thế giới** về tài chính năng lượng (mở).",
-        "- Nghị định, Quyết định VN (hãy dùng tài liệu chính thống, do nhà nước phát hành)."
+        "- Quyết định 768/QĐ-TTg ngày 15/04/2025 — Cổng thông tin Chính phủ: https://chinhphu.vn/?classid=0&docid=213388&pageid=27160",
+        "- Văn bản hợp nhất Luật Điện lực 07/VBHN-VPQH và các văn bản sửa đổi/hướng dẫn còn hiệu lực tại ngày nghiên cứu."
       ]
     },
     {
@@ -22781,6 +22994,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     }
   ]
 };
+
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
   const normalizeSearchText = value => String(value || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
@@ -22999,24 +23213,160 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     return `<aside class="catalog-module-expansion"><span class="catalog-module-expansion__mark" aria-hidden="true">✦</span><div><small>PHÂN TÍCH CHUYÊN ĐỀ · KIẾN THỨC MỞ RỘNG</small><p>${escapeHTML(note)}</p></div></aside>`;
   }
   const COURSE_SOURCE_LINKS = {
-    6: [{label:'U.S. DOE — Energy Storage',url:'https://www.energy.gov/oe/energy-storage'}],
-    7: [{label:'U.S. DOE — Hydrogen and Fuel Cell Technologies Office',url:'https://www.energy.gov/eere/fuelcells/hydrogen-and-fuel-cell-technologies-office'},{label:'U.S. DOE — Fuel Cell Basics',url:'https://www.energy.gov/eere/fuelcells/fuel-cell-basics'}],
-    8: [{label:'U.S. DOE — Geothermal Electricity Generation',url:'https://www.energy.gov/hgeo/geothermal/geothermal-electricity-generation'},{label:'U.S. DOE — Geothermal Environmental Analysis',url:'https://www.energy.gov/hgeo/geothermal/environmental-analysis'}],
-    9: [{label:'U.S. DOE — Marine Energy Basics',url:'https://www.energy.gov/cmei/water/marine-energy-basics'},{label:'U.S. DOE — Marine Energy Glossary',url:'https://www.energy.gov/cmei/water/marine-energy-glossary'}],
-    10: [{label:'IIT Delhi Virtual Labs — Three-phase uncontrolled rectifier',url:'https://pe1-iitd.vlabs.ac.in/exp/three-phase-uncontrolled/theory.html'}],
-    11: [{label:'U.S. DOE — Grid Deployment Office',url:'https://www.energy.gov/gdo/grid-deployment-office'}],
-    12: [{label:'U.S. DOE — Microgrids',url:'https://www.energy.gov/oe/microgrids'}],
-    13: [{label:'U.S. DOE — Alternative Fuels Data Center: Electric Vehicles',url:'https://afdc.energy.gov/vehicles/electric_basics.html'}],
-    14: [{label:'NIST — Smart Grid program and cybersecurity resources',url:'https://www.nist.gov/programs-projects/smart-grid'}],
-    16: [{label:'EIA — Electricity explained',url:'https://www.eia.gov/energyexplained/electricity/'}],
-    17: [{label:'U.S. EPA — Life Cycle Assessment',url:'https://www.epa.gov/lca'}],
-    18: [{label:'Văn bản hợp nhất 07/VBHN-VPQH (05/02/2026) — Luật Điện lực, Công báo Chính phủ',url:'https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-07-vbhn-vpqh-468936/62703.htm'},{label:'Luật Điện lực số 61/2024/QH15 — Cổng văn bản Chính phủ',url:'https://vanban.chinhphu.vn/?docid=212489&pageid=27160'},{label:'Nghị định 57/2025/NĐ-CP — Cơ chế mua bán điện trực tiếp',url:'https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-57-2025-nd-cp-44534.htm'},{label:'Quyết định 768/QĐ-TTg — Điều chỉnh Quy hoạch điện VIII',url:'https://vanban.chinhphu.vn/?classid=2&docid=213388&pageid=27160'},{label:'Thông tư 29/2026/TT-BCT — hiệu lực 20/07/2026',url:'https://congbao.chinhphu.vn/van-ban/thong-tu-so-29-2026-tt-bct-469692/65629.htm'}],
-    19: [{label:'National Laboratory of the Rockies — SAM source code and BSD-3-Clause license',url:'https://github.com/NatLabRockies/SAM'},{label:'PyPSA — source code and MIT license',url:'https://github.com/PyPSA/PyPSA'}],
-    20: [{label:'NLR — PVWatts Calculator',url:'https://pvwatts.nlr.gov/pvwatts.php'},{label:'National Laboratory of the Rockies — SAM',url:'https://sam.nlr.gov/'},{label:'NLR — Wind Energy Economic Analysis',url:'https://www.nlr.gov/wind/economic-analysis'}],
-    21: [{label:'PyBaMM — battery modelling repository; inspect LICENSE for the selected version',url:'https://github.com/pybamm-team/PyBaMM'}],
-    22: [{label:'GridLAB-D — official source repository; check LICENSE and dependencies',url:'https://github.com/gridlab-d/gridlab-d'},{label:'OpenDSS — official project documentation',url:'https://opendss.epri.com/'}],
-    23: [{label:'Quyết định 768/QĐ-TTg — Điều chỉnh Quy hoạch điện VIII',url:'https://vanban.chinhphu.vn/?classid=2&docid=213388&pageid=27160'}]
-  };
+  "6": [
+    {
+      "label": "U.S. DOE — Energy Storage",
+      "url": "https://www.energy.gov/oe/energy-storage"
+    }
+  ],
+  "7": [
+    {
+      "label": "U.S. DOE — Hydrogen and Fuel Cell Technologies Office",
+      "url": "https://www.energy.gov/eere/fuelcells/hydrogen-and-fuel-cell-technologies-office"
+    },
+    {
+      "label": "U.S. DOE — Fuel Cell Basics",
+      "url": "https://www.energy.gov/eere/fuelcells/fuel-cell-basics"
+    }
+  ],
+  "8": [
+    {
+      "label": "U.S. DOE — Geothermal Electricity Generation",
+      "url": "https://www.energy.gov/hgeo/geothermal/geothermal-electricity-generation"
+    },
+    {
+      "label": "U.S. DOE — Geothermal Environmental Analysis",
+      "url": "https://www.energy.gov/hgeo/geothermal/environmental-analysis"
+    },
+    {
+      "label": "IRENA — Renewable Capacity Statistics 2026 (© IRENA 2026)",
+      "url": "https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026"
+    }
+  ],
+  "9": [
+    {
+      "label": "U.S. DOE — Marine Energy Basics",
+      "url": "https://www.energy.gov/cmei/water/marine-energy-basics"
+    },
+    {
+      "label": "Neumann et al. — Joint Modelling of Wave Energy Flux and Wave Direction",
+      "url": "https://www.mdpi.com/2227-9737/9/3/460"
+    }
+  ],
+  "10": [
+    {
+      "label": "IIT Delhi Virtual Labs — Three-phase uncontrolled bridge rectifier",
+      "url": "https://pe1-iitd.vlabs.ac.in/exp/three-phase-uncontrolled/theory.html"
+    },
+    {
+      "label": "IIT Kharagpur Virtual Labs — Full-wave rectification",
+      "url": "https://be-iitkgp.vlabs.ac.in/exp/full-wave-rectification/theory.html"
+    }
+  ],
+  "11": [
+    {
+      "label": "U.S. DOE — Grid Deployment Office",
+      "url": "https://www.energy.gov/gdo/grid-deployment-office"
+    }
+  ],
+  "12": [
+    {
+      "label": "U.S. DOE — Microgrids",
+      "url": "https://www.energy.gov/oe/microgrids"
+    }
+  ],
+  "13": [
+    {
+      "label": "CharIN — Combined Charging System FAQ",
+      "url": "https://www.charin.global/faq-section/"
+    },
+    {
+      "label": "U.S. DOE AFDC — Electric Vehicle Basics",
+      "url": "https://afdc.energy.gov/vehicles/electric_basics.html"
+    }
+  ],
+  "14": [
+    {
+      "label": "NIST — Smart Grid program and cybersecurity resources",
+      "url": "https://www.nist.gov/programs-projects/smart-grid"
+    }
+  ],
+  "16": [
+    {
+      "label": "EIA — Electricity explained",
+      "url": "https://www.eia.gov/energyexplained/electricity/"
+    }
+  ],
+  "17": [
+    {
+      "label": "U.S. EPA — Life Cycle Assessment",
+      "url": "https://www.epa.gov/lca"
+    }
+  ],
+  "18": [
+    {
+      "label": "Cổng thông tin Chính phủ — Quyết định 768/QĐ-TTg ngày 15/04/2025",
+      "url": "https://chinhphu.vn/?classid=0&docid=213388&pageid=27160"
+    },
+    {
+      "label": "Công báo Chính phủ — Thông tư 29/2026/TT-BCT",
+      "url": "https://vanban.chinhphu.vn/?docid=218353&orggroupid=4&pageid=27160"
+    }
+  ],
+  "19": [
+    {
+      "label": "National Laboratory of the Rockies — SAM source code and BSD-3-Clause license",
+      "url": "https://github.com/NatLabRockies/SAM"
+    },
+    {
+      "label": "PyPSA — source code and MIT license",
+      "url": "https://github.com/PyPSA/PyPSA"
+    }
+  ],
+  "20": [
+    {
+      "label": "NLR — PVWatts Calculator",
+      "url": "https://pvwatts.nlr.gov/pvwatts.php"
+    },
+    {
+      "label": "National Laboratory of the Rockies — SAM",
+      "url": "https://sam.nlr.gov/"
+    },
+    {
+      "label": "NLR — Wind Energy Economic Analysis",
+      "url": "https://www.nlr.gov/wind/economic-analysis"
+    }
+  ],
+  "21": [
+    {
+      "label": "PyBaMM — battery modelling repository; inspect LICENSE for the selected version",
+      "url": "https://github.com/pybamm-team/PyBaMM"
+    }
+  ],
+  "22": [
+    {
+      "label": "GridLAB-D — official source repository; check LICENSE and dependencies",
+      "url": "https://github.com/gridlab-d/gridlab-d"
+    },
+    {
+      "label": "OpenDSS — official project documentation",
+      "url": "https://opendss.epri.com/"
+    }
+  ],
+  "23": [
+    {
+      "label": "Quyết định 768/QĐ-TTg — Điều chỉnh Quy hoạch điện VIII",
+      "url": "https://vanban.chinhphu.vn/?classid=2&docid=213388&pageid=27160"
+    }
+  ],
+  "15": [
+    {
+      "label": "IEA — Projected Costs of Generating Electricity",
+      "url": "https://www.iea.org/reports/projected-costs-of-generating-electricity-2020"
+    }
+  ]
+};
+
   function catalogCourseSourcesMarkup(course) {
     const sources = COURSE_SOURCE_LINKS[course.number] || [];
     if (!sources.length) return '';
@@ -23058,7 +23408,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
   COURSE_ACCURACY_NOTES[7].body += '\n\nHiệu suất điện phân không phải một con số cố định cho mọi công nghệ. Cần nêu cơ sở HHV/LHV, tính tại stack hay toàn hệ thống, điều kiện tải và phụ tải phụ trợ. Với HHV khoảng 39,4 kWh/kg H₂, phép tính 39,4/0,75 ≈ 52,5 kWh điện/kg H₂ chỉ là phép chia minh họa theo hiệu suất 75% HHV; không phải suất tiêu thụ bảo đảm cho mọi thiết bị. Các nội dung về hydro trong khóa này chỉ phục vụ phân tích khái niệm và mô phỏng, không thực hành với khí nén hoặc thiết bị áp suất.';
   COURSE_ACCURACY_NOTES[8] = {
     title: 'Địa nhiệt: phân biệt phát điện, nhiệt hữu ích và điều kiện địa chất',
-    body: 'Không có một độ sâu khoan, nhiệt độ hay hệ số công suất áp dụng cho mọi địa điểm. Nguồn địa nhiệt phụ thuộc gradient nhiệt, độ thấm, lưu lượng, thành phần chất lưu và điều kiện địa chất. Hơi khô, flash steam và binary cycle là các cấu hình khác nhau; ranh giới áp dụng thay đổi theo thiết kế và tài nguyên. Bơm nhiệt địa nhiệt nông thường dùng để trao đổi nhiệt cho công trình, không đồng nghĩa với nhà máy phát điện địa nhiệt.\\n\\nIRENA ghi nhận 15,674 GW công suất địa nhiệt lắp đặt toàn cầu vào cuối năm 2025, tăng khoảng 0,259 GW (259 MW) trong năm 2025. Đây là công suất điện, không phải công suất nhiệt trực tiếp; cần đọc đúng định nghĩa thống kê. Tác động môi trường có thể gồm sử dụng nước, khí không ngưng, nước muối khoáng và địa chấn kích thích ở một số cấu hình. Nội dung khóa chỉ yêu cầu phân tích dữ liệu và mô hình, không hướng dẫn khoan hoặc vận hành giếng.',
+    body: 'Không có một độ sâu khoan, nhiệt độ hay hệ số công suất áp dụng cho mọi địa điểm. Nguồn địa nhiệt phụ thuộc gradient nhiệt, độ thấm, lưu lượng, thành phần chất lưu và điều kiện địa chất. Hơi khô, flash steam và binary cycle là các cấu hình khác nhau; ranh giới áp dụng thay đổi theo thiết kế và tài nguyên. Bơm nhiệt địa nhiệt nông thường dùng để trao đổi nhiệt cho công trình, không đồng nghĩa với nhà máy phát điện địa nhiệt.\\n\\nIRENA ghi nhận khoảng 15,7 GW công suất địa nhiệt lắp đặt toàn cầu vào cuối năm 2025, tăng khoảng 0,259 GW (259 MW) trong năm 2025. Đây là công suất điện, không phải công suất nhiệt trực tiếp; cần đọc đúng định nghĩa thống kê. Tác động môi trường có thể gồm sử dụng nước, khí không ngưng, nước muối khoáng và địa chấn kích thích ở một số cấu hình. Nội dung khóa chỉ yêu cầu phân tích dữ liệu và mô hình, không hướng dẫn khoan hoặc vận hành giếng.',
     source: 'IRENA Renewable Capacity Statistics 2026; U.S. Department of Energy — Geothermal Electricity Generation and Environmental Analysis.',
     url: 'https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026'
   };
@@ -23076,7 +23426,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
   };
   COURSE_ACCURACY_NOTES[18] = {
     title: 'Pháp luật và quy hoạch điện phải ghi phiên bản, ngày hiệu lực và ngày tra cứu',
-    body: 'Luật Điện lực số 61/2024/QH15 có hiệu lực từ ngày 01/02/2025; Văn phòng Quốc hội đã ban hành Văn bản hợp nhất 07/VBHN-VPQH ngày 05/02/2026. Khi mô tả cơ chế thị trường, mua bán điện trực tiếp, giá điện, cấp phép hoặc quy hoạch, cần đọc bản hợp nhất cùng văn bản hướng dẫn, sửa đổi và văn bản mới hơn còn hiệu lực tại ngày nghiên cứu. Ngày ban hành văn bản hợp nhất không tự động đồng nghĩa mọi quy định trong đó cùng có một ngày hiệu lực mới. Quyết định 768/QĐ-TTg ngày 15/04/2025 phê duyệt Điều chỉnh Quy hoạch điện VIII; chỉ tiêu trong quy hoạch là mục tiêu/kịch bản quy hoạch, không phải sản lượng hay công suất đã đạt.\\n\\nMột bài học pháp lý cần ghi số hiệu văn bản, cơ quan ban hành, ngày ban hành, ngày hiệu lực và phạm vi điều chỉnh. Thông tư 29/2026/TT-BCT ban hành ngày 02/06/2026, có hiệu lực 20/07/2026, quy định vận hành thị trường bán buôn điện cạnh tranh; chỉ viện dẫn khi nội dung bài học đúng phạm vi điều chỉnh của văn bản này. Không lấy bản tin báo chí hoặc một con số trong đề cương cũ để kết luận quyền đấu nối, biểu giá hay nghĩa vụ pháp lý hiện hành. Phần này là tài liệu giáo dục, không thay thế tư vấn pháp lý.',
+    body: 'Luật Điện lực số 61/2024/QH15 có hiệu lực từ ngày 01/02/2025; Văn phòng Quốc hội đã ban hành Văn bản hợp nhất 07/VBHN-VPQH ngày 05/02/2026. Khi mô tả cơ chế thị trường, mua bán điện trực tiếp, giá điện, cấp phép hoặc quy hoạch, cần đọc bản hợp nhất cùng văn bản hướng dẫn, sửa đổi và văn bản mới hơn còn hiệu lực tại ngày nghiên cứu. Ngày ban hành văn bản hợp nhất không tự động đồng nghĩa mọi quy định trong đó cùng có một ngày hiệu lực mới. Quyết định 768/QĐ-TTg ngày 15/04/2025 phê duyệt Điều chỉnh Quy hoạch điện VIII; chỉ tiêu trong quy hoạch là mục tiêu/kịch bản quy hoạch, không phải sản lượng hay công suất đã đạt.\\n\\nMột bài học pháp lý cần ghi số hiệu văn bản, cơ quan ban hành, ngày ban hành, ngày hiệu lực và phạm vi điều chỉnh. Theo tra cứu ngày 07/11/2026, Thông tư 29/2026/TT-BCT được ban hành ngày 02/06/2026 và có hiệu lực 20/07/2026, quy định vận hành thị trường bán buôn điện cạnh tranh. Khi dùng nội dung pháp lý, phải mở văn bản gốc và văn bản sửa đổi/bổ sung còn hiệu lực tại ngày học; không suy rộng thông tư này sang mọi hoạt động điện lực. Cơ sở dữ liệu của Cục Điện lực còn ghi nhận các văn bản năm 2026 liên quan cơ chế giá điện và DPPA; vì vậy nội dung về giá, đấu nối, mua bán trực tiếp hoặc cấp phép phải được đối chiếu lại theo đúng chủ đề và ngày nghiên cứu. Không lấy bản tin báo chí hoặc một con số trong đề cương cũ để kết luận quyền đấu nối, biểu giá hay nghĩa vụ pháp lý hiện hành. Phần này là tài liệu giáo dục, không thay thế tư vấn pháp lý.',
     source: 'Luật Điện lực số 61/2024/QH15; Quyết định 768/QĐ-TTg ngày 15/04/2025; cổng văn bản Chính phủ.',
     url: 'https://vanban.chinhphu.vn/?docid=212489&pageid=27160'
   };
@@ -23137,7 +23487,60 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     url: 'https://vanban.chinhphu.vn/?classid=2&docid=213388&pageid=27160'
   };
 
-  function catalogAccuracyMarkup(course) {
+  const COURSE_PROJECT_WORKBENCH = {
+    6: { title: 'Mô hình lịch sạc – xả BESS trong một ngày', scenario: 'Dùng chuỗi phụ tải và sản lượng PV giả lập theo từng giờ để xem pin giúp dịch chuyển điện năng ra sao. Đây là bài toán mô phỏng, không phải hướng dẫn xây dựng hay đấu nối bộ pin.', steps: ['Lập bảng 24 mốc thời gian gồm phụ tải, PV, điện mua lưới và trạng thái SOC giả định.', 'Đặt giới hạn công suất sạc/xả, SOC tối thiểu/tối đa và hiệu suất hai chiều; mô tả rõ các giả định.', 'So sánh kịch bản không pin và có pin; kiểm tra cân bằng năng lượng ở từng bước.'], output: 'Bảng công suất theo giờ, đồ thị SOC, năng lượng nạp/xả, tổn hao và nhận xét về giới hạn mô hình.', check: 'Tách kW khỏi kWh; không cho SOC vượt giới hạn; tổng năng lượng đầu vào – đầu ra – tổn hao phải cân bằng trong sai số làm tròn.' },
+    7: { title: 'Cân bằng năng lượng cho chuỗi điện – hydrogen', scenario: 'Xây dựng bảng tính giả lập cho một hệ điện phân dùng nguồn điện tái tạo, sau đó so sánh việc dùng điện trực tiếp với chuyển đổi qua hydrogen.', steps: ['Chọn một cơ sở hiệu suất nhất quán: HHV hoặc LHV; ghi rõ cấp stack hay toàn hệ thống.', 'Tính năng lượng hóa học của lượng H₂ giả định và điện đầu vào tương ứng; tách riêng nén, lưu trữ và vận chuyển nếu có.', 'So sánh tổn hao của chuỗi điện → H₂ → điện với phương án điện khí hóa trực tiếp ở cùng ranh giới.'], output: 'Sơ đồ dòng năng lượng, bảng giả định, bảng hiệu suất theo từng công đoạn và kết luận về trường hợp ứng dụng.', check: 'Không trộn HHV với LHV; hydrogen được xem là chất mang năng lượng; không thực hiện thí nghiệm hoặc thao tác với khí/thiết bị áp suất.' },
+    8: { title: 'Mô hình nhiệt – điện của một mỏ địa nhiệt giả định', scenario: 'Dùng dữ liệu giả lập về lưu lượng, nhiệt độ vào/ra và phụ tải phụ trợ để ước lượng công suất nhiệt và điện ròng.', steps: ['Đổi lưu lượng thể tích sang lưu lượng khối lượng bằng giả định mật độ đã nêu.', 'Tính công suất nhiệt từ lưu lượng khối lượng, nhiệt dung riêng và ΔT; dùng hiệu suất chuyển đổi được ghi rõ là giả định.', 'Trừ phụ tải bơm/làm mát giả lập và phân tích độ nhạy khi lưu lượng hoặc ΔT thay đổi.'], output: 'Sơ đồ khối nhà máy, bảng cân bằng nhiệt – điện và đồ thị độ nhạy.', check: 'Phân biệt kW nhiệt với kW điện; dùng nhiệt độ tuyệt đối cho giới hạn Carnot; không coi một hiệu suất hay gradient địa nhiệt là phổ quát.' },
+    9: { title: 'So sánh tài nguyên sóng và thủy triều bằng cùng một chuẩn', scenario: 'Phân tích một vùng biển giả định bằng chuỗi dữ liệu nhiều mùa, không suy luận từ một giá trị sóng hoặc triều đơn lẻ.', steps: ['Ghi Hs, Te, biên độ triều, vận tốc dòng và độ sâu; ghi đơn vị cùng nguồn dữ liệu.', 'Ước lượng tài nguyên lý thuyết với công thức đúng phạm vi áp dụng; phân biệt kW/m với kW thiết bị.', 'Bổ sung hiệu suất thiết bị, mức sẵn sàng, chi phí, môi trường và giới hạn hàng hải trước khi so sánh.'], output: 'Bản đồ/biểu đồ tài nguyên giả lập, bảng giả định và ma trận ưu – nhược điểm.', check: 'Không gọi công suất tài nguyên là điện năng thu được; không đưa tỷ lệ toàn cầu nếu chưa có phạm vi và phương pháp thống nhất.' },
+    10: { title: 'Phân tích mạch AC và bộ biến đổi bằng mô hình', scenario: 'Sử dụng sơ đồ và dữ liệu giả lập để đọc quan hệ điện áp, dòng, công suất tác dụng/phản kháng và nguyên lý biến đổi AC/DC.', steps: ['Ghi rõ đại lượng RMS, điện áp pha hay điện áp dây, tần số và hệ số công suất.', 'Kiểm tra công thức công suất một pha/ba pha và quan hệ tốc độ – tần số của máy điện.', 'Mô phỏng dạng sóng chỉnh lưu/nghịch lưu trong phần mềm học tập; không lắp hoặc đấu nối mạch công suất thật.'], output: 'Sơ đồ khối, bảng tính có đơn vị, đồ thị dạng sóng và phần giải thích các giả định lý tưởng.', check: 'Không đồng nhất giá trị đỉnh với RMS; phân biệt kW/kVA/kvar; ghi đúng điều kiện của công thức chỉnh lưu.' },
+    11: { title: 'Điều phối danh mục tài nguyên trong mô hình VPP', scenario: 'Tạo một mô hình giả lập gồm mái PV, pin và phụ tải linh hoạt để khảo sát việc phối hợp tài nguyên phân tán.', steps: ['Xác định ranh giới danh mục, vai trò từng thiết bị và quyền điều khiển giả định.', 'Thiết lập lịch điều phối theo phụ tải và nguồn tái tạo; áp giới hạn SOC và công suất.', 'Thử tình huống sai số dự báo hoặc mất dữ liệu; mô tả cơ chế dự phòng và giám sát.'], output: 'Sơ đồ VPP, lịch công suất tổng, chỉ số sai số và bảng kịch bản.', check: 'Phân biệt BMS, EMS, AMI, SCADA và PMU; không mô tả mô hình như hệ thống đang vận hành ngoài đời.' },
+    12: { title: 'Kiểm tra hai chế độ vận hành microgrid bằng mô phỏng', scenario: 'Mô hình một microgrid nhỏ chỉ bằng dữ liệu và phần mềm giả lập, so sánh chế độ nối lưới và chế độ độc lập.', steps: ['Vẽ ranh giới hệ thống, điểm kết nối chung, nguồn, tải và lưu trữ.', 'Lập cân bằng công suất và phân loại tải ưu tiên trong từng kịch bản.', 'Thử tình huống mất nguồn hoặc sai số dự báo trong mô phỏng; ghi rõ giả định chuyển trạng thái.'], output: 'Sơ đồ microgrid, bảng cân bằng theo thời gian và bảng mức độ đáp ứng phụ tải.', check: 'Không mặc định PV + pin là microgrid; khả năng vận hành độc lập phụ thuộc bảo vệ, điều khiển và thiết kế thực.' },
+    13: { title: 'Lập lịch sạc EV có xét nhu cầu di chuyển', scenario: 'Dùng dữ liệu xe, lịch đến/rời bãi và phụ tải giả lập để cân bằng nhu cầu sạc với giới hạn lưới.', steps: ['Mô tả số xe, thời điểm kết nối, nhu cầu năng lượng và SOC mục tiêu theo giả định.', 'So sánh sạc ngay khi đến với sạc có điều phối; chỉ bật V2G trong kịch bản giả định có phần cứng phù hợp.', 'Đánh giá ảnh hưởng đến đỉnh phụ tải, điện năng, tổn hao và mức sẵn sàng cho chuyến đi.'], output: 'Đồ thị công suất sạc theo giờ, SOC giả lập và so sánh hai chính sách.', check: 'Không đồng nhất dung lượng pin với công suất sạc; V2G cần xe, EVSE, phần mềm, hợp đồng và quy định tương thích.' },
+    14: { title: 'Dự báo sản lượng PV và đánh giá sai số mô hình', scenario: 'Dùng dữ liệu công khai hoặc dữ liệu tổng hợp để xây dựng mô hình dự báo phục vụ nghiên cứu, không điều khiển thiết bị thật.', steps: ['Kiểm tra chất lượng dữ liệu, đơn vị, thiếu dữ liệu và dấu thời gian.', 'Tách tập huấn luyện/kiểm định theo thời gian để tránh rò rỉ dữ liệu tương lai.', 'So sánh mô hình cơ sở với mô hình ML bằng MAE/RMSE và phân tích sai số theo mùa/giờ.'], output: 'Bản mô tả dữ liệu, biểu đồ dự báo – thực tế giả lập và bảng chỉ số đánh giá.', check: 'Không xem AI là hệ thống điều khiển an toàn; nêu giới hạn dữ liệu, sai số và vai trò quyết định của con người.' },
+    15: { title: 'Sàng lọc khả thi cho dự án năng lượng', scenario: 'Phân tích một đề xuất dự án giả định theo các nhóm tài nguyên, kỹ thuật, kinh tế, môi trường, xã hội và pháp lý.', steps: ['Mô tả vấn đề, địa điểm giả định, nhu cầu và các phương án thay thế.', 'Lập danh sách dữ liệu còn thiếu: tài nguyên, lưới, đất đai, môi trường, chi phí và quy định.', 'Xây dựng ma trận rủi ro và kịch bản; phân tách rõ dữ liệu đã kiểm chứng với giả định.'], output: 'Bản ghi nhớ tiền khả thi ngắn, ma trận rủi ro và danh sách câu hỏi cần khảo sát thêm.', check: 'Không coi một phép tính sơ bộ là hồ sơ thiết kế hoặc kết luận pháp lý; mọi quy định cần ghi ngày tra cứu.' },
+    16: { title: 'So sánh hai phương án bằng LCOE và dòng tiền', scenario: 'Dùng hai dự án giả lập có tuổi thọ, chi phí, sản lượng và cấu trúc vốn khác nhau để hiểu tác động của giả định kinh tế.', steps: ['Xác định ranh giới chi phí, năm gốc tiền tệ, tuổi thọ và tỷ lệ chiết khấu.', 'Tính LCOE từ tổng chi phí vòng đời chiết khấu chia cho tổng điện năng chiết khấu; lập riêng dòng tiền cho IRR/NPV.', 'Thay đổi giá vốn, sản lượng, suy giảm và chi phí vận hành để làm phân tích độ nhạy.'], output: 'Bảng giả định, biểu đồ dòng tiền và so sánh LCOE/NPV/IRR theo kịch bản.', check: 'CAPEX/OPEX đơn lẻ không đủ xác định IRR; phân biệt chi phí danh nghĩa với chi phí thực và ghi đơn vị tiền tệ.' },
+    17: { title: 'Ranh giới vòng đời của một hệ thống PV', scenario: 'Xây dựng khung LCA khái niệm cho một hệ thống PV giả định, so sánh tác động qua các giai đoạn sản xuất – vận hành – cuối vòng đời.', steps: ['Chọn đơn vị chức năng, ví dụ 1 kWh AC giao tại điểm quy định, và mô tả ranh giới hệ thống.', 'Liệt kê nguyên liệu, sản xuất, vận chuyển, lắp đặt, vận hành, thay thế và xử lý cuối vòng.', 'Ghi nguồn dữ liệu, năm, địa điểm, phương pháp phân bổ và bất định.'], output: 'Sơ đồ vòng đời, bảng kiểm kê đầu vào/đầu ra và danh sách giới hạn nghiên cứu.', check: 'Không so sánh g CO₂e/kWh nếu đơn vị chức năng hoặc ranh giới khác nhau; phát thải vòng đời khác phát thải tại điểm vận hành.' },
+    18: { title: 'Hồ sơ theo dõi một chính sách điện lực', scenario: 'Chọn một chính sách hoặc văn bản quy hoạch của Việt Nam và lập hồ sơ nguồn để theo dõi hiệu lực, phạm vi và các văn bản liên quan.', steps: ['Ghi số hiệu, cơ quan ban hành, ngày ký, ngày hiệu lực và văn bản sửa đổi/hợp nhất.', 'Tóm tắt mục tiêu và phạm vi điều chỉnh bằng lời của mình; dẫn liên kết tới văn bản gốc.', 'Phân biệt chỉ tiêu quy hoạch với công suất/sản lượng đã thực hiện; ghi ngày tra cứu.'], output: 'Bảng dòng thời gian văn bản, sơ đồ quan hệ văn bản và bản phân tích chính sách ngắn.', check: 'Không coi văn bản hợp nhất là một ngày hiệu lực mới; nội dung học tập không thay thế tư vấn pháp lý.' },
+    19: { title: 'Tạo mô hình PV có thể tái lập', scenario: 'Dùng công cụ mô phỏng và bộ dữ liệu thời tiết công khai hoặc tổng hợp để ước tính sản lượng PV.', steps: ['Ghi phần mềm, phiên bản, mô hình, dữ liệu thời tiết, vị trí và bước thời gian.', 'Thiết lập thông số PV giả định; tách công suất DC và AC, mô tả tổn hao.', 'Chạy kịch bản cơ sở và phân tích độ nhạy với bóng che, nhiệt độ hoặc tỷ lệ DC/AC.'], output: 'File cấu hình, bảng đầu vào/đầu ra, biểu đồ tháng và nhật ký phiên bản.', check: 'Kết quả mô phỏng không phải số đo thật; giấy phép phần mềm không tự cấp quyền cho dữ liệu đi kèm.' },
+    20: { title: 'Thiết kế sơ bộ hệ PV – gió lai trên giấy', scenario: 'Định cỡ một hệ PV – gió giả định bằng dữ liệu phụ tải và tài nguyên tổng hợp, không triển khai thiết bị thật.', steps: ['Lập chuỗi tải theo giờ và nhu cầu năng lượng; phân biệt tải đỉnh với điện năng ngày.', 'Dùng bức xạ, nhiệt độ, hướng/nghiêng PV và phân bố gió/đường cong turbine để mô phỏng.', 'Xét pin, giới hạn inverter, thiếu hụt, điện dư và chi phí theo nhiều kịch bản.'], output: 'Sơ đồ khối hệ thống, bảng định cỡ, đồ thị nguồn – tải và giả định chi phí.', check: 'Không nhân công suất nhãn với 8.760 giờ; không dùng tốc độ gió trung bình đơn lẻ để dự báo sản lượng năm.' },
+    21: { title: 'Mô phỏng SOC và suy giảm pin theo kịch bản', scenario: 'Tạo mô hình pin bằng bộ dữ liệu giả lập/công khai đã được cấp quyền; chỉ phân tích ở mức phần mềm.', steps: ['Định nghĩa dung lượng danh định, giới hạn SOC, DoD, hiệu suất và công suất.', 'Mô phỏng chu kỳ sạc/xả với nhiều tải; kiểm tra cân bằng năng lượng và giới hạn trạng thái.', 'So sánh một số giả định nhiệt độ/DoD/tốc độ sạc và ghi rõ mô hình lão hóa đơn giản hóa.'], output: 'Đồ thị SOC, công suất, năng lượng giao và bảng so sánh tuổi thọ giả định.', check: 'Không suy ra SOH pin thật từ mô phỏng; không mở pack, thử nghiệm cell hoặc thao tác phần cứng.' },
+    22: { title: 'Power-flow trên lưới phân phối giả lập', scenario: 'Sử dụng mô hình mẫu có sẵn trong phần mềm để quan sát ảnh hưởng của tải và nguồn PV lên điện áp nút.', steps: ['Ghi sơ đồ topology, base kV/kVA, cấu hình pha, thông số nhánh và mô hình tải.', 'Chạy kịch bản tải cơ sở và kịch bản có PV giả định; kiểm tra hội tụ, điện áp, dòng và tổn thất.', 'Thử DR trên dữ liệu giả lập và so sánh đỉnh phụ tải; không kết nối bất kỳ hạ tầng thật nào.'], output: 'Sơ đồ bus, bảng điện áp/dòng, đồ thị trước – sau và ghi chú giả định.', check: 'Không gửi lệnh tới SCADA/thiết bị thật; phải nêu base, đơn vị và giới hạn solver.' },
+    23: { title: 'Đồ án cuối khóa có thể kiểm chứng', scenario: 'Chọn một câu hỏi hẹp và trả lời bằng dữ liệu có nguồn gốc, mô hình có thể lặp lại và báo cáo trung thực.', steps: ['Xác định vấn đề, người hưởng lợi, câu hỏi nghiên cứu, phạm vi và tiêu chí thành công.', 'Tạo hồ sơ dữ liệu/phần mềm: nguồn, phiên bản, ngày truy cập, giấy phép, tiền xử lý và giả định.', 'Kiểm chứng bằng phép tính độc lập, phân tích độ nhạy và nêu điều chưa thể kết luận.'], output: 'Báo cáo, sơ đồ phương pháp, bộ dữ liệu/ mã do người học tự tạo trong phạm vi giấy phép và bài thuyết trình.', check: 'Phân biệt dữ liệu đo, dữ liệu công khai, giả định và kết quả mô phỏng; trích dẫn không thay thế giấy phép.' }
+  };
+
+  function catalogProjectWorkbenchMarkup(course) {
+    const guide = COURSE_PROJECT_WORKBENCH[course.number];
+    if (!guide) return '';
+    return `
+      <section class="catalog-project-studio" aria-label="Bài vận dụng và kiểm tra hiểu biết">
+        <div class="catalog-project-studio__head"><span class="catalog-project-studio__mark" aria-hidden="true">✦</span><div><small>STUDIO · BÀI VẬN DỤNG MÔ PHỎNG</small><h3>${escapeHTML(guide.title)}</h3><p>${escapeHTML(guide.scenario)}</p></div></div>
+        <div class="catalog-project-studio__grid">
+          <article class="catalog-project-studio__panel"><span class="catalog-project-studio__index">01 / QUY TRÌNH</span><h4>Thực hiện theo từng bước</h4><ol>${guide.steps.map(step => `<li>${escapeHTML(step)}</li>`).join('')}</ol></article>
+          <article class="catalog-project-studio__panel"><span class="catalog-project-studio__index">02 / SẢN PHẨM</span><h4>Đầu ra cần hoàn thành</h4><p>${escapeHTML(guide.output)}</p></article>
+          <article class="catalog-project-studio__panel catalog-project-studio__panel--check"><span class="catalog-project-studio__index">03 / KIỂM CHỨNG</span><h4>Tự kiểm tra trước khi kết luận</h4><p>${escapeHTML(guide.check)}</p></article>
+        </div>
+        <p class="catalog-project-studio__foot">Dữ liệu trong bài vận dụng là dữ liệu giả lập hoặc dữ liệu công khai có điều khoản rõ ràng. Mọi kết quả cần ghi đơn vị, giả định, phạm vi và giới hạn; không dùng bài tập này làm hướng dẫn triển khai thiết bị thực tế.</p>
+      </section>`;
+  }
+
+  
+Object.assign(COURSE_ACCURACY_NOTES, {
+  8: { title:'Địa nhiệt: phân biệt nguồn nhiệt, hiệu suất và điều kiện mỏ', body:'Các mô hình flash, binary và dry steam không có một ngưỡng nhiệt độ duy nhất áp dụng cho mọi dự án. DOE mô tả flash phổ biến với chất lưu trên khoảng 182°C và binary có thể dùng nguồn thấp hơn; đây là mô tả điển hình, không thay thế khảo sát nhiệt độ, lưu lượng, hóa học chất lưu, áp suất và kinh tế dự án. Địa nhiệt có thể điều độ tại mỏ phù hợp nhưng không đồng nghĩa sản lượng bất biến hoặc không có tác động môi trường.\n\nKhi tính công suất nhiệt, dùng P_th = m_dot × cp × ΔT. Công suất điện ròng phải xác định rõ hiệu suất chu trình và điện tự dùng. Không lấy giới hạn Carnot làm hiệu suất nhà máy; mọi nhiệt độ trong công thức Carnot phải đổi sang kelvin. Số liệu IRENA cuối năm 2025 là công suất lắp đặt: địa nhiệt khoảng 15,7 GW và PV khoảng 2.383 GW; không phải sản lượng điện.', source:'U.S. DOE — Geothermal Electricity Generation; IRENA — Renewable Capacity Statistics 2026 (© IRENA 2026; attribution required)', url:'https://www.energy.gov/hgeo/geothermal/geothermal-electricity-generation' },
+  11: { title:'Lưới thông minh và VPP: phân biệt tài sản, điều khiển và thị trường', body:'VPP là mô hình điều phối nhiều nguồn phân tán (PV, pin, phụ tải linh hoạt, EV...) như một danh mục có thể cung cấp dịch vụ hệ thống; nó không biến các thiết bị thành một nhà máy vật lý duy nhất. Khả năng tham gia thị trường phụ thuộc quy tắc đo đếm, điều độ, kết nối, dữ liệu, quyền điều khiển và khung pháp lý tại từng nơi.\n\nKhông đồng nhất SCADA, AMI và PMU: SCADA giám sát/thu thập dữ liệu và có thể thực hiện điều khiển; AMI phục vụ đo đếm thông minh; PMU đo đồng bộ pha và trạng thái động. Bài học chỉ dùng sơ đồ và dữ liệu mô phỏng, không gửi lệnh tới hệ thống điện hoặc thiết bị thật.', source:'U.S. DOE — Grid Deployment Office; NIST Smart Grid', url:'https://www.energy.gov/gdo/grid-deployment-office' },
+  12: { title:'Microgrid: khả năng cô lập không đồng nghĩa luôn cấp điện liên tục', body:'Microgrid thường có thể vận hành nối lưới và, nếu thiết kế phù hợp, chuyển sang chế độ islanded. Khả năng duy trì tải phụ thuộc công suất nguồn, dung lượng lưu trữ, nhiên liệu, điều khiển, bảo vệ, khả năng khởi động độc lập và danh mục phụ tải ưu tiên. Không phải microgrid nào cũng có khả năng islanding hoặc black-start.\n\nPhân biệt inverter grid-following và grid-forming; kiểm tra cân bằng công suất, tần số, điện áp, ngắn mạch và phối hợp bảo vệ trong mô hình. Bài thực hành chỉ mô phỏng bằng dữ liệu mẫu, không thao tác đóng cắt, đấu nối hay điều khiển thiết bị điện thật.', source:'U.S. DOE — Microgrids', url:'https://www.energy.gov/oe/microgrids' },
+  13: { title:'Xe điện: công suất sạc, năng lượng pin và phát thải vòng đời', body:'kW là công suất tức thời; kWh là năng lượng tích lũy. Sạc AC bị giới hạn bởi bộ sạc trên xe và EVSE; sạc DC cấp điện một chiều qua bộ biến đổi bên ngoài. V2G cần xe, EVSE hai chiều, giao thức, sự cho phép của nhà sản xuất và điều kiện kết nối phù hợp; không phải mọi xe điện đều hỗ trợ.\n\nKhông suy ra phát thải bằng 0 chỉ từ tỷ lệ điện tái tạo. Đánh giá phát thải cần nêu hệ số phát thải lưới và thời điểm sạc, sản xuất xe/pin, vòng đời, tái chế và functional unit. Các ví dụ 400 V, 125 A hoặc 22 kW chỉ là phép tính lý tưởng, không phải chỉ dẫn chọn cáp hay đấu nối.', source:'U.S. DOE Alternative Fuels Data Center — Electric Vehicle Basics', url:'https://afdc.energy.gov/vehicles/electric_basics.html' },
+  14: { title:'AI/IoT: tránh rò rỉ dữ liệu và không nhầm dự báo với quan hệ nhân quả', body:'Với chuỗi thời gian năng lượng, chia train/validation/test theo trật tự thời gian; không xáo trộn ngẫu nhiên nếu cách đó làm rò rỉ tương lai vào tập huấn luyện. So sánh mô hình với baseline đơn giản, kiểm tra mùa vụ, dữ liệu thiếu, ngoại lệ và drift. RMSE có cùng đơn vị với biến mục tiêu và rất nhạy với sai số lớn; không dùng một chỉ số duy nhất để kết luận mô hình tốt.\n\nIoT/OT có thể tác động môi trường vật lý, vì vậy bài học chỉ thảo luận phòng vệ, phân quyền, sao lưu, phân đoạn mạng và giám sát bằng tình huống giả lập; không thử nghiệm trên hệ thống thật hoặc thiết bị không thuộc quyền quản lý.', source:'NIST — Smart Grid; NIST — Operational Technology Security', url:'https://www.nist.gov/programs-projects/smart-grid' },
+  16: { title:'Kinh tế năng lượng: mọi chỉ tiêu cần cùng ranh giới và cùng thời điểm', body:'LCOE là chỉ tiêu chi phí bình quân quy dẫn theo điện năng trong một ranh giới phân tích xác định; không tự phản ánh đầy đủ giá trị thời gian, độ linh hoạt, truyền tải, lưu trữ, rủi ro và chi phí hệ thống. NPV phụ thuộc tỷ lệ chiết khấu và dòng tiền; IRR có thể có nhiều nghiệm hoặc gây hiểu nhầm với dòng tiền đổi dấu nhiều lần.\n\nPhân biệt giá bán lẻ, giá thị trường bán buôn, giá hợp đồng, chi phí biên và doanh thu công suất/dịch vụ phụ trợ. Mọi ví dụ tài chính phải nêu năm giá, tiền tệ, lạm phát, thuế, tỷ giá, thời hạn, hệ số công suất, suy giảm, O&M, thay thế thiết bị và giả định chiết khấu.', source:'U.S. EIA — Electricity Explained; IEA — Projected Costs of Generating Electricity', url:'https://www.eia.gov/energyexplained/electricity/' },
+  17: { title:'LCA: không so sánh nếu khác đơn vị chức năng hoặc ranh giới', body:'LCA cần xác định mục tiêu, phạm vi, đơn vị chức năng (functional unit), ranh giới hệ thống, dữ liệu kiểm kê, phương pháp đánh giá tác động và cách diễn giải. So sánh g CO₂e/kWh phải dùng cùng định nghĩa sản phẩm điện, thời hạn, công suất/năng lượng đầu ra, vòng đời, hệ số phát thải và quy tắc phân bổ.\n\nKhông so sánh một nghiên cứu cradle-to-gate với nghiên cứu cradle-to-grave mà không nói rõ khác biệt. GWP phụ thuộc bộ giá trị và chân trời thời gian (ví dụ GWP100); kết quả là ước tính có bất định, không phải một hằng số cho mọi dự án PV, gió hay pin.', source:'U.S. EPA — Life Cycle Assessment; IPCC Assessment Reports', url:'https://www.epa.gov/lca' },
+  18: { title:'Chính sách Việt Nam: dùng đúng văn bản, đúng ngày và đúng chỉ tiêu', body:'Khi nghiên cứu pháp luật, kiểm tra văn bản gốc, văn bản sửa đổi/hợp nhất, điều khoản hiệu lực và văn bản hướng dẫn tại ngày tra cứu. Luật Điện lực 61/2024/QH15 có hiệu lực từ 01/02/2025; Điều chỉnh Quy hoạch điện VIII được phê duyệt tại Quyết định 768/QĐ-TTg ngày 15/04/2025. Theo nội dung điều chỉnh, mục tiêu tỷ trọng nguồn năng lượng tái tạo không bao gồm thủy điện vào khoảng 28–36% năm 2030; không nhầm chỉ tiêu này với tỷ trọng năng lượng sơ cấp hoặc kết quả thực tế.\n\nThông tư 29/2026/TT-BCT về vận hành thị trường bán buôn điện cạnh tranh có hiệu lực 20/07/2026. Nội dung này được rà soát tại 08/11/2026; cần kiểm tra lại cơ sở dữ liệu pháp luật chính thức trước khi dùng cho quyết định thực tế. Đây là tài liệu học tập, không thay thế tư vấn pháp lý.', source:'Cổng văn bản Chính phủ — Luật 61/2024/QH15; Quyết định 768/QĐ-TTg; Bộ Công Thương — Thông tư 29/2026/TT-BCT', url:'https://vanban.chinhphu.vn/?classid=2&docid=213388&pageid=27160' },
+  19: { title:'Mô phỏng: mô hình không phải bản sao hoàn hảo của hệ thống', body:'Kết quả mô phỏng phụ thuộc giả định, dữ liệu đầu vào, bước thời gian, điều kiện biên, cấu hình solver và phiên bản phần mềm. Luôn kiểm tra đơn vị, cân bằng năng lượng, giới hạn vật lý, độ nhạy tham số và đối chiếu với baseline hoặc dữ liệu tham chiếu. Nêu rõ mô phỏng steady-state hay dynamic và những hiện tượng không được mô hình hóa.\n\n“Open source” không có nghĩa mọi dataset, hình ảnh hoặc tài liệu đi kèm đều tự do sử dụng. Kiểm tra LICENSE/NOTICE của đúng repository, phiên bản, dependency và điều khoản riêng của dữ liệu.', source:'NLR — System Advisor Model; PyPSA official repository', url:'https://sam.nlr.gov/' },
+  20: { title:'Thiết kế PV – gió: thiết kế sơ bộ không thay thế thiết kế kỹ thuật', body:'Tách công suất danh định (kW), điện năng theo thời gian (kWh), công suất DC của mảng PV và công suất AC đầu ra inverter. PVWatts phù hợp ước tính sơ bộ; khi đã có datasheet, cần mô hình thiết bị, nhiệt độ, che bóng, tổn thất và cấu hình cụ thể.\n\nCông suất gió lý tưởng phải nhân hệ số công suất khí động Cp và xét đường cong công suất, mật độ không khí, phân bố gió, cut-in/rated/cut-out, tổn thất và availability. Không tính sản lượng năm chỉ từ tốc độ gió trung bình. Các bài tập chỉ tạo sơ đồ/ước tính mô phỏng; việc thi công, đấu nối và bảo vệ cần người có chuyên môn.', source:'NLR — PVWatts; U.S. DOE — Small Wind Guidebook', url:'https://pvwatts.nlr.gov/docs/help_about.php' },
+  21: { title:'Mô hình pin: phân biệt cell, module, pack và năng lượng dùng được', body:'Ah là điện lượng; kWh là năng lượng và cần biết điện áp để quy đổi. Không dùng dung lượng danh định như thể toàn bộ đều khả dụng: cần đặt SOC min/max, DoD, hiệu suất sạc/xả, công suất giới hạn, nhiệt độ và dự phòng. Suy giảm phụ thuộc hóa học, nhiệt độ, SOC lưu trữ, C-rate, DoD, thời gian và chế độ vận hành.\n\nMô hình điện hóa có giả định và phạm vi áp dụng riêng; khớp mô hình với dữ liệu không chứng minh tình trạng pin thật. Chỉ làm bài mô phỏng hoặc phân tích dữ liệu công bố; không mở pack, tháo cell hay thử nghiệm pin thật.', source:'PyBaMM — official battery modelling project', url:'https://github.com/pybamm-team/PyBaMM' },
+  22: { title:'Mô phỏng lưới: kiểm tra base, topology và hội tụ', body:'Trước khi chạy power flow, xác định base kV/kVA, số pha, kiểu bus, cấu hình biến áp, thông số đường dây, mô hình tải và quy ước pu. Sai base hoặc topology có thể tạo kết quả sai nhiều bậc. Kiểm tra hội tụ, cân bằng công suất, điện áp bus, dòng nhánh và tổn thất; không chỉ nhìn đồ thị đẹp.\n\nSCADA, AMI và PMU có mục đích khác nhau. Mô hình là lưới giả lập và không được kết nối vào hệ thống OT/SCADA hoặc gửi lệnh đến thiết bị điều khiển thật.', source:'OpenDSS — EPRI; GridLAB-D — official repository; NIST OT Security', url:'https://opendss.epri.com/' },
+  23: { title:'Capstone: minh bạch giả định, dữ liệu, phiên bản và quyền sử dụng', body:'Mỗi con số trong báo cáo cần được phân loại: dữ liệu đo, dữ liệu công khai, kết quả mô phỏng hay giả định. Ghi nguồn, đơn vị, vị trí, thời gian, phiên bản, bước thời gian, phương pháp xử lý và độ bất định. Kết quả mô phỏng không được trình bày như dữ liệu vận hành thực; số liệu tự tạo phải gắn nhãn giả định.\n\nTrích dẫn không tự động cấp quyền sao chép. Với mã nguồn, hình, bảng, bài báo và dataset, kiểm tra license/terms của đúng phiên bản và dependency; giữ attribution và copyright notice bắt buộc. Tách kiến thức/facts khỏi cách diễn đạt, thiết kế, hình ảnh và mã nguồn được bảo hộ.', source:'Quyết định 768/QĐ-TTg; nguồn dữ liệu gốc và license của từng tài nguyên' }
+});
+
+function catalogAccuracyMarkup(course) {
     const note = COURSE_ACCURACY_NOTES[course.number];
     if (!note) return '';
     const noteParagraphs = String(note.body || '').split(/\n\s*\n/).map(paragraph => `<p>${escapeHTML(paragraph.trim())}</p>`).join('');
@@ -23205,6 +23608,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
         <div class="catalog-flow-heading"><span class="catalog-flow-heading__number">01</span><div><small>${isPractice ? 'THỰC HÀNH THEO CHẶNG' : 'ĐỀ CƯƠNG HỌC TẬP'}</small><h3>Tất cả nội dung trong một trang cuộn</h3><p>Không cần bấm nút bên cạnh để chuyển bài. Chỉ cần cuộn xuống; mỗi chuyên đề được mở sẵn ngay trong trang.</p></div></div>
         <main class="catalog-course-flow">${lessons}</main>
         ${catalogSupplementalMarkup(activeCourse)}
+        ${catalogProjectWorkbenchMarkup(activeCourse)}
         ${catalogAccuracyMarkup(activeCourse)}
         ${catalogCourseSourcesMarkup(activeCourse)}
         <aside class="catalog-safety-note"><span class="catalog-safety-note__symbol">!</span><div><strong>Nguyên tắc thực hành an toàn</strong><p>Các nội dung liên quan đến điện lưới, điện áp cao, biến tần công suất, pin lithium dung lượng lớn, hydro và bình chứa áp suất được học bằng mô phỏng hoặc kiến thức lý thuyết. Không tự lắp ráp, đấu nối hay thử nghiệm thiết bị nguy hiểm. Hoạt động phòng thí nghiệm thực tế chỉ dành cho môi trường chuyên dụng có người phụ trách chuyên môn.</p></div></aside>
