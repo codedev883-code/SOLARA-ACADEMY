@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html data-theme="dark" lang="vi" data-solara-version="16.11">
+<html data-theme="dark" lang="vi" data-solara-version="16.12">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
@@ -31,7 +31,7 @@ try {
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="SOLARA Academy — Học viện Năng lượng Tái tạo" name="twitter:title"/>
 <meta content="68 bài học nền tảng, bài học chuyên sâu, tổng quan năng lượng theo vùng và phòng mô phỏng tương tác." name="twitter:description"/>
-<title>SOLARA Academy — Học viện Năng lượng Tái tạo · V16.11 · Fine Cursor & Learning Studio</title>
+<title>SOLARA Academy — Học viện Năng lượng Tái tạo · V16.12 · Mobile Layout & Accessibility Fixes</title>
 <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6.5' fill='%2345e0a2'/%3E%3Cg stroke='%23f4c24f' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M16 2v4M16 26v4M2 16h4M26 16h4M6 6l2.8 2.8M23.2 23.2L26 26M26 6l-2.8 2.8M8.8 23.2L6 26'/%3E%3C/g%3E%3C/svg%3E" rel="icon"/>
 
 <style id="solara-styles">
@@ -14125,8 +14125,7 @@ html { overflow-x: clip;
  }
 [hidden] { display: none !important;
  }
-.gloss-toggle[hidden], .dock-more-menu[hidden] { display: none !important;
- }
+/* Global [hidden] rule above also covers these controls. */
 
 .map-v2__fig-head { display:flex;
  align-items:center;
@@ -17774,6 +17773,61 @@ html.perf-lite .cosmic-meteor--eleven { display: none !important; }
   .cosmic-meteor--single { animation:none !important; display:none !important; }
 }
 
+
+/* V16.12 — Mission cards: robust mobile/tablet text layout */
+@media (max-width: 900px) {
+  #mission .mission .pillars {
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100%;
+    min-width: 0;
+  }
+  #mission .mission .pillar {
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: 48px minmax(0, 1fr);
+    align-items: start;
+    gap: 14px;
+    padding: clamp(15px, 3.4vw, 20px);
+    transform: none;
+  }
+  #mission .mission .pillar > div {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  #mission .mission .pillar b,
+  #mission .mission .pillar p {
+    max-width: 100%;
+    min-width: 0;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: manual;
+  }
+  #mission .mission .pillar .pic {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 380px) {
+  #mission .mission .pillar {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 11px;
+    padding: 14px;
+  }
+  #mission .mission .pillar .pic {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+  }
+}
+@media (hover: none) {
+  #mission .mission .pillar:hover { transform: none; }
+  #mission .mission .pillar:hover .pic { transform: none; }
+}
+.src-card[id^="source-"] {
+  scroll-margin-top: calc(var(--nav-h, 68px) + 20px);
+}
 </style>
 </head>
 <body>
@@ -17971,15 +18025,15 @@ html.perf-lite .cosmic-meteor--eleven { display: none !important; }
 </div>
 <div class="pillars rv" style="--d:.15s">
 <div class="pillar">
-<span class="pic"><svg viewBox="0 0 24 24"><path class="ic-stroke" d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"></path></svg></span>
+<span class="pic"><svg aria-hidden="true" viewBox="0 0 24 24"><path class="ic-stroke" d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8z"></path></svg></span>
 <div><b>Miễn phí &amp; phi lợi nhuận</b><p>Không phí ẩn, không quảng cáo làm phiền. Kiến thức là món quà chung.</p></div>
 </div>
 <div class="pillar">
-<span class="pic"><svg viewBox="0 0 24 24"><path class="ic-stroke" d="M9 3h6v3h3l-3 7h-6L6 6h3zM10 13v8M14 13v8M9 21h6"></path></svg></span>
+<span class="pic"><svg aria-hidden="true" viewBox="0 0 24 24"><path class="ic-stroke" d="M9 3h6v3h3l-3 7h-6L6 6h3zM10 13v8M14 13v8M9 21h6"></path></svg></span>
 <div><b>Chính xác như phòng thí nghiệm</b><p>Mọi con số đều ghi nguồn: IRENA, IEA, Ember, EVN — cập nhật định kỳ.</p></div>
 </div>
 <div class="pillar">
-<span class="pic"><svg viewBox="0 0 24 24"><path class="ic-stroke" d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"></path></svg></span>
+<span class="pic"><svg aria-hidden="true" viewBox="0 0 24 24"><path class="ic-stroke" d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"></path></svg></span>
 <div><b>Dễ hiểu như một câu chuyện</b><p>Ví dụ đời thường, hình minh họa tự vẽ, ngôn ngữ không hàn lâm.</p></div>
 </div>
 </div>
@@ -19190,7 +19244,7 @@ html.perf-lite .cosmic-meteor--eleven { display: none !important; }
         { q: 'Làm thế nào để tự kiểm tra sau mỗi bài học?', a: 'Hãy thử tự giải thích lại khái niệm bằng lời của mình, làm hoạt động hoặc ví dụ trong bài, kiểm tra đơn vị và giả định trong phép tính, rồi đối chiếu với phần kết quả mong đợi. Phiên bản này không có một Quiz Arena độc lập.' }
     ];
 
-    function esc(s) { return String(s).replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m])); }
+    function esc(s) { return String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m])); }
     function fmt(v, d = 0) { return v.toLocaleString('vi-VN', { minimumFractionDigits: d, maximumFractionDigits: d }); }
     function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd'); }
 
@@ -19836,7 +19890,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
         }
     }
     function initMagnetic() {
-        if (isTouch || reduced || !window.matchMedia?.('(hover: hover) and (pointer: fine)').matches) return;
+        if (isTouch || reduced || lowPowerHardware || !window.matchMedia?.('(hover: hover) and (pointer: fine)').matches) return;
         let activeButton = null;
         let bounds = null;
         let pointer = null;
@@ -20058,6 +20112,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     function renderCourses() {
         const grid = $('#modGrid');
         if (!grid) return;
+        const previousSearch = $('#courseSearchInput')?.value || '';
 
         let dashboard = $('#courseDashboard');
         if (!dashboard) {
@@ -20106,10 +20161,10 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
               <input id="courseSearchInput" type="search" autocomplete="off" placeholder="Tìm chủ đề hoặc tên bài học..." aria-label="Tìm khóa học và bài học">
             </label>
             <div class="course-filter-group" role="group" aria-label="Lọc chủ đề">
-              <button class="course-filter" type="button" data-course-filter="all" aria-pressed="true">Tất cả</button>
-              <button class="course-filter" type="button" data-course-filter="started" aria-pressed="false">Đang học</button>
-              <button class="course-filter" type="button" data-course-filter="completed" aria-pressed="false">Hoàn thành</button>
-              <button class="course-filter" type="button" data-course-filter="saved" aria-pressed="false">Đã lưu</button>
+              <button class="course-filter" type="button" data-course-filter="all" aria-pressed="${SOLARA_COURSE_FILTER === 'all'}">Tất cả</button>
+              <button class="course-filter" type="button" data-course-filter="started" aria-pressed="${SOLARA_COURSE_FILTER === 'started'}">Đang học</button>
+              <button class="course-filter" type="button" data-course-filter="completed" aria-pressed="${SOLARA_COURSE_FILTER === 'completed'}">Hoàn thành</button>
+              <button class="course-filter" type="button" data-course-filter="saved" aria-pressed="${SOLARA_COURSE_FILTER === 'saved'}">Đã lưu</button>
             </div>
           </div>
         `;
@@ -20134,6 +20189,8 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
             `;
         }).join('');
 
+        const restoredSearch = $('#courseSearchInput');
+        if (restoredSearch) restoredSearch.value = previousSearch;
         updateCourseProgressUI();
         filterCourseCards();
     }
@@ -20318,7 +20375,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
               <div class="course-sidebar-empty" id="courseSidebarEmpty">Chưa có bài học khớp với từ khóa này. Thử cách tìm khác nhé!</div>
               <div class="course-sidebar__foot"><span>${stats.done} / ${stats.total} bài hoàn thành</span><span>${stats.percent}%</span></div>
             </aside>
-            <main class="course-main" id="courseMain">
+            <div class="course-main" id="courseMain" role="region" aria-label="Nội dung khóa học">
               <section class="course-modal-headline course-modal-headline--wide" aria-label="Giới thiệu chủ đề">
                 <div class="course-modal-headline__copy">
                   <span class="course-modal-kicker">SOLARA LEARNING STUDIO · LEARNING PATH</span>
@@ -20342,7 +20399,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
               ${foundationCourseSourcesMarkup(module.id)}
               ${foundationCourseAccuracyMarkup(module.id)}
               ${foundationStudioGuideMarkup(module.id)}
-            </main>
+            </div>
           </div>`;
 
         if (preserveScroll) {
@@ -20364,8 +20421,18 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
         if (!nav) return;
         nav.querySelectorAll('[data-course-jump-index]').forEach(button => {
             const active = Number(button.dataset.courseJumpIndex) === safeIndex;
-            if (active) button.setAttribute('aria-current', 'step');
-            else button.removeAttribute('aria-current');
+            if (active) {
+                button.setAttribute('aria-current', 'step');
+                const navRect = nav.getBoundingClientRect();
+                const buttonRect = button.getBoundingClientRect();
+                const clipped = buttonRect.left < navRect.left + 4 || buttonRect.right > navRect.right - 4
+                    || buttonRect.top < navRect.top + 4 || buttonRect.bottom > navRect.bottom - 4;
+                if (clipped) button.scrollIntoView({
+                    inline: 'nearest',
+                    block: 'nearest',
+                    behavior: reduced ? 'auto' : 'smooth'
+                });
+            } else button.removeAttribute('aria-current');
         });
     }
 
@@ -20419,7 +20486,12 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
         if (!modalEl || modalEl.classList.contains('is-closing') || !modalEl.classList.contains('open')) return;
                                                                                         
         modalEl.classList.add('is-closing');
-        modalEl.setAttribute('aria-hidden', 'false');
+        const returnTarget = SOLARA_MODAL_RETURN_FOCUS;
+        if (returnTarget?.isConnected && typeof returnTarget.focus === 'function') {
+            returnTarget.focus({ preventScroll: true });
+        }
+        SOLARA_MODAL_RETURN_FOCUS = null;
+        modalEl.setAttribute('aria-hidden', 'true');
         SOLARA_ACTIVE_MODULE = null;
         window.clearTimeout(SOLARA_MODAL_CLOSE_TIMER);
         SOLARA_MODAL_CLOSE_TIMER = window.setTimeout(() => {
@@ -20429,9 +20501,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
             if (modalHead) modalHead.innerHTML = '';
             if (modalBody) modalBody.innerHTML = '';
             window.SOLARA_MODAL_SCROLL?.unlock('learning');
-            const target = SOLARA_MODAL_RETURN_FOCUS;
             SOLARA_MODAL_RETURN_FOCUS = null;
-            if (target?.isConnected && typeof target.focus === 'function') target.focus({ preventScroll: true });
         }, 420);
     }
 
@@ -21051,7 +21121,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
     }
 
     function initCursor() {
-        if (isTouch) return;
+        if (isTouch || reduced || lowPowerHardware) return;
         const dot = $('#curDot');
         const ring = $('#curRing');
         if (!dot || !ring) return;
@@ -21064,7 +21134,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
         let lastX = targetX;
         let lastY = targetY;
         let motionEnergy = 0;
-        const hoverTargets = 'a,button,.mod,.pillar,.faq-q,.gq,.les,.dock-item,.roadmap-card,.course-action-btn,.course-filter';
+        const hoverTargets = 'a,button,.mod,.pillar,.catalog-card,.practice-card,.faq-q,.gq,.les,.dock-item,.roadmap-card,.course-action-btn,.course-filter';
 
         function stop() {
             if (raf) cancelAnimationFrame(raf);
@@ -21179,8 +21249,8 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
                 });
             }, { threshold: 0.12, rootMargin: '0px 0px -5% 0px' });
         }
-        observePremiumMotion(document);
         if (supported) document.documentElement.classList.add('motion-ready');
+        observePremiumMotion(document);
         document.addEventListener('solara:motionchange', event => {
             if (event.detail?.reduced) {
                 document.documentElement.classList.remove('motion-ready');
@@ -21224,7 +21294,7 @@ Tần số sau sự cố phụ thuộc quán tính, dự phòng, đáp ứng đi
                 console.error(`[SOLARA] ${name} không khởi tạo được:`, error);
             }
         }
-        console.log('%c[SOLARA V16.11] Website initialized', 'color:#45e0a2;font-weight:700;font-size:14px');
+        console.log('%c[SOLARA V16.12] Website initialized', 'color:#45e0a2;font-weight:700;font-size:14px');
         console.log(`[SOLARA] 68 bài học · 12 bài đọc · 70 thuật ngữ · 12 FAQ · hoạt động tự ôn tập trong bài học`);
     }
     if (document.readyState === 'loading')
@@ -23606,7 +23676,7 @@ function catalogAccuracyMarkup(course) {
         ${modalProgressMarkup(activeCourse)}
         <nav class="catalog-lesson-nav" aria-label="Menu bài học trong khóa học"><div class="catalog-lesson-nav__label"><small>ĐI ĐẾN</small><b>${activeCourse.items.length} ${isPractice ? 'chặng' : 'bài học'}</b></div><div class="catalog-lesson-nav__track">${lessonNav}</div></nav>
         <div class="catalog-flow-heading"><span class="catalog-flow-heading__number">01</span><div><small>${isPractice ? 'THỰC HÀNH THEO CHẶNG' : 'ĐỀ CƯƠNG HỌC TẬP'}</small><h3>Tất cả nội dung trong một trang cuộn</h3><p>Không cần bấm nút bên cạnh để chuyển bài. Chỉ cần cuộn xuống; mỗi chuyên đề được mở sẵn ngay trong trang.</p></div></div>
-        <main class="catalog-course-flow">${lessons}</main>
+        <div class="catalog-course-flow" role="region" aria-label="Nội dung khóa học chuyên môn">${lessons}</div>
         ${catalogSupplementalMarkup(activeCourse)}
         ${catalogProjectWorkbenchMarkup(activeCourse)}
         ${catalogAccuracyMarkup(activeCourse)}
@@ -23622,9 +23692,10 @@ function catalogAccuracyMarkup(course) {
   function openCatalog(number, trigger) {
     window.clearTimeout(catalogCloseTimer);
     const modal = $('#catalogModal');
-    if (modal) modal.setAttribute('aria-hidden','false');
+    if (!modal) return;
     activeCourse = CURRICULUM.find(course => course.number === Number(number));
     if (!activeCourse) return;
+    modal.setAttribute('aria-hidden','false');
     activeIndex = 0;
     returnFocus = trigger || document.activeElement;
     renderModal(false);
@@ -23637,15 +23708,15 @@ function catalogAccuracyMarkup(course) {
     const modal = $('#catalogModal');
     if (!modal || !modal.classList.contains('open')) return;
     modal.classList.remove('open');
-                                                                                      
-    modal.setAttribute('aria-hidden','false');
+    const target = returnFocus;
+    if (target?.isConnected && typeof target.focus === 'function') target.focus({ preventScroll: true });
+    returnFocus = null;
+    modal.setAttribute('aria-hidden','true');
     activeCourse = null;
     window.clearTimeout(catalogCloseTimer);
     catalogCloseTimer = window.setTimeout(() => {
       if (modal.classList.contains('open')) return;
-      modal.setAttribute('aria-hidden','true');
       window.SOLARA_MODAL_SCROLL?.unlock('catalog');
-      if (returnFocus?.isConnected) returnFocus.focus({preventScroll:true});
     }, 410);
   }
   function updateCatalogLessonNav(activeIndex) {
@@ -23891,10 +23962,18 @@ function catalogAccuracyMarkup(course) {
     });
     window.addEventListener('resize', () => { if (!menu.hidden) position(); }, { passive: true });
     window.addEventListener('scroll', () => { if (!menu.hidden) position(); }, { passive: true, capture: true });
+    const footerZoneObserver = new MutationObserver(() => {
+      if (document.documentElement.classList.contains('solara-footer-zone') && menu.classList.contains('open')) close();
+    });
+    footerZoneObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+    if (document.documentElement.classList.contains('solara-footer-zone')) close();
   }
   function initCourseCardDepth() {
     const finePointer = window.matchMedia?.('(hover: hover) and (pointer: fine)').matches;
-    if (!finePointer) return;
+    const lowPowerHardware = navigator.connection?.saveData === true
+      || (Number(navigator.deviceMemory || 0) > 0 && Number(navigator.deviceMemory) <= 4)
+      || (Number(navigator.hardwareConcurrency || 0) > 0 && Number(navigator.hardwareConcurrency) <= 4);
+    if (!finePointer || lowPowerHardware || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
     const selector = '.catalog-card, .practice-card, .mod[data-tilt]';
     let activeCard = null, activeRect = null;
     const resetCard = card => {
@@ -23967,7 +24046,7 @@ function catalogAccuracyMarkup(course) {
     const selectors=[
       '#mission .mission > *','#mission .pillar',
       '#roadmapItems .roadmap-item',
-      '#sources .src-panel','#modGrid .mod',
+      '#sources .src-card','#modGrid .mod',
       '#specialistGrid .catalog-card','#practiceGrid .practice-card',
       '#lessons .les','#glossGrid .gitem',
       '#faqGrid > *','#transparency .trans-item',
@@ -24609,7 +24688,6 @@ function catalogAccuracyMarkup(course) {
 
   const rippleSelector = [
     '.btn',
-    '.dock-item',
     '.dock-more-button',
     '.theme-btn',
     '.catalog-action',
@@ -24638,13 +24716,21 @@ function catalogAccuracyMarkup(course) {
     target.appendChild(ripple);
     state.rippleCount += 1;
 
+    let cleaned = false;
     const cleanup = () => {
+      if (cleaned) return;
+      cleaned = true;
       ripple.remove();
+      if (!target.querySelector('.solara-ripple')) target.classList.remove('solara-ripple-host');
       state.rippleCount = Math.max(0, state.rippleCount - 1);
     };
     ripple.addEventListener('animationend', cleanup, { once: true });
     window.setTimeout(cleanup, 760);
   }, { passive: true });
+
+  document.querySelectorAll('.eyebrow svg, .pillar .pic svg, .mod-ic svg').forEach(svg => {
+    if (!svg.hasAttribute('aria-label') && !svg.hasAttribute('role')) svg.setAttribute('aria-hidden', 'true');
+  });
 
   const glowSelector = '.hero-diagram, .mod, .catalog-card, .practice-card, .roadmap-card, .pillar, .dcard, .src-card';
 
@@ -24775,7 +24861,7 @@ function catalogAccuracyMarkup(course) {
     enumerable: false,
     writable: false,
     value: Object.freeze({
-      version: '16.8',
+      version: '16.12',
       get reducedMotion() { return state.reduced; },
       get pageHidden() { return state.hidden; },
       get activeRipples() { return state.rippleCount; }
